@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, ListItem, Menu, MenuButton, MenuItem, MenuList, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { NavLink } from "../styledcomponents/Typograph";
@@ -7,7 +8,24 @@ import DropdownArrow from '../svgs/dropdownarrow'
 import { ContactModal } from "./ContactModal";
 import { GiHamburgerMenu } from 'react-icons/gi'
 
+import { Context } from '../pages/Home'
+
+
 export function Navbar() {
+
+    const MyContext = useContext(Context)
+
+    const anchor = () => {
+
+        setTimeout(() => {
+            MyContext.current.scrollIntoView({
+                behavior: 'smooth'
+            })
+        }, 1000)
+
+
+        
+    }
 
     const { isOpen, onOpen, onClose } = useDisclosure()
     const { isOpen: drawerOpen , onOpen: onDrawerOpen, onClose: onDrawerClose } = useDisclosure()
@@ -35,9 +53,11 @@ export function Navbar() {
                                     </Link>
                                 </ListItem>
                                 <ListItem  listStyleType='none'  marginRight='40px'>
-                                        <NavLink>
+                                    <Link to='/'>
+                                        <NavLink onClick={anchor}>
                                             Sobre Nós
                                         </NavLink>
+                                    </Link>
                                 </ListItem>
                                 <ListItem  listStyleType='none'  marginRight='40px'>
                                 <Menu>
@@ -48,9 +68,11 @@ export function Navbar() {
                                     </MenuButton>
                                     <MenuList>
                                         <MenuItem>
+                                        <Link to='/empreendimentos-em-andamento'>
                                             <NavLink>
                                                 Em andamento
                                             </NavLink>
+                                        </Link>
                                         </MenuItem>
                                         <MenuItem>
                                             <NavLink>

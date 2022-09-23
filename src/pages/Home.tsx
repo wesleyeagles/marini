@@ -8,9 +8,19 @@ import { Lead } from "../components/Lead";
 import { Navbar } from "../components/Navbar";
 import { Sobre } from "../components/Sobre";
 
+import {createContext, useRef} from 'react'
+
+export const Context = createContext<any>({})
+
+    export const ContextStore = (props: any) => {
+        const ref = useRef()
+        return <Context.Provider value={ref}> {props.children} </Context.Provider>
+    }
+
 export function Home() {
+
     return (
-        <>
+        <ContextStore>
         <Navbar />
         <Header />
         <Sobre />
@@ -20,6 +30,6 @@ export function Home() {
         <Lead />
         <ContactBanner />
         <Footer />
-        </>
+        </ContextStore>
     )
 }

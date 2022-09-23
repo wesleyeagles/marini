@@ -16,6 +16,11 @@ export const StyledH1 = styled(Heading)`
    font-size: 3.5rem!important;
    font-weight: 500!important;
 
+   ${props => props.secondary && css`
+      font-size: 3rem!important;
+      font-weight: 400!important;
+   `}
+
    @media screen and (max-width: 768px) {
       font-size: 2.5rem!important;
    }
@@ -33,6 +38,12 @@ export const StyledH2 = styled(Heading)`
    @media screen and (max-width: 768px) {
       font-size: 2.3rem!important;
    }
+`
+
+export const StyledH3 = styled(Heading)`
+   color: #252525;
+   font-weight: 500;
+   font-size: 2rem;
 `
 
 export const StyledP = styled(Text)`
@@ -53,7 +64,8 @@ export const StyledP = styled(Text)`
 
 export const StyledStrong = styled.strong <Props>`
    font-weight: 700!important;
-   color: ${props => props.color? props.color : '#000'}
+   color: ${props => props.color? props.color : '#000'};
+   margin: ${props => props.margin? props.margin : '0px'};
 
    ${props => props.semibold && css`
     font-weight: 500!important;

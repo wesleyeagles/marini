@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Box, Container } from "@chakra-ui/react";
 import StyledButton from "../styledcomponents/Button";
 import { StyledH2, StyledP, StyledSmall, StyledSpan, StyledStrong } from "../styledcomponents/Typograph";
@@ -10,6 +11,9 @@ import { Shield } from 'tabler-icons-react';
 import { Check } from 'tabler-icons-react';
 import { Star } from 'tabler-icons-react';
 
+import { Context } from '../pages/Home'
+
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,9 +24,11 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
 
-export function Sobre() {
+export const Sobre = () => {
+    const MyContext = useContext(Context)
+
     return (
-        <Box display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
+        <Box ref={MyContext} display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <Box display='flex' alignItems={{xl: 'flex-end'}} flexDirection={{sm: 'column', xl: 'row'}} justifyContent={{xl: 'space-between'}}>
                     <Box>
