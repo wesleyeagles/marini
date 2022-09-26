@@ -9,11 +9,27 @@ import Instagram from '../svgs/instagramicon'
 import Linkedin from '../svgs/linkedinicon'
 import Youtube from '../svgs/youtubeicon'
 import Eagles from '../svgs/eagleslogo'
+import { HashLink } from "react-router-hash-link";
 
 
 export function Footer() {
 
     const { isOpen, onOpen, onClose } = useDisclosure()
+
+    const scrollToTop = () => {
+        setTimeout(() => {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: 0
+            })
+        }, 200) 
+    }
+
+    function removeHash () { 
+        setTimeout(() => {
+            history.pushState("", document.title, window.location.pathname + window.location.search)
+        }, 100)  
+    }
 
 
     return (
@@ -28,19 +44,23 @@ export function Footer() {
                         <Text w='max-content' as='span' display='block' fontWeight='500' fontSize='17px' color='#ABABAB'>
                             Navegue
                         </Text>
-                        <Link to='/'>
+                        <Link onClick={scrollToTop} to='/'>
                             <Text w='max-content' marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
                                 Início
                             </Text>
                         </Link>
 
+                        <HashLink onClick={removeHash} smooth to='/#sobre'>
                         <Text w='max-content' cursor='pointer' marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
                             Sobre nós
                         </Text>
+                        </HashLink>
 
+                        <HashLink onClick={removeHash} smooth to='/#empreendimentos'>
                         <Text w='max-content' cursor='pointer' marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
                             Empreendimentos
                         </Text>
+                        </HashLink>
 
                         <Text onClick={onOpen} w='max-content' cursor='pointer' marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
                             Contato

@@ -8,23 +8,16 @@ import DropdownArrow from '../svgs/dropdownarrow'
 import { ContactModal } from "./ContactModal";
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-import { Context } from '../pages/Home'
+import { Context } from '../App'
+import { HashLink } from "react-router-hash-link";
 
 
 export function Navbar() {
 
-    const MyContext = useContext(Context)
-
-    const anchor = () => {
-
+    function removeHash () { 
         setTimeout(() => {
-            MyContext.current.scrollIntoView({
-                behavior: 'smooth'
-            })
-        }, 1000)
-
-
-        
+            history.pushState("", document.title, window.location.pathname + window.location.search)
+        }, 100)  
     }
 
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -46,18 +39,18 @@ export function Navbar() {
                         <nav>
                             <UnorderedList display='flex' justifyContent='space-between' alignItems='center'>
                                 <ListItem listStyleType='none' marginRight='40px'>
-                                    <Link to=''>
+                                    <Link to='/'>
                                         <NavLink>
                                             Página Inicial
                                         </NavLink>
                                     </Link>
                                 </ListItem>
                                 <ListItem  listStyleType='none'  marginRight='40px'>
-                                    <Link to='/'>
-                                        <NavLink onClick={anchor}>
+                                    <HashLink onClick={removeHash} smooth to='/#sobre'>
+                                        <NavLink>
                                             Sobre Nós
                                         </NavLink>
-                                    </Link>
+                                    </HashLink>
                                 </ListItem>
                                 <ListItem  listStyleType='none'  marginRight='40px'>
                                 <Menu>
@@ -67,18 +60,20 @@ export function Navbar() {
                                         </NavLink>
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem>
                                         <Link to='/empreendimentos-em-andamento'>
+                                        <MenuItem>
                                             <NavLink>
                                                 Em andamento
                                             </NavLink>
-                                        </Link>
                                         </MenuItem>
+                                        </Link>
+                                        <Link to='/empreendimentos-em-resid%C3%AAnciais'>
                                         <MenuItem>
                                             <NavLink>
                                                 Residênciais
                                             </NavLink>
                                         </MenuItem>
+                                        </Link>
                                         <MenuItem disabled>
                                             <NavLink>
                                                 Lançamento (Em Breve)
@@ -114,7 +109,7 @@ export function Navbar() {
             <DrawerCloseButton  />
             <DrawerBody marginTop={10}>
               <Box>
-                <Link to='/'>
+                <Link onClick={onDrawerClose} to='/'>
                 <NavLink>
                     Página Inicial
                 </NavLink>
@@ -122,9 +117,11 @@ export function Navbar() {
               </Box>
 
               <Box marginTop={1}>
-                <NavLink onClick={onDrawerClose}>
+              <HashLink onClick={onDrawerClose} smooth to='/#empreendimentos'>
+                <NavLink>
                     Sobre Nós
                 </NavLink>
+              </HashLink>
               </Box>
 
               <Box>
@@ -136,14 +133,18 @@ export function Navbar() {
                 </MenuButton>
                 <MenuList>
                     <MenuItem>
+                    <Link onClick={onDrawerClose} to='/empreendimentos-em-andamento'>
                         <NavLink>
                             Em andamento
                         </NavLink>
+                    </Link>
                     </MenuItem>
                     <MenuItem>
+                    <Link onClick={onDrawerClose} to='/empreendimentos-em-resid%C3%AAnciais'>
                         <NavLink>
                             Residênciais
                         </NavLink>
+                    </Link>
                     </MenuItem>
                     <MenuItem disabled>
                         <NavLink>

@@ -1,10 +1,20 @@
+import { useContext } from "react";
+import { HashLink } from 'react-router-hash-link';
 import { Box, Container } from "@chakra-ui/react";
 import StyledButton from "../styledcomponents/Button";
 import { StyledH1, StyledP, StyledStrong } from "../styledcomponents/Typograph";
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
+import { Context } from '../App'
 
 export function Header() {
+
+    function removeHash () { 
+        setTimeout(() => {
+            history.pushState("", document.title, window.location.pathname + window.location.search)
+        }, 100)  
+    }
+
     return (
         <Box display='flex' alignItems='center' className="bg-header" h={{sm: '420px', md: '577px', lg: '577px', '2xl': '800px'}}>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
@@ -21,9 +31,11 @@ export function Header() {
                     </Box>
 
                     <Box marginTop={{sm: '30px', '2xl': '55px'}}>
+                        <HashLink onClick={removeHash} smooth to='#empreendimentos'>
                         <StyledButton outlined white rightIcon={<HiOutlineArrowRight size={19}/>}>  
                             VER EMPREENDIMENTOS
                         </StyledButton>
+                        </HashLink>
                     </Box>
                 </Box>
             </Container>

@@ -2,8 +2,9 @@ import React, { useRef, useState } from "react";
 
 import { Box, Container, Text } from "@chakra-ui/react";
 import { BannerAndamento } from "../components/BannerAndamento";
-import { Navbar } from "../components/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {Helmet} from "react-helmet";
+import {motion} from "framer-motion"
 
 
 // Import Swiper styles
@@ -25,8 +26,35 @@ export function EmpreendimentosEmAndamento() {
     const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
     return (
+        <>
+        <Helmet>
+        {/* charset */}
+        <meta charSet="utf-8" />
+
+        {/* url */}
+        <meta content="http://www.mariniconstrucoes.com.br/empreendimentos-em-andamento" property="og:url" />
+        <link href="http://www.mariniconstrucoes.com.br/empreendimentos-em-andamento" rel="canonical" />
+
+        {/* title */}
+        <title>Marini | Empreendimentos em andamento</title>
+        <meta content="Marini | Empreendimentos em andamento" property="og:title" />
+        <meta content="Marini | Empreendimentos em andamento" property="og:site_name" />
+
+        {/* description */}
+        <meta content="Residencial Jardim San Paulo está sendo construído no charmoso Bairro Borgo. O novo empreendimento conta com uma planta funcional e bem dividida de apartamentos que priorizam o bem estar, buscando valorização das unidades com excelentes orientações solares em perfeito contato com a natureza. A fachada busca conectar as torres entre si por elementos geométricos, dando ao empreendimento um caráter de sofisticação e valorização." name="description" />
+        <meta content="Residencial Jardim San Paulo está sendo construído no charmoso Bairro Borgo. O novo empreendimento conta com uma planta funcional e bem dividida de apartamentos que priorizam o bem estar, buscando valorização das unidades com excelentes orientações solares em perfeito contato com a natureza. A fachada busca conectar as torres entre si por elementos geométricos, dando ao empreendimento um caráter de sofisticação e valorização." property="og:description" />
+
+        {/* keyword */}
+        <meta name='keywords' content='residencial, residencial jardim san paulo, san paulo, jardim san paulo, bairro borgo, novo empreendimento, apartamento san paulo' />
+    
+        {/* og type */} 
+        <meta content="website" property="og:type" />
+    
+        {/* og lang */} 
+        <meta content="pt_BR" property="og:locale" />
+        </Helmet>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 1.6}}} exit={{opacity: 0, transition: {duration: 0.1} }}>
         <StyledEmpreendimentosAndamento>
-        <Navbar />
         <BannerAndamento />
         <Box paddingTop='72px' paddingBottom='124px'>
             <Box display='flex' justifyContent='center'>
@@ -270,5 +298,7 @@ export function EmpreendimentosEmAndamento() {
         </Box>
         <Footer />
         </StyledEmpreendimentosAndamento>
+        </motion.div>
+        </>
     )
 }

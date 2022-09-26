@@ -1,10 +1,8 @@
 import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Input, useDisclosure } from "@chakra-ui/react"
-import { useRef } from "react"
 import { NavLink } from "../styledcomponents/Typograph"
 
 export function DrawerMenu({isDrawerOpen, Close}: any) {
     const { isOpen, onOpen: onDrawerOpen, onClose: onDrawerClose } = useDisclosure()
-    const btnRef = useRef<any>()
   
     return (
       <>

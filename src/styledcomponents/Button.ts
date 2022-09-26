@@ -3,7 +3,7 @@ import  { Button } from '@chakra-ui/react'
 
 const StyledButton = styled(Button)`
     background: #3C5F89!important;
-    height: auto!important;
+    height: 52px!important;
     color: #F0F0F0!important;
     font-size: 14px!important;
     font-weight: 600!important;
@@ -13,6 +13,7 @@ const StyledButton = styled(Button)`
     text-transform: uppercase;
     border-radius: 5px!important;
     line-height: 1.6!important;
+    flex: none!important;
 
     margin-top: ${props => props.marginTop? props.marginTop : '0px'};
     margin-bottom: ${props => props.marginBottom? props.marginBottom : '0px'};

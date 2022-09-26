@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const StyledBannerAndamento = styled(Box)`
     width: 100%;
-    height: 613px;
+    height: 633px;
     display: flex;
     align-items: center;
     background-position: center;

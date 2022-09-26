@@ -60,6 +60,10 @@ export const StyledP = styled(Text)`
     color: #606060!important;
    `}
 
+   @media screen and (max-width: 1280px) {
+      font-size: 1rem!important;
+   }
+
 `
 
 export const StyledStrong = styled.strong <Props>`

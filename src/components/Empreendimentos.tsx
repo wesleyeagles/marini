@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Box, Container, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { StyledEmpreendimentos } from "../styledcomponents/StyledEmpreendimentos";
@@ -11,12 +12,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
+import { Context } from "../App";
 
 export function Empreendimentos() {
+    const AnchorEmpreendimentos = useContext(Context)
+
+    const scrollToTop = () => {
+        setTimeout(() => {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: 0
+            })
+        }, 200) 
+    }
+
     return (
-        <StyledEmpreendimentos>
+        <StyledEmpreendimentos id='empreendimentos'>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
-                <Box display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems={{lg: 'center'}} justifyContent={{lg: 'space-between'}} marginTop={{sm: '320px', md: '0'}}>
+                <Box ref={AnchorEmpreendimentos} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems={{lg: 'center'}} justifyContent={{lg: 'space-between'}} marginTop={{sm: '320px', md: '0'}}>
                     <Box w={{lg: '45%', xl: '60%'}}>
                     <StyledH2>
                         Nossos empreendimentos
@@ -31,7 +44,7 @@ export function Empreendimentos() {
                 </Box>
 
                 <Box display={{sm: 'none', lg: 'flex'}} marginTop='80px'>
-                    <Link to=''>
+                    <Link to='' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
@@ -42,7 +55,7 @@ export function Empreendimentos() {
                     </Box>
                     </Link>
 
-                    <Link to=''>
+                    <Link to='/empreendimentos-em-andamento' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
@@ -53,11 +66,11 @@ export function Empreendimentos() {
                     </Box>
                     </Link>
 
-                    <Link to=''>
+                    <Link to='/empreendimentos-em-resid%C3%AAnciais' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
-                                OBRAS RESIDENCIAIS
+                                OBRAS RESIDÊNCIAIS
                             </Text>
                         </Box>
                         <img className="empreendimentos__img" src="/images/residenciais.png" alt="" />
@@ -88,7 +101,7 @@ export function Empreendimentos() {
                         </SwiperSlide>
 
                         <SwiperSlide className="empreendimentos__slide">
-                        <Link to=''>
+                        <Link to='/empreendimentos-em-andamento' onClick={scrollToTop}>
                         <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
@@ -101,11 +114,11 @@ export function Empreendimentos() {
                         </SwiperSlide>
 
                         <SwiperSlide className="empreendimentos__slide">
-                        <Link to=''>
+                        <Link to='/empreendimentos-em-resid%C3%AAnciais' onClick={scrollToTop}>
                         <Box className="empreendimentos__single">
                             <Box className="empreendimentos__title_box">
                                 <Text className="empreendimentos__title">
-                                    OBRAS RESIDENCIAIS
+                                    OBRAS RESIDÊNCIAIS
                                 </Text>
                             </Box>
                             <img className="empreendimentos__img" src="/images/residenciais.png" alt="" />

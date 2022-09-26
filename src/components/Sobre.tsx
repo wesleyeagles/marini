@@ -11,7 +11,7 @@ import { Shield } from 'tabler-icons-react';
 import { Check } from 'tabler-icons-react';
 import { Star } from 'tabler-icons-react';
 
-import { Context } from '../pages/Home'
+import { Context } from '../App'
 
 
 
@@ -23,12 +23,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
+import { HashLink } from "react-router-hash-link";
 
 export const Sobre = () => {
-    const MyContext = useContext(Context)
+
+
+    function removeHash () { 
+        setTimeout(() => {
+            history.pushState("", document.title, window.location.pathname + window.location.search)
+        }, 100)  
+    }
 
     return (
-        <Box ref={MyContext} display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
+        <Box id='sobre' display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <Box display='flex' alignItems={{xl: 'flex-end'}} flexDirection={{sm: 'column', xl: 'row'}} justifyContent={{xl: 'space-between'}}>
                     <Box>
@@ -42,9 +49,11 @@ export const Sobre = () => {
                         <StyledP w={{xl: '460px'}} black>
                             Trabalhamos para oferecer mais qualidade de vida e acreditamos que todos merecem um lar para morar. 
                         </StyledP>
+                        <HashLink onClick={removeHash} smooth to='#empreendimentos'>
                         <StyledButton marginTop='51px' marginBottom='64px'>
                             VER EMPREENDIMENTOS
                         </StyledButton>
+                        </HashLink>
                         <StyledSmall width='460px' color='#606060' display='block'>
                             Esse é nosso serviço, proporcionamos as pessoas a capacidade de <StyledStrong color='#3E5481'>transformar sonhos em projetos de vida.</StyledStrong>
                         </StyledSmall>
