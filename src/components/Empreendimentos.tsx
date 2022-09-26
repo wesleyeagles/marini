@@ -66,7 +66,7 @@ export function Empreendimentos() {
                     </Box>
                     </Link>
 
-                    <Link to='/empreendimentos-em-resid%C3%AAnciais' onClick={scrollToTop}>
+                    <Link to='/empreendimentos-resid%C3%AAnciais' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
@@ -114,7 +114,7 @@ export function Empreendimentos() {
                         </SwiperSlide>
 
                         <SwiperSlide className="empreendimentos__slide">
-                        <Link to='/empreendimentos-em-resid%C3%AAnciais' onClick={scrollToTop}>
+                        <Link to='/empreendimentos-resid%C3%AAnciais' onClick={scrollToTop}>
                         <Box className="empreendimentos__single">
                             <Box className="empreendimentos__title_box">
                                 <Text className="empreendimentos__title">
