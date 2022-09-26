@@ -10,8 +10,7 @@ export function Router() {
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/empreendimentos-em-andamento' element={<EmpreendimentosEmAndamento/>}/>
-            <Route path='/empreendimentos-resid%C3%AAnciais' element={<EmpreendimentosResidenciais/>}/>
-            <Route path='/storybook' element={<Home />}/>
+            <Route path='/empreendimentos-residenciais' element={<EmpreendimentosResidenciais/>}/>
         </Routes>
         </AnimatePresence>
     )

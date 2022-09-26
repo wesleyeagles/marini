@@ -68,7 +68,7 @@ export const EmpreendimentosResidenciais = () => {
                     Confira nossos empreendimentos residenciais
                 </StyledH3>
             
-            <Box marginTop='47px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -162,7 +162,7 @@ export const EmpreendimentosResidenciais = () => {
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black>
+                        <StyledP black='true'>
                         Mais do que um projeto, uma obra pensada, planejada e construída com toda funcionalidade de forma diferenciada e com 860m² do mais alto padrão. 
                         Um projeto de Arquiteta Valéria Ferreira que acompanha a qualidade e o acabamento das realizações da Marini Construções.
                         </StyledP>
@@ -240,11 +240,6 @@ export const EmpreendimentosResidenciais = () => {
                         </Box>
                     </Box>
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                        <a target='_blank' href="https://api.whatsapp.com/send?phone=5554999106006&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20casa%20de%20alto%20padr%C3%A3o%20localizada%20na%20Rua%20das%20flores%2C%20Bairro%20tamandar%C3%A9%20Garibaldi%20-%20RS">
-                        <StyledButton outlined>
-                            Entrar em contato
-                        </StyledButton>
-                        </a>
 
                         <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
@@ -258,7 +253,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -312,7 +307,7 @@ export const EmpreendimentosResidenciais = () => {
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black>
+                        <StyledP black='true'>
                         Casa localizada no Caminhos da Eulália em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
@@ -339,16 +334,11 @@ export const EmpreendimentosResidenciais = () => {
                         </Box>
                     </Box>
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                        <a target='_blank' href="https://api.whatsapp.com/send?phone=5554999106006&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Casa%20localizada%20no%20Caminhos%20da%20Eul%C3%A1lia%20em%20Bento%20Gon%C3%A7alves%2FRS.">
-                        <StyledButton outlined>
-                            Entrar em contato
-                        </StyledButton>
-                        </a>
                     </Box>
                 </Box>
             </Box>
 
-            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -402,7 +392,7 @@ export const EmpreendimentosResidenciais = () => {
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black>
+                        <StyledP black='true'>
                         Casa de Alto Padrão localizada no Bairro Santa Marta em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
@@ -429,11 +419,6 @@ export const EmpreendimentosResidenciais = () => {
                         </Box>
                     </Box>
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                        <a target='_blank' href="https://api.whatsapp.com/send?phone=5554999106006&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Casa%20de%20Alto%20Padr%C3%A3o%20localizada%20no%20Bairro%20Santa%20Marta%20em%20Bento%20Gon%C3%A7alves%2FRS.">
-                        <StyledButton outlined>
-                            Entrar em contato
-                        </StyledButton>
-                        </a>
 
                         <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
@@ -447,7 +432,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -501,7 +486,7 @@ export const EmpreendimentosResidenciais = () => {
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black>
+                        <StyledP black='true'>
                         Casa localizada no Bairro Santa Marta em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
@@ -552,11 +537,6 @@ export const EmpreendimentosResidenciais = () => {
                         </Box>
                     </Box>
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                        <a target='_blank' href="https://api.whatsapp.com/send?phone=5554999106006&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Casa%20localizada%20no%20Bairro%20Santa%20Marta%20em%20Bento%20Gon%C3%A7alves%2FRS.">
-                        <StyledButton outlined>
-                            Entrar em contato
-                        </StyledButton>
-                        </a>
 
                         <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
@@ -570,7 +550,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -630,17 +610,12 @@ export const EmpreendimentosResidenciais = () => {
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black>
+                        <StyledP black='true'>
                         Casa localizada no Bairro Alto das Videiras em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
                     
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                        <a target='_blank' href="https://api.whatsapp.com/send?phone=5554999106006&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Casa%20localizada%20no%20Bairro%20Alto%20das%20Videiras%20em%20Bento%20Gon%C3%A7alves%2FRS.">
-                        <StyledButton outlined>
-                            Entrar em contato
-                        </StyledButton>
-                        </a>
 
                         <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
@@ -654,7 +629,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -708,7 +683,7 @@ export const EmpreendimentosResidenciais = () => {
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black>
+                        <StyledP black='true'>
                             Casa localizada nos Caminhos da Eulália em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
@@ -765,11 +740,6 @@ export const EmpreendimentosResidenciais = () => {
                         </Box>
                     </Box>
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                        <a target='_blank' href="https://api.whatsapp.com/send?phone=5554999106006&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Casa%20localizada%20nos%20Caminhos%20da%20Eul%C3%A1lia%20em%20Bento%20Gon%C3%A7alves%2FRS.">
-                        <StyledButton outlined>
-                            Entrar em contato
-                        </StyledButton>
-                        </a>
 
                         <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>

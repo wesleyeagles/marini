@@ -99,7 +99,7 @@ export function ContactModal({Open, Close, isModalOpen}: any) {
                             Entre em contato
                         </StyledH2>
                         <Box marginTop='33px'>
-                            <StyledP black>
+                            <StyledP black='true'>
                                 Preencha o <StyledStrong color='#3E5481'>formulário abaixo</StyledStrong> e aguarde o retorno de nossos especialistas.
                             </StyledP>
                         </Box>

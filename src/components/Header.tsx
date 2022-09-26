@@ -32,7 +32,7 @@ export function Header() {
 
                     <Box marginTop={{sm: '30px', '2xl': '55px'}}>
                         <HashLink onClick={removeHash} smooth to='#empreendimentos'>
-                        <StyledButton outlined white rightIcon={<HiOutlineArrowRight size={19}/>}>  
+                        <StyledButton outlined='true' white='true' rightIcon={<HiOutlineArrowRight size={19}/>}>  
                             VER EMPREENDIMENTOS
                         </StyledButton>
                         </HashLink>

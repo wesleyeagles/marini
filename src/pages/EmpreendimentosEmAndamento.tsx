@@ -232,7 +232,7 @@ export function EmpreendimentosEmAndamento() {
 
                         <Box marginTop={{sm: '32px', lg: '0'}} w={{sm: '100%', lg: '53%', xl: '56%'}}>
                             <Box marginBottom='72px'>
-                                <StyledP black>
+                                <StyledP black='true'>
                                 Residencial Jardim San Paulo está sendo construído no charmoso Bairro Borgo.
                                 O novo empreendimento conta com uma planta funcional e bem dividida de apartamentos que priorizam o bem estar, buscando valorização das unidades com excelentes orientações solares em perfeito contato com a natureza.
                                 A fachada busca conectar as torres entre si por elementos geométricos, dando ao empreendimento um caráter de sofisticação e valorização.

@@ -18,11 +18,11 @@ export function Habitation() {
                         Proporcionar habitação e bem estar
                     </StyledH2>
 
-                    <StyledP marginTop='40px' marginBottom='32px' w={{lg: '430px'}} black>
+                    <StyledP marginTop='40px' marginBottom='32px' w={{lg: '430px'}} black='true'>
                         Acreditamos que as pessoas e sua interação fazem o seu e o nosso negócio. Esse é nosso jeito de fazer, com tecnologia, funcionalidade, simplicidade e inovação.
                     </StyledP>
 
-                    <StyledP w={{lg: '430px'}} black>
+                    <StyledP w={{lg: '430px'}} black='true'>
                         Nossa colaboração consiste em proporcionar <StyledStrong color="#3E5481">habitação e bem estar.</StyledStrong>
                     </StyledP>
 

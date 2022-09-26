@@ -30,13 +30,13 @@ export function Banner() {
                 </Box>
             </Box>
             <Box className="banner_gradient" w={{sm: '100%', md: '60%', lg:'50%'}} h='100%'>
-                <StyledH2 w={{xl: '420px'}} white>
+                <StyledH2 w={{xl: '420px'}} white='true'>
                     Beleza, tecnologia e sustentabilidade
                 </StyledH2>
                 <StyledP w={{lg: '390px', xl: '450px'}} marginTop='40px' marginBottom='56px'>
                     Nossos empreendimentos além de encantar com sua beleza, possuem características modernas com a tecnologia a favor da qualidade de vida, e também se preocupam com a sustentabilidade e o meio ambiente.
                 </StyledP>
-                <StyledButton onClick={onOpen} transparent rightIcon={<HiOutlineArrowRight size={19}/>}>
+                <StyledButton onClick={onOpen} transparent='true' rightIcon={<HiOutlineArrowRight size={19}/>}>
                     Entrar em contato
                 </StyledButton>
             </Box>

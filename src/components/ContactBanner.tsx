@@ -13,7 +13,7 @@ export function ContactBanner() {
         <StyledContactBanner>
             <Container>
                 <Box>
-                    <StyledH2 white textAlign='center'>
+                    <StyledH2 white='true' textAlign='center'>
                         Viva o sonho que você sempre sonhou
                     </StyledH2>
                     <StyledP margin='0 auto' w={{xl: '85%'}} textAlign='center' marginTop='32px' marginBottom='56px'>
@@ -26,7 +26,7 @@ export function ContactBanner() {
 
 
                         <a href="https://wa.me/5554999106006" target='_blank'>
-                        <StyledButton marginLeft={{md: '8px'}} marginTop={{sm: '16px', md: '0'}} white outlined>
+                        <StyledButton marginLeft={{md: '8px'}} marginTop={{sm: '16px', md: '0'}} white='true' outlined='true'>
                             chame no whatsapp
                         </StyledButton>
                         </a>

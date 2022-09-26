@@ -42,11 +42,11 @@ export const Sobre = () => {
                         <StyledH2 w={{lg: '520px'}}>
                             Transformamos sonhos em projetos de vida
                         </StyledH2>
-                        <StyledP w={{xl: '460px'}} marginTop='48px' marginBottom='32px' black>
+                        <StyledP w={{xl: '460px'}} marginTop='48px' marginBottom='32px' black='true'>
                             Somos uma empresa com foco em projetos residenciais, com novas tecnologias, novos sistemas que 
                             <StyledStrong color='#3E5481'> proporcionam mais conforto e segurança</StyledStrong> para as pessoas. 
                         </StyledP>
-                        <StyledP w={{xl: '460px'}} black>
+                        <StyledP w={{xl: '460px'}} black='true'>
                             Trabalhamos para oferecer mais qualidade de vida e acreditamos que todos merecem um lar para morar. 
                         </StyledP>
                         <HashLink onClick={removeHash} smooth to='#empreendimentos'>
