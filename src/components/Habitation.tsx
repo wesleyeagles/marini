@@ -50,7 +50,7 @@ export function Habitation() {
                             Viva o que você sempre sonhou
                         </StyledSmall>
                     </Box>
-                    <img width='592px' height='455px' src="/images/habitation-image.png" alt="" />
+                    <img src="/images/habitation-image.png" alt="" />
                 </Box>
             </Box>
             </Container>

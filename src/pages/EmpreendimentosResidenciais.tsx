@@ -258,7 +258,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='47px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -348,7 +348,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='47px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -447,7 +447,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='47px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -570,7 +570,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='47px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 
@@ -654,7 +654,7 @@ export const EmpreendimentosResidenciais = () => {
                 </Box>
             </Box>
 
-            <Box marginTop='47px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+            <Box marginTop='120px' display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
                 <Swiper
 

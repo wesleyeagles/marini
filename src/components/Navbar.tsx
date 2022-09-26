@@ -67,10 +67,10 @@ export function Navbar() {
                                             </NavLink>
                                         </MenuItem>
                                         </Link>
-                                        <Link to='/empreendimentos-em-resid%C3%AAnciais'>
+                                        <Link to='/empreendimentos-resid%C3%AAnciais'>
                                         <MenuItem>
                                             <NavLink>
-                                                Residênciais
+                                                Residenciais
                                             </NavLink>
                                         </MenuItem>
                                         </Link>
@@ -140,9 +140,9 @@ export function Navbar() {
                     </Link>
                     </MenuItem>
                     <MenuItem>
-                    <Link onClick={onDrawerClose} to='/empreendimentos-em-resid%C3%AAnciais'>
+                    <Link onClick={onDrawerClose} to='/empreendimentos-resid%C3%AAnciais'>
                         <NavLink>
-                            Residênciais
+                            Residenciais
                         </NavLink>
                     </Link>
                     </MenuItem>

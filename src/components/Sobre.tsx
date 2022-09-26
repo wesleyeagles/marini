@@ -35,10 +35,10 @@ export const Sobre = () => {
     }
 
     return (
-        <Box id='sobre' display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
+        <Box display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <Box display='flex' alignItems={{xl: 'flex-end'}} flexDirection={{sm: 'column', xl: 'row'}} justifyContent={{xl: 'space-between'}}>
-                    <Box>
+                    <Box id='sobre' scrollMarginTop={8}>
                         <StyledH2 w={{lg: '520px'}}>
                             Transformamos sonhos em projetos de vida
                         </StyledH2>

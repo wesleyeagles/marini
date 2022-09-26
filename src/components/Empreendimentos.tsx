@@ -70,7 +70,7 @@ export function Empreendimentos() {
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
-                                OBRAS RESIDÊNCIAIS
+                                OBRAS RESIDENCIAIS
                             </Text>
                         </Box>
                         <img className="empreendimentos__img" src="/images/residenciais.png" alt="" />
@@ -118,7 +118,7 @@ export function Empreendimentos() {
                         <Box className="empreendimentos__single">
                             <Box className="empreendimentos__title_box">
                                 <Text className="empreendimentos__title">
-                                    OBRAS RESIDÊNCIAIS
+                                    OBRAS RESIDENCIAIS
                                 </Text>
                             </Box>
                             <img className="empreendimentos__img" src="/images/residenciais.png" alt="" />
