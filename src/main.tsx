@@ -14,6 +14,8 @@ import '@fontsource/poppins/300.css'
 import '@fontsource/poppins/200.css'
 import '@fontsource/poppins/100.css'
 
+import Fonts from './Fonts'
+
 import { extendTheme } from '@chakra-ui/react'
 
 const breakpoints = {
@@ -29,6 +31,8 @@ const theme = extendTheme({
   fonts: {
     heading: `'Poppins', sans-serif`,
     body: `'Poppins', sans-serif`,
+    Nevrada: `'Nevrada'`,
+    Highlight: `'Highlight'`
   },
 })
 
@@ -36,7 +40,7 @@ export default theme
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme}> <Fonts />
     <App />
     </ChakraProvider>
   </React.StrictMode>

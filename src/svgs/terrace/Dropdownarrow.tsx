@@ -3,13 +3,16 @@ import { SVGProps } from "react"
 
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={17}
-    height={13}
+    width={10}
+    height={6}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <path d="M0 7h16m0 0-4.5-6M16 7l-4.5 5.5" stroke="#fff" strokeWidth={1.5} />
+    <path
+      d="M5 6 .757 1.757 2.172.343 5 3.172 7.828.343l1.415 1.414L5 6Z"
+      fill="#fff"
+    />
   </svg>
 )
 

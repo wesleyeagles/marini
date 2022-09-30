@@ -34,6 +34,14 @@ const StyledButton = styled(Button)`
         }
     `}
 
+    ${props => props.terrace && css`
+        background: #860A10!important;
+
+        &:hover {
+            background: #860A1080!important;
+        }
+    `}
+
     ${props => props.outlined && css`
         background: transparent!important;
         border: solid 1px #3C5F89!important;

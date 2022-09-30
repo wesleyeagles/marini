@@ -20,6 +20,7 @@ import { StyledP, StyledStrong } from "../styledcomponents/Typograph";
 import { MapPin } from 'tabler-icons-react';
 import StyledButton from "../styledcomponents/Button";
 import { Footer } from "../components/Footer";
+import { Navbar } from "../components/Navbar";
 
 export function EmpreendimentosEmAndamento() {
 
@@ -53,6 +54,7 @@ export function EmpreendimentosEmAndamento() {
         {/* og lang */} 
         <meta content="pt_BR" property="og:locale" />
         </Helmet>
+        <Navbar />
         <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 1.6}}} exit={{opacity: 0, transition: {duration: 0.1} }}>
         <StyledEmpreendimentosAndamento>
         <BannerAndamento />

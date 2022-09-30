@@ -1,5 +1,4 @@
 import { BrowserRouter } from 'react-router-dom'
-import { Navbar } from './components/Navbar'
 import { Router } from './components/Router'
 
 import './main.css'
@@ -19,7 +18,6 @@ function App() {
   return (
    <BrowserRouter>
    <ContextStore>
-   <Navbar />
    <Router />
    </ContextStore>
    </BrowserRouter>

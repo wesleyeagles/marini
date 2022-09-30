@@ -4,7 +4,7 @@ import StyledButton from "../styledcomponents/Button";
 import { StyledInput } from "../styledcomponents/Input";
 import { StyledTextArea } from "../styledcomponents/TextArea";
 
-export function FormModal() {
+export function FormModal({formAction, colorBg = false}: any) {
 
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
@@ -18,7 +18,7 @@ export function FormModal() {
   
 
     return (
-      <form action="">
+      <form action={formAction}>
       <FormControl isRequired marginTop='45px'>
       <StyledInput
         type='text'
@@ -46,13 +46,13 @@ export function FormModal() {
     <FormControl marginTop='10px' isRequired>
       <StyledTextArea
         type='phone'
-        value={phone}
+        value={message}
         placeholder='Escreva sua mensagem:'
-        onChange={handlePhoneChange}
+        onChange={handleMessageChange}
       />
     </FormControl>
     <Box marginTop='10px' display='flex' justifyContent='flex-end'>
-        <StyledButton type='submit'>
+        <StyledButton terrace={colorBg} type='submit'>
             ENVIAR
         </StyledButton>
     </Box>

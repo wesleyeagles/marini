@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { EmpreendimentosEmAndamento } from "../pages/EmpreendimentosEmAndamento";
 import { EmpreendimentosResidenciais } from "../pages/EmpreendimentosResidenciais";
 import { Home } from "../pages/Home";
+import { Terrace } from "../pages/Terrace";
 
 export function Router() {
     return (
@@ -11,6 +12,7 @@ export function Router() {
             <Route path='/' element={<Home />}/>
             <Route path='/empreendimentos-em-andamento' element={<EmpreendimentosEmAndamento/>}/>
             <Route path='/empreendimentos-residenciais' element={<EmpreendimentosResidenciais/>}/>
+            <Route path='/terrace' element={<Terrace/>}/>
         </Routes>
         </AnimatePresence>
     )

@@ -1,11 +1,9 @@
-import { useContext } from "react";
 import { HashLink } from 'react-router-hash-link';
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, Heading } from "@chakra-ui/react";
 import StyledButton from "../styledcomponents/Button";
 import { StyledH1, StyledP, StyledStrong } from "../styledcomponents/Typograph";
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
-import { Context } from '../App'
 
 export function Header() {
 
