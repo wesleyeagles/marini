@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './components/Router'
 
-import './main.css'
+import './main.scss'
 
 
 import {createContext, useRef} from 'react'
