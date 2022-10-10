@@ -235,7 +235,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                                <Image src='/images/terrace/icons/Church.png' />
+                                <Image src='/images/terrace/icons/church.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Vista da cidade privilegiada
@@ -290,7 +290,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/Waitersplit.png' />
+                            <Image src='/images/terrace/icons/WaiterSplit.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Esperas (Split e água quente)
@@ -299,7 +299,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/Waitercoifa.png' />
+                            <Image src='/images/terrace/icons/WaiterCoifa.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Esperas para saída de coifa
