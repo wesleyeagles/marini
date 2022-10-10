@@ -217,7 +217,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/localization.png' />
+                            <Image src='/images/terrace/icons/Localization.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Excelente localização central
@@ -226,7 +226,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/varanda.png' />
+                            <Image src='/images/terrace/icons/Varanda.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Varanda com a sacada externa
@@ -235,7 +235,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                                <Image src='/images/terrace/icons/church.png' />
+                                <Image src='/images/terrace/icons/Church.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Vista da cidade privilegiada
@@ -244,7 +244,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/bed.png' />
+                            <Image src='/images/terrace/icons/Bed.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Conforto e a privacidade (Apartamentos com 2 suítes e lavabo)
@@ -253,7 +253,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/kitchen.png' />
+                            <Image src='/images/terrace/icons/Kitchen.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Cozinha prática (Churrasqueira com ponto de gás inferior)
@@ -262,7 +262,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/garage.png' />
+                            <Image src='/images/terrace/icons/Garage.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Box na garagem com possiboilidade de vagas adicionais
@@ -271,7 +271,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/gas.png' />
+                            <Image src='/images/terrace/icons/Gas.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Medidores individuais de água, luz e gás
@@ -281,7 +281,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/lock.png' />
+                            <Image src='/images/terrace/icons/Lock.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Fechaduras digitais de acesso aos apartamentos
@@ -290,7 +290,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/waitersplit.png' />
+                            <Image src='/images/terrace/icons/Waitersplit.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Esperas (Split e água quente)
@@ -299,7 +299,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/waitercoifa.png' />
+                            <Image src='/images/terrace/icons/Waitercoifa.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Esperas para saída de coifa
@@ -308,7 +308,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/sofa.png' />
+                            <Image src='/images/terrace/icons/Sofa.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Hall de entrada elevado, com decoração exclusiva e mobiliado
@@ -317,7 +317,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/balao.png' />
+                            <Image src='/images/terrace/icons/Balao.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Salão de festas (Mobiliado e equipado)
@@ -326,7 +326,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/playground.png' />
+                            <Image src='/images/terrace/icons/Playground.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Playground externo (com acesso ao salão de festas)
@@ -335,7 +335,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/fitness.png' />
+                            <Image src='/images/terrace/icons/Fitness.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Fitness center (Academia)
@@ -344,7 +344,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/pet.png' />
+                            <Image src='/images/terrace/icons/Pet.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Espaço pet cercado
@@ -353,7 +353,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/porcelanato.png' />
+                            <Image src='/images/terrace/icons/Porcelanato.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Porcelanato nas áreas sociais e laminado nas áreas íntimas
@@ -362,7 +362,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/texturizada.png' />
+                            <Image src='/images/terrace/icons/Texturizada.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Revestimento externo pastilhada e texturizada
@@ -371,7 +371,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/gesso.png' />
+                            <Image src='/images/terrace/icons/Gesso.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Rebaixo de gesso em todo o teto
@@ -380,7 +380,7 @@ export const Terrace = () => {
 
                         <Box w={{sm: '46%', lg: 'auto'}} display='flex' flexDirection={{sm: 'column', lg: 'row'}} alignItems='center'>
                             <Box w='30px' h={{sm: '40px', lg: 'auto'}}>
-                            <Image src='/images/terrace/icons/massa.png' />
+                            <Image src='/images/terrace/icons/Massa.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
                                 Massa corrida nas paredes
@@ -1135,40 +1135,6 @@ export const Terrace = () => {
             </Container>
         </Box>
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <Drawer
             isOpen={drawerOpen}
             placement='right'
