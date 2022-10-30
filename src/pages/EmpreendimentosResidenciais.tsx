@@ -67,7 +67,7 @@ export const EmpreendimentosResidenciais = () => {
             <Box paddingTop='97px' paddingBottom='187px'>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <StyledH3>
-                    Confira nossos empreendimentos residenciais
+                    Confira nossos empreendimentos entregues
                 </StyledH3>
             
             <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>

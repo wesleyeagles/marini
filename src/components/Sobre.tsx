@@ -35,19 +35,24 @@ export const Sobre = () => {
     }
 
     return (
-        <Box display='flex' alignItems='center' bg='#FFF' h={{sm: '1480px', md: '1680px', lg: '1520px', xl: '1000px', '2xl': '1180px'}}>
+        <Box display='flex' alignItems='center' bg='#FFF' h={{sm: '1580px', md: '1680px', lg: '1520px', xl: '1360px', '2xl': '1180px'}}>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
-                <Box display='flex' alignItems={{xl: 'flex-end'}} flexDirection={{sm: 'column', xl: 'row'}} justifyContent={{xl: 'space-between'}}>
+                <Box display='flex' alignItems={{xl: 'center'}} flexDirection={{sm: 'column', xl: 'row'}} justifyContent={{xl: 'space-between'}}>
                     <Box id='sobre' scrollMarginTop={8}>
                         <StyledH2 w={{lg: '520px'}}>
                             Transformamos sonhos em projetos de vida
                         </StyledH2>
                         <StyledP w={{xl: '460px'}} marginTop='48px' marginBottom='32px' black='true'>
-                            Somos uma empresa com foco em projetos residenciais, com novas tecnologias, novos sistemas que 
-                            <StyledStrong color='#3E5481'> proporcionam mais conforto e segurança</StyledStrong> para as pessoas. 
+                        Somos uma empresa com foco em projetos residenciais, com novas tecnologias, 
+                        novos sistemas que proporcionam mais conforto e segurança para as pessoas. 
+                        Trabalhamos para oferecer mais qualidade de vida e acreditamos que todos merecem um lar para morar. 
+                        Esse é nosso serviço, proporcionamos as pessoas a capacidade de transformar sonhos em projetos de vida.
                         </StyledP>
                         <StyledP w={{xl: '460px'}} black='true'>
-                            Trabalhamos para oferecer mais qualidade de vida e acreditamos que todos merecem um lar para morar. 
+                        Acreditamos que as pessoas e sua interação fazem o seu e o nosso negócio. Esse é nosso jeito de fazer, com tecnologia, funcionalidade, simplicidade e inovação.
+                        </StyledP>
+                        <StyledP w={{xl: '460px'}} black='true' marginTop='32px'>
+                        Nossa colaboração consiste em proporcionar habitação e bem estar.
                         </StyledP>
                         <HashLink onClick={removeHash} smooth to='#empreendimentos'>
                         <StyledButton marginTop='51px' marginBottom='64px'>
@@ -87,10 +92,13 @@ export const Sobre = () => {
                             <Shield size={25} color="#3E5481"/>
                         </div>
                         <StyledSpan className="sobre__title">
-                            Segurança
+                            Valores
                         </StyledSpan>
                         <StyledSmall color='#606060' display="block">
-                            Investimos em novas tecnologias, novos sistemas que proporcionam maior conforto e segurança para as pessoas
+                        Somos pessoas servindo pessoas.<br/>
+                        Crescemos e aprendemos juntos.<br/>
+                        Trabalho em equipe.<br/>
+                        Economia sustentável.<br/>
                         </StyledSmall>
                     </div>
 
@@ -99,10 +107,10 @@ export const Sobre = () => {
                             <Check size={25} color="#3E5481"/>
                         </div>
                         <StyledSpan className="sobre__title">
-                            Qualidade de vida
+                            Visão
                         </StyledSpan>
                         <StyledSmall color='#606060' display="block">
-                            Trabalhamos para oferecer aos clientes uma maior qualidade de vida
+                            Competência em edificações funcionais e utilitárias.
                         </StyledSmall>
                     </div>
 
@@ -111,10 +119,10 @@ export const Sobre = () => {
                             <Star size={25} color="#3E5481"/>
                         </div>
                         <StyledSpan className="sobre__title">
-                            Requinte e sofisticação
+                           Missão
                         </StyledSpan>
                         <StyledSmall color='#606060' display="block">
-                            Ambientes integrados visando melhor convívio e o máximo aproveitamento
+                        Tornar-se referência na edificação de prédios residenciais, na qualidade de serviços, funcionalidade e otimização de espaços, com simplicidade e inovação, utilizando processo sustentável para obter resultados positivos. Nosso compromisso é com a geração de resultado e com o crescimento.
                         </StyledSmall>
                     </div>
                     </Box>

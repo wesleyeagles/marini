@@ -66,11 +66,11 @@ export function Empreendimentos() {
                     </Box>
                     </Link>
 
-                    <Link to='/empreendimentos-residenciais' onClick={scrollToTop}>
+                    <Link to='/empreendimentos-entregues' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
-                                OBRAS RESIDENCIAIS
+                                OBRAS ENTREGUES
                             </Text>
                         </Box>
                         <img className="empreendimentos__img" src="/images/residenciais.png" alt="" />

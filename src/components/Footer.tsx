@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Container, Divider, Image, Text, useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { StyledFooter } from "../styledcomponents/StyledFooter";
 import { ContactModal } from "./ContactModal";
@@ -37,7 +37,7 @@ export function Footer() {
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} flexWrap={{md: 'wrap', lg: 'nowrap'}} justifyContent={{md: 'space-between'}}>
                     <Box display={{sm: 'flex', md: 'none', xl: 'block'}} marginRight={{md: '94px'}} justifyContent='center'>
-                        <Logo />
+                        <Image src='images/terrace/logo-branca.png' alt='logo-branca'/>
                     </Box>
 
                     <Box w={{md:'45%', lg: '130px'}} flex='none' marginRight={{lg: '100px'}} marginTop={{sm: '60px', md: '0'}}>

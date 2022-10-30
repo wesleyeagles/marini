@@ -11,7 +11,7 @@ export function Router() {
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/empreendimentos-em-andamento' element={<EmpreendimentosEmAndamento/>}/>
-            <Route path='/empreendimentos-residenciais' element={<EmpreendimentosResidenciais/>}/>
+            <Route path='/empreendimentos-entregues' element={<EmpreendimentosResidenciais/>}/>
             <Route path='/terrace' element={<Terrace/>}/>
         </Routes>
         </AnimatePresence>

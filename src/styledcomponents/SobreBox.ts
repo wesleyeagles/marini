@@ -34,7 +34,7 @@ export const SobreBox = styled(Box)`
     .sobre__single {
         border: solid 1px #74747420;
         width: 384px;
-        height: 227px;
+        height: 327px;
         border-radius: 5px;
         padding-top: 26px;
         padding-left: 27px;

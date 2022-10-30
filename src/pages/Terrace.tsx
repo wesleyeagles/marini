@@ -1096,7 +1096,7 @@ export const Terrace = () => {
                                 </Text>
                             </MenuButton>
                             <MenuList>
-                                <HashLink to='/terrace#condominal' smooth>
+                                <HashLink to='/terrace#residencial' smooth>
                                 <MenuItem>
                                     Residencial
                                 </MenuItem>
@@ -1176,7 +1176,7 @@ export const Terrace = () => {
                     </Link>
                     </MenuItem>
                     <MenuItem>
-                    <Link as={HashLink} onClick={onDrawerClose} to='/empreendimentos-residenciais'>
+                    <Link as={HashLink} onClick={onDrawerClose} to='/empreendimentos-entregues'>
                         <NavLink>
                             Condominal
                         </NavLink>

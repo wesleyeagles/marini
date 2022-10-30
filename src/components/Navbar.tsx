@@ -67,10 +67,10 @@ export function Navbar() {
                                             </NavLink>
                                         </MenuItem>
                                         </Link>
-                                        <Link to='/empreendimentos-residenciais'>
+                                        <Link to='/empreendimentos-entregues'>
                                         <MenuItem>
                                             <NavLink>
-                                                Residenciais
+                                                Entregues
                                             </NavLink>
                                         </MenuItem>
                                         </Link>
