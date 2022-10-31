@@ -62,7 +62,7 @@ export function Empreendimentos() {
                                 EM ANDAMENTO
                             </Text>
                         </Box>
-                        <img className="empreendimentos__img" src="/images/andamento.png" alt="" />
+                        <img className="empreendimentos__img" src="images/sanpaulo-andamento.png" alt="" />
                     </Box>
                     </Link>
 
