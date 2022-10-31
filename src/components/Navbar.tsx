@@ -59,7 +59,7 @@ export function Navbar() {
                                             Empreendimentos
                                         </NavLink>
                                     </MenuButton>
-                                    <MenuList>
+                                    <MenuList zIndex='9999'>
                                         <Link to='/empreendimentos-em-andamento'>
                                         <MenuItem>
                                             <NavLink>
