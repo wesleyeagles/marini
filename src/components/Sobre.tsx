@@ -35,7 +35,7 @@ export const Sobre = () => {
     }
 
     return (
-        <Box display='flex' alignItems='center' bg='#FFF' h={{sm: '1580px', md: '1680px', lg: '1520px', xl: '1520px', '2xl': '1480px'}}>
+        <Box display='flex' alignItems='center' bg='#FFF' h={{sm: '1580px', md: '1680px', lg: '1520px', xl: '1520px', '2xl': '1380px'}}>
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <Box display='flex' alignItems={{xl: 'center'}} flexDirection={{sm: 'column', xl: 'row'}} justifyContent={{xl: 'space-between'}}>
                     <Box id='sobre' scrollMarginTop={8}>
