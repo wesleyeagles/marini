@@ -92,13 +92,10 @@ export const Sobre = () => {
                             <Shield size={25} color="#3E5481"/>
                         </div>
                         <StyledSpan className="sobre__title">
-                            Valores
+                            Missão
                         </StyledSpan>
                         <StyledSmall color='#606060' display="block">
-                        Somos pessoas servindo pessoas.<br/>
-                        Crescemos e aprendemos juntos.<br/>
-                        Trabalho em equipe.<br/>
-                        Economia sustentável.<br/>
+                        Tornar-se referência na edificação de prédios residenciais, na qualidade de serviços, funcionalidade e otimização de espaços, com simplicidade e inovação, utilizando processo sustentável para obter resultados positivos. Nosso compromisso é com a geração de resultado e com o crescimento.
                         </StyledSmall>
                     </div>
 
@@ -119,10 +116,13 @@ export const Sobre = () => {
                             <Star size={25} color="#3E5481"/>
                         </div>
                         <StyledSpan className="sobre__title">
-                           Missão
+                           Valores
                         </StyledSpan>
                         <StyledSmall color='#606060' display="block">
-                        Tornar-se referência na edificação de prédios residenciais, na qualidade de serviços, funcionalidade e otimização de espaços, com simplicidade e inovação, utilizando processo sustentável para obter resultados positivos. Nosso compromisso é com a geração de resultado e com o crescimento.
+                        Somos pessoas servindo pessoas.<br/>
+                        Crescemos e aprendemos juntos.<br/>
+                        Trabalho em equipe.<br/>
+                        Economia sustentável.<br/>
                         </StyledSmall>
                     </div>
                     </Box>

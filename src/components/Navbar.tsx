@@ -74,11 +74,13 @@ export function Navbar() {
                                             </NavLink>
                                         </MenuItem>
                                         </Link>
+                                        <Link to='/terrace'>
                                         <MenuItem disabled>
                                             <NavLink>
-                                                Lançamento (Em Breve)
+                                                Lançamento
                                             </NavLink>
                                         </MenuItem>
+                                        </Link>
                                     </MenuList>
                                 </Menu>
                                 </ListItem>
