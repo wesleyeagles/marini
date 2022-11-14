@@ -8,7 +8,7 @@ export const StyledBannerAndamento = styled(Box)`
     align-items: center;
     background-position: center;
     background-size: cover;
-    background-image: url(images/banner-andamento.png);
+    background-image: url(images/banner-andamento.jpg);
 
     @media screen and (max-width: 1556px) {
         height: 577px;

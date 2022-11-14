@@ -157,7 +157,7 @@ export const EmpreendimentosResidenciais = () => {
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Garagem:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada:</StyledStrong>
                                         01 ou 02 vagas
                                     </Text>
                                 </ListItem>
@@ -309,7 +309,7 @@ export const EmpreendimentosResidenciais = () => {
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Garagem:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada:</StyledStrong>
                                         01 ou 02 vagas
                                     </Text>
                                 </ListItem>
@@ -604,7 +604,7 @@ export const EmpreendimentosResidenciais = () => {
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Garagem:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada:</StyledStrong>
                                         04 veículos
                                     </Text>
                                 </ListItem>
@@ -688,7 +688,15 @@ export const EmpreendimentosResidenciais = () => {
                 centeredSlides={true}
                 >
                     <SwiperSlide className="andamento__slide">
-                        <img src="images/casa-1-image-1.png" />
+                        <img src="images/habvita-image-1.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/habvita-image-2.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/habvita-image-3.png" />
                     </SwiperSlide>
                 </Swiper>
 
@@ -712,7 +720,15 @@ export const EmpreendimentosResidenciais = () => {
                             modules={[FreeMode, Navigation, Thumbs]}
                             >
                                 <SwiperSlide>
-                                    <img src="images/casa-1-image-1-thumb.png" />
+                                    <img src="images/habvita-image--thumb-1.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/habvita-image--thumb-2.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/habvita-image--thumb-3.png" />
                                 </SwiperSlide>
                             </Swiper>
                             </Box>
@@ -721,17 +737,24 @@ export const EmpreendimentosResidenciais = () => {
                 <Box w={{lg: '53%', xl: '57%'}}>
                     <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
                         <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
-                            Casa
+                            Clinica Habvita
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
                         <StyledP black='true'>
-                        Casa localizada no Caminhos da Eulália em Bento Gonçalves/RS.
+                        Clinica de Repouso da Melhor Idade, localizada no Bairro São Roque em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
                     <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
                         <Box marginRight={{sm: '40px', md: '0px'}}>
                             <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área Total:</StyledStrong>
+                                        420m²
+                                    </Text>
+                                </ListItem>
+
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
                                         <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera Água Quente:</StyledStrong>
@@ -752,7 +775,16 @@ export const EmpreendimentosResidenciais = () => {
                         </Box>
                     </Box>
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-                    </Box>
+
+                        <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
+                            <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
+                                <MapPin />
+                            </Box>
+                            <Text w={{sm: '240px', lg: '165px', xl: '135px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Bairro São Roque Bento Gonçalves - RS
+                            </Text>
+                        </Box>
+                        </Box>
                 </Box>
             </Box>
 
@@ -773,7 +805,11 @@ export const EmpreendimentosResidenciais = () => {
                 centeredSlides={true}
                 >
                     <SwiperSlide className="andamento__slide">
-                        <img src="images/casa-2-image-1.png" />
+                        <img src="images/central-image-1.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/central-image-2.png" />
                     </SwiperSlide>
                 </Swiper>
 
@@ -797,7 +833,11 @@ export const EmpreendimentosResidenciais = () => {
                             modules={[FreeMode, Navigation, Thumbs]}
                             >
                                 <SwiperSlide>
-                                    <img src="images/casa-2-image-1-thumb.png" />
+                                    <img src="images/central-image-thumb-1.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/central-image-thumb-2.png" />
                                 </SwiperSlide>
                             </Swiper>
                             </Box>
@@ -806,12 +846,12 @@ export const EmpreendimentosResidenciais = () => {
                 <Box w={{lg: '53%', xl: '57%'}}>
                     <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
                         <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
-                            Casa
+                            Sala Comercial Central
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
                         <StyledP black='true'>
-                        Casa de Alto Padrão localizada no Bairro Santa Marta em Bento Gonçalves/RS.
+                            Sala Comercial situada no centro da Cidade em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
                     <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
@@ -819,8 +859,15 @@ export const EmpreendimentosResidenciais = () => {
                             <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera Água Quente:</StyledStrong>
-                                        2
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área total:</StyledStrong>
+                                        280m²
+                                    </Text>
+                                </ListItem>
+
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Porcelanato:</StyledStrong>
+                                        Sim
                                     </Text>
                                 </ListItem>
                             </UnorderedList>
@@ -829,8 +876,15 @@ export const EmpreendimentosResidenciais = () => {
                             <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}} paddingRight={{xl: '55px'}}>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Privilegiada:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada:</StyledStrong>
                                         Sim
+                                    </Text>
+                                </ListItem>
+
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera Água Quente:</StyledStrong>
+                                        2
                                     </Text>
                                 </ListItem>
                             </UnorderedList>
@@ -842,8 +896,8 @@ export const EmpreendimentosResidenciais = () => {
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
                                 <MapPin />
                             </Box>
-                            <Text w={{sm: '240px', lg: '185px', xl: '175px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
-                            Bairro Santa Marta Bento Gonçalves - RS
+                            <Text w={{sm: '240px', lg: '165px', xl: '135px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Bairro Centro Bento Gonçalves - RS
                             </Text>
                         </Box>
                     </Box>
@@ -867,7 +921,19 @@ export const EmpreendimentosResidenciais = () => {
                 centeredSlides={true}
                 >
                     <SwiperSlide className="andamento__slide">
-                        <img src="images/casa-3-image-1.png" />
+                        <img src="images/gasperi-image-1.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/gasperi-image-2.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/gasperi-image-3.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/gasperi-image-4.png" />
                     </SwiperSlide>
                 </Swiper>
 
@@ -891,7 +957,19 @@ export const EmpreendimentosResidenciais = () => {
                             modules={[FreeMode, Navigation, Thumbs]}
                             >
                                 <SwiperSlide>
-                                    <img src="images/casa-3-image-1-thumb.png" />
+                                    <img src="images/gasperi-image-thumb-1.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/gasperi-image-thumb-2.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/gasperi-image-thumb-3.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/gasperi-image-thumb-4.png" />
                                 </SwiperSlide>
                             </Swiper>
                             </Box>
@@ -900,12 +978,12 @@ export const EmpreendimentosResidenciais = () => {
                 <Box w={{lg: '53%', xl: '57%'}}>
                     <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
                         <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
-                            Casa
+                            Clínica De Gasperi
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
                         <StyledP black='true'>
-                        Casa localizada no Bairro Santa Marta em Bento Gonçalves/RS.
+                        A nova Clínica De Gasperi foi totalmente projetada e construída para a realização exclusiva de cirurgias plásticas oferecendo o mais alto padrão de qualidade, conforto e segurança, atendendo e superando a todas as exigências da ANVISA.
                         </StyledP>
                     </Box>
                     <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
@@ -913,19 +991,140 @@ export const EmpreendimentosResidenciais = () => {
                             <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Churrasqueira:</StyledStrong>
-                                        1
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área Total:</StyledStrong>
+                                        1000m²
                                     </Text>
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Rebaixo em Gesso:</StyledStrong>
-                                        Em todo apto
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera Água Quente:</StyledStrong>
+                                        2
+                                    </Text>
+                                </ListItem>
+                            </UnorderedList>
+                        </Box>
+                        <Box>
+                            <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}} paddingRight={{xl: '55px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área Privativa:</StyledStrong>
+                                        900m²
+                                    </Text>
+                                </ListItem>
+                            </UnorderedList>
+                        </Box>
+                    </Box>
+                    <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
+
+                        <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
+                            <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
+                                <MapPin />
+                            </Box>
+                            <Text w={{sm: '240px', lg: '185px', xl: '135px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Bairro Planalto Bento Gonçalves - RS
+                            </Text>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+                <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
+                <Swiper
+
+                breakpoints={{
+                    768: {
+                        centerInsufficientSlides: false,
+                        centeredSlides: true
+                    }
+                }}
+                spaceBetween={10}
+                navigation={true}
+                thumbs={{ swiper: thumbsSwiper6 && !thumbsSwiper6.destroyed ? thumbsSwiper6 : null }}
+                modules={[FreeMode, Navigation, Thumbs]}
+                centeredSlides={true}
+                >
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/ever-image-1.png" />
+                    </SwiperSlide>
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/ever-image-2.png" />
+                    </SwiperSlide>
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/ever-image-3.png" />
+                    </SwiperSlide>
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/ever-image-4.png" />
+                    </SwiperSlide>
+                </Swiper>
+
+                <Box marginTop='13px'>
+                            <Swiper
+                            slidesPerView={3}
+                            breakpoints={{
+                                960: {
+                                    slidesPerView: 3
+                                },  
+                                
+                                768: {
+                                    slidesPerView: 5
+                                    
+                                } 
+                            }}
+                            onSwiper={setThumbsSwiper6}
+                            spaceBetween={20}
+                            freeMode={true}
+                            watchSlidesProgress={true}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            >
+                                <SwiperSlide>
+                                    <img src="images/ever-image-thumb-1.png" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="images/ever-image-thumb-2.png" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="images/ever-image-thumb-3.png" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="images/ever-image-thumb-4.png" />
+                                </SwiperSlide>
+                            </Swiper>
+                            </Box>
+                </Box>
+
+                <Box w={{lg: '53%', xl: '57%'}}>
+                    <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
+                        <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
+                            Ever Brasil
+                        </Text>
+                    </Box>
+                    <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
+                        <StyledP black='true'>
+                            Ever Brasil empresa de insumos para a indústria de alimentos e bebidas, localizada na Garibaldina em Garibaldi/RS
+                        </StyledP>
+                    </Box>
+
+                    <Box marginTop={{sm: '20px', lg: '20px', xl: '40px'}}>
+                    <Text>
+                        <StyledStrong display='block' margin='0px 4px 0px 0px'>
+                            Área Construída:
+                        </StyledStrong>
+                            1200m²
+                    </Text>
+                    </Box>
+                    <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
+                        <Box marginRight={{sm: '40px', md: '0px'}}>
+                            <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área Total:</StyledStrong>
+                                        1.200m²
                                     </Text>
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização privilegiada:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada:</StyledStrong>
                                         Sim
                                     </Text>
                                 </ListItem>
@@ -935,102 +1134,18 @@ export const EmpreendimentosResidenciais = () => {
                             <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}} paddingRight={{xl: '55px'}}>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Energia solar:</StyledStrong>
-                                        Sim
-                                    </Text>
-                                </ListItem>
-                                <ListItem>
-                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera para split:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Churrasqueira:</StyledStrong>
                                         1
                                     </Text>
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera água quente:</StyledStrong>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera Água Quente:</StyledStrong>
                                         2
                                     </Text>
                                 </ListItem>
                             </UnorderedList>
                         </Box>
-                    </Box>
-                    <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
-
-                        <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
-                            <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
-                                <MapPin />
-                            </Box>
-                            <Text w={{sm: '240px', lg: '185px', xl: '175px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
-                            Bairro Santa Marta Bento Gonçalves - RS
-                            </Text>
-                        </Box>
-                    </Box>
-                </Box>
-            </Box>
-
-            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
-                <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
-                <Swiper
-
-                breakpoints={{
-                    768: {
-                        centerInsufficientSlides: false,
-                        centeredSlides: true
-                    }
-                }}
-                spaceBetween={10}
-                navigation={true}
-                thumbs={{ swiper: thumbsSwiper6 && !thumbsSwiper6.destroyed ? thumbsSwiper6 : null }}
-                modules={[FreeMode, Navigation, Thumbs]}
-                centeredSlides={true}
-                >
-                    <SwiperSlide className="andamento__slide">
-                        <img src="images/casa-4-image-1.png" />
-                    </SwiperSlide>
-                    <SwiperSlide className="andamento__slide">
-                        <img src="images/casa-4-image-2.png" />
-                    </SwiperSlide>
-                </Swiper>
-
-                <Box marginTop='13px'>
-                            <Swiper
-                            slidesPerView={3}
-                            breakpoints={{
-                                960: {
-                                    slidesPerView: 3
-                                },  
-                                
-                                768: {
-                                    slidesPerView: 5
-                                    
-                                } 
-                            }}
-                            onSwiper={setThumbsSwiper6}
-                            spaceBetween={20}
-                            freeMode={true}
-                            watchSlidesProgress={true}
-                            modules={[FreeMode, Navigation, Thumbs]}
-                            >
-                                <SwiperSlide>
-                                    <img src="images/casa-4-image-1-thumb.png" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="images/casa-4-image-2-thumb.png" />
-                                </SwiperSlide>
-                            </Swiper>
-                            </Box>
-                </Box>
-
-                <Box w={{lg: '53%', xl: '57%'}}>
-                    <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
-                        <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
-                            Casa
-                        </Text>
-                    </Box>
-                    <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
-                        <StyledP black='true'>
-                        Casa localizada no Bairro Alto das Videiras em Bento Gonçalves/RS.
-                        </StyledP>
                     </Box>
                     
                     <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
@@ -1039,8 +1154,8 @@ export const EmpreendimentosResidenciais = () => {
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
                                 <MapPin />
                             </Box>
-                            <Text w={{sm: '240px', lg: '185px', xl: '175px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
-                            Bairro Alto das Videiras Bento Gonçalves - RS
+                            <Text w={{sm: '240px', lg: '185px', xl: '155px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Bairro Garibaldina Bento Gonçalves - RS
                             </Text>
                         </Box>
                     </Box>
@@ -1064,7 +1179,7 @@ export const EmpreendimentosResidenciais = () => {
                 centeredSlides={true}
                 >
                     <SwiperSlide className="andamento__slide">
-                        <img src="images/casa-5-image-1.png" />
+                        <img src="images/zanini-image-1.png" />
                     </SwiperSlide>
                 </Swiper>
 
@@ -1088,7 +1203,7 @@ export const EmpreendimentosResidenciais = () => {
                             modules={[FreeMode, Navigation, Thumbs]}
                             >
                                 <SwiperSlide>
-                                    <img src="images/casa-5-image-1-thumb.png" />
+                                    <img src="images/zanini-image-thumb-1.png" />
                                 </SwiperSlide>
                             </Swiper>
                             </Box>
@@ -1097,12 +1212,12 @@ export const EmpreendimentosResidenciais = () => {
                 <Box w={{lg: '53%', xl: '57%'}}>
                     <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
                         <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
-                            Casa
+                            Sala Comercial Zanini
                         </Text>
                     </Box>
                     <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
                         <StyledP black='true'>
-                            Casa localizada nos Caminhos da Eulália em Bento Gonçalves/RS.
+                            Sala Comercial Zanini, localizada no Bairro São Roque em Bento Gonçalves/RS.
                         </StyledP>
                     </Box>
                     <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
@@ -1111,19 +1226,13 @@ export const EmpreendimentosResidenciais = () => {
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
                                         <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área Total: </StyledStrong>
-                                        70m²
+                                        900m²
                                     </Text>
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Garagem:</StyledStrong>
-                                        01 veículo
-                                    </Text>
-                                </ListItem>
-                                <ListItem>
-                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Dormitórios:</StyledStrong>
-                                        2
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Porcelanato:</StyledStrong>
+                                        Sim
                                     </Text>
                                 </ListItem>
                                 <ListItem>
@@ -1139,19 +1248,13 @@ export const EmpreendimentosResidenciais = () => {
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
                                         <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área privativa:</StyledStrong>
-                                        60m²
+                                        700m²
                                     </Text>
                                 </ListItem>
                                 <ListItem>
                                     <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Churrasqueira:</StyledStrong>
-                                        1
-                                    </Text>
-                                </ListItem>
-                                <ListItem>
-                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
-                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Rebaixo em gesso:</StyledStrong>
-                                        Em todo apto
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Laminado:</StyledStrong>
+                                        Sim
                                     </Text>
                                 </ListItem>
                             </UnorderedList>
@@ -1163,8 +1266,8 @@ export const EmpreendimentosResidenciais = () => {
                             <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
                                 <MapPin />
                             </Box>
-                            <Text w={{sm: '240px', lg: '185px', xl: '190px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
-                            Bairro Caminhos da Eulália Bento Gonçalves - RS
+                            <Text w={{sm: '240px', lg: '185px', xl: '150px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Bairro São Roque Bento Gonçalves - RS
                             </Text>
                         </Box>
                     </Box>

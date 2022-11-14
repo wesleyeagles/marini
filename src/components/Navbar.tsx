@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, ListItem, Menu, MenuButton, MenuItem, MenuList, UnorderedList, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Image, ListItem, Menu, MenuButton, MenuItem, MenuList, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { NavLink } from "../styledcomponents/Typograph";
 
@@ -30,7 +30,7 @@ export function Navbar() {
                     <Box flex={1}>
                         <Box w='max-content'>
                         <Link to='/'>
-                            <Logo />
+                            <Image w='150px' src='images/LOGO MARINI CONSTRUÇÕES HORIZONTAL.png' />
                         </Link>
                         </Box>
                     </Box>

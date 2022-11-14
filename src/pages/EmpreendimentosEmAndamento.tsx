@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-import { Box, Container, Text } from "@chakra-ui/react";
+import { Box, Container, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
 import { BannerAndamento } from "../components/BannerAndamento";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Helmet} from "react-helmet";
@@ -11,11 +11,12 @@ import {motion} from "framer-motion"
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/zoom";
 import "swiper/css/thumbs";
 
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import { FreeMode, Navigation, Thumbs, Zoom } from "swiper";
 import { StyledEmpreendimentosAndamento } from "../styledcomponents/StyledEmpreendimentosAndamento";
-import { StyledP, StyledStrong } from "../styledcomponents/Typograph";
+import { StyledH2, StyledP, StyledStrong } from "../styledcomponents/Typograph";
 
 import { MapPin } from 'tabler-icons-react';
 import StyledButton from "../styledcomponents/Button";
@@ -25,6 +26,21 @@ import { Navbar } from "../components/Navbar";
 export function EmpreendimentosEmAndamento() {
 
     const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+
+
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen: isOpen2, onOpen: onOpen2, onClose: onClose2 } = useDisclosure()
+    const { isOpen: isOpen3, onOpen: onOpen3, onClose: onClose3 } = useDisclosure()
+    const { isOpen: isOpen4, onOpen: onOpen4, onClose: onClose4 } = useDisclosure()
+    const { isOpen: isOpen5, onOpen: onOpen5, onClose: onClose5 } = useDisclosure()
+    const { isOpen: isOpen6, onOpen: onOpen6, onClose: onClose6 } = useDisclosure()
+    const { isOpen: isOpen7, onOpen: onOpen7, onClose: onClose7 } = useDisclosure()
+    const { isOpen: isOpen8, onOpen: onOpen8, onClose: onClose8 } = useDisclosure()
+    const { isOpen: isOpen9, onOpen: onOpen9, onClose: onClose9 } = useDisclosure()
+    const { isOpen: isOpen10, onOpen: onOpen10, onClose: onClose10 } = useDisclosure()
+    const { isOpen: isOpen11, onOpen: onOpen11, onClose: onClose11 } = useDisclosure()
+    const { isOpen: isOpen12, onOpen: onOpen12, onClose: onClose12 } = useDisclosure()
+    const { isOpen: isOpen13, onOpen: onOpen13, onClose: onClose13 } = useDisclosure()
 
     return (
         <>
@@ -144,6 +160,14 @@ export function EmpreendimentosEmAndamento() {
                                 <SwiperSlide className="andamento__slide">
                                     <img src="images/sanpaulo-image-16.png" />
                                 </SwiperSlide>
+
+                                <SwiperSlide className="andamento__slide">
+                                    <img src="images/sanpaulo-image-17.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide className="andamento__slide">
+                                    <img src="images/sanpaulo-image-18.png" />
+                                </SwiperSlide>
                             </Swiper>
                             
                             <Box marginTop='13px'>
@@ -228,6 +252,14 @@ export function EmpreendimentosEmAndamento() {
                                 <SwiperSlide>
                                     <img src="images/sanpaulo-image-thumb-16.png" />
                                 </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-17.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-18.png" />
+                                </SwiperSlide>
                             </Swiper>
                             </Box>
                         </Box>
@@ -298,8 +330,215 @@ export function EmpreendimentosEmAndamento() {
                 </Container>
             </Box>
         </Box>
+
+        <Box paddingBottom={20}>
+            <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
+                <Box marginBottom={4}>
+                    <StyledH2>
+                        Obras
+                    </StyledH2>
+                </Box>
+                <Box>
+                    <Swiper
+                    spaceBetween={20}
+                    navigation={true}
+                    zoom={true}
+                    slidesPerView='auto'
+                    modules={[Navigation, Zoom]}
+                    >
+
+                        <SwiperSlide className="andamento-slide-single">
+                            <Image cursor='pointer' onClick={onOpen} src='images/obras-image-1.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                        <Image cursor='pointer' onClick={onOpen2} src='images/obras-image-2.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                        <Image cursor='pointer' onClick={onOpen3} src='images/obras-image-3.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                        <Image cursor='pointer' onClick={onOpen4} src='images/obras-image-4.png'/>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className="andamento-slide-single">
+                        <Image cursor='pointer' onClick={onOpen5} src='images/obras-image-5.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                            <Image cursor='pointer' onClick={onOpen6} src='images/obras-image-6.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                           <Image cursor='pointer' onClick={onOpen7} src='images/obras-image-7.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                            <Image cursor='pointer' onClick={onOpen8} src='images/obras-image-8.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                           <Image cursor='pointer' onClick={onOpen9} src='images/obras-image-9.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                           <Image cursor='pointer' onClick={onOpen10} src='images/obras-image-10.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                           <Image cursor='pointer' onClick={onOpen11} src='images/obras-image-11.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                           <Image cursor='pointer' onClick={onOpen12} src='images/obras-image-12.png'/>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="andamento-slide-single">
+                           <Image cursor='pointer' onClick={onOpen13} src='images/obras-image-13.png'/>
+                        </SwiperSlide>
+                    </Swiper>
+                </Box>
+            </Container>
+        </Box>
         <Footer />
         </StyledEmpreendimentosAndamento>
+
+
+
+        <Modal size='6xl' isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-1.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen2} onClose={onClose2}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-2.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen3} onClose={onClose3}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-3.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen4} onClose={onClose4}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-4.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen5} onClose={onClose5}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-5.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen6} onClose={onClose6}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-6.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen7} onClose={onClose7}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-7.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen8} onClose={onClose8}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-8.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen9} onClose={onClose9}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-9.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen10} onClose={onClose10}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-10.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen11} onClose={onClose11}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-11.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen12} onClose={onClose12}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-12.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+      <Modal size='6xl' isOpen={isOpen13} onClose={onClose13}>
+        <ModalOverlay />
+        <ModalContent w='100%' h={{sm: '350px', 'md': '500px'}}>
+          <ModalCloseButton color='#FFF' bgColor='#000'/>
+          <ModalBody padding={0} w='100%' h='100%'>
+            <Image w='100%' h='100%' src='images/obras-big-image-13.png' />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+
+
         </motion.div>
         </>
     )

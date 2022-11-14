@@ -63,6 +63,14 @@ export const StyledEmpreendimentosAndamento = styled(Box)`
         left: 10px;
     }
     }
+    
+    .andamento-slide-single {
+	width: 300px!important;
+
+        img {
+            width: 100%;
+        }
+    }
 
     
 `

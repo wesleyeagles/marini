@@ -67,14 +67,14 @@ export function Footer() {
                         </Text>
                     </Box>
 
-                    <Box w={{md:'45%', lg:'226px'}} flex='none' marginRight={{lg: '50px'}} marginTop={{sm: '60px', md: '0'}}>
+                    <Box w={{md:'45%', lg:'256px'}} flex='none' marginRight={{lg: '50px'}} marginTop={{sm: '60px', md: '0'}}>
                         <Text w='max-content' as='span' display='block' fontWeight='500' fontSize='17px' color='#ABABAB'>
                             Fale conosco
                         </Text>
 
-                        <a href="mailto:imoveis@mariniconstruções.com.br"> 
+                        <a href="mailto:imoveis@mariniconstrucoes.com.br"> 
                             <Text marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
-                            imoveis@marini construções.com.br
+                            imoveis@marini construcoes.com.br
                             </Text>
                         </a>
 
@@ -86,7 +86,7 @@ export function Footer() {
 
                         <a target='_blank' href="https://www.google.com/maps/place/R.+Fernandes+Vi%C3%AAira,+146+-+Cidade+Alta,+Bento+Gon%C3%A7alves+-+RS,+95700-000/@-29.172232,-51.5185428,17z/data=!3m1!4b1!4m5!3m4!1s0x951c3cb39197ce8f:0xefc4cf54df6c6d50!8m2!3d-29.172232!4d-51.5185428">
                         <Text cursor='pointer' marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
-                            R. Fernandes Viêira, 146 - Sala 03 - Cidade Alta, Bento Gonçalves - RS, 95700-372
+                            Rua Ferndes Viêira, 146<br/> Sala 03 - Cidade Alta,<br/> Bento Gonçalves - RS, 95700-372
                         </Text>
                         </a>
                     </Box>
@@ -97,7 +97,7 @@ export function Footer() {
                         </Text>
                             <Text marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
                             08h às 11:30h, 13h às 17h
-                            de seg. a sexta
+                            de segunda a sexta
                         </Text>
                     </Box>
 

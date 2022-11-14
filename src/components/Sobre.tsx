@@ -89,18 +89,6 @@ export const Sobre = () => {
                     <Box w='100%' display={{sm: 'none', lg: 'flex'}} justifyContent='space-between'>
                     <div className="sobre__single">
                         <div className="sobre__icon">
-                            <Shield size={25} color="#3E5481"/>
-                        </div>
-                        <StyledSpan className="sobre__title">
-                            Missão
-                        </StyledSpan>
-                        <StyledSmall color='#606060' display="block">
-                        Tornar-se referência na edificação de prédios residenciais, na qualidade de serviços, funcionalidade e otimização de espaços, com simplicidade e inovação, utilizando processo sustentável para obter resultados positivos. Nosso compromisso é com a geração de resultado e com o crescimento.
-                        </StyledSmall>
-                    </div>
-
-                    <div className="sobre__single">
-                        <div className="sobre__icon">
                             <Check size={25} color="#3E5481"/>
                         </div>
                         <StyledSpan className="sobre__title">
@@ -108,6 +96,18 @@ export const Sobre = () => {
                         </StyledSpan>
                         <StyledSmall color='#606060' display="block">
                             Competência em edificações funcionais e utilitárias.
+                        </StyledSmall>
+                    </div>
+
+                    <div className="sobre__single">
+                        <div className="sobre__icon">
+                            <Shield size={25} color="#3E5481"/>
+                        </div>
+                        <StyledSpan className="sobre__title">
+                            Missão
+                        </StyledSpan>
+                        <StyledSmall color='#606060' display="block">
+                        Tornar-se referência na edificação de prédios residenciais, na qualidade de serviços, funcionalidade e otimização de espaços, com simplicidade e inovação, utilizando processo sustentável para obter resultados positivos. Nosso compromisso é com a geração de resultado e com o crescimento.
                         </StyledSmall>
                     </div>
 
@@ -143,11 +143,11 @@ export const Sobre = () => {
                                     <Shield size={25} color="#3E5481"/>
                                 </div>
                                 <StyledSpan className="sobre__title">
-                                    Segurança
+                                    Visão
                                 </StyledSpan>
                                 <StyledSmall color='#606060' display="block">
-                                    Investimos em novas tecnologias, novos sistemas que proporcionam maior conforto e segurança para as pessoas
-                                </StyledSmall>
+                                Competência em edificações funcionais e utilitárias.
+                                 </StyledSmall>
                             </div>
                             </SwiperSlide>
 
@@ -157,10 +157,10 @@ export const Sobre = () => {
                                     <Check size={25} color="#3E5481"/>
                                 </div>
                                 <StyledSpan className="sobre__title">
-                                    Qualidade de vida
+                                    Missão  
                                 </StyledSpan>
                                 <StyledSmall color='#606060' display="block">
-                                    Trabalhamos para oferecer aos clientes uma maior qualidade de vida
+                                Tornar-se referência na edificação de prédios residenciais, na qualidade de serviços, funcionalidade e otimização de espaços, com simplicidade e inovação, utilizando processo sustentável para obter resultados positivos. Nosso compromisso é com a geração de resultado e com o crescimento.
                                 </StyledSmall>
                             </div>
                             </SwiperSlide>
@@ -171,10 +171,13 @@ export const Sobre = () => {
                                     <Star size={25} color="#3E5481"/>
                                 </div>
                                 <StyledSpan className="sobre__title">
-                                    Requinte e sofisticação
+                                Valores
                                 </StyledSpan>
                                 <StyledSmall color='#606060' display="block">
-                                    Ambientes integrados visando melhor convívio e o máximo aproveitamento
+                                Somos pessoas servindo pessoas.<br/>
+                                Crescemos e aprendemos juntos.<br/>
+                                Trabalho em equipe.<br/>
+                                Economia sustentável.
                                 </StyledSmall>
                             </div>
                             </SwiperSlide>
