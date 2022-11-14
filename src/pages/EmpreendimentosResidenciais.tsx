@@ -32,6 +32,7 @@ export const EmpreendimentosResidenciais = () => {
     const [thumbsSwiper7, setThumbsSwiper7] = useState<any>(null);
     const [thumbsSwiper8, setThumbsSwiper8] = useState<any>(null);
     const [thumbsSwiper9, setThumbsSwiper9] = useState<any>(null);
+    const [thumbsSwiper10, setThumbsSwiper10] = useState<any>(null);
 
 
     return (
@@ -1268,6 +1269,140 @@ export const EmpreendimentosResidenciais = () => {
                             </Box>
                             <Text w={{sm: '240px', lg: '185px', xl: '150px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
                             Bairro São Roque Bento Gonçalves - RS
+                            </Text>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+
+            <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+                <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
+                <Swiper
+
+                breakpoints={{
+                    768: {
+                        centerInsufficientSlides: false,
+                        centeredSlides: true
+                    }
+                }}
+                spaceBetween={10}
+                navigation={true}
+                thumbs={{ swiper: thumbsSwiper10 && !thumbsSwiper10.destroyed ? thumbsSwiper10 : null }}
+                modules={[FreeMode, Navigation, Thumbs]}
+                centeredSlides={true}
+                >
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/xingu-image-1.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/xingu-image-2.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/xingu-image-3.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/xingu-image-4.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/xingu-image-5.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/xingu-image-6.png" />
+                    </SwiperSlide>
+                </Swiper>
+
+                <Box marginTop='13px'>
+                            <Swiper
+                            slidesPerView={3}
+                            breakpoints={{
+                                960: {
+                                    slidesPerView: 3
+                                },  
+                                
+                                768: {
+                                    slidesPerView: 5
+                                    
+                                } 
+                            }}
+                            onSwiper={setThumbsSwiper10}
+                            spaceBetween={20}
+                            freeMode={true}
+                            watchSlidesProgress={true}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            >
+                                <SwiperSlide>
+                                    <img src="images/xingu-image-thumb-1.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/xingu-image-thumb-2.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/xingu-image-thumb-3.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/xingu-image-thumb-4.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/xingu-image-thumb-5.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/xingu-image-thumb-6.png" />
+                                </SwiperSlide>
+                            </Swiper>
+                            </Box>
+                </Box>
+
+                <Box w={{lg: '53%', xl: '57%'}}>
+                    <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
+                        <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
+                            Bar Xingú
+                        </Text>
+                    </Box>
+                    <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
+                        <StyledP black='true'>
+                            Bar localizado na Rua Xingú, 862 - Bairro São Bento - Bento Gonçalves/RS.
+                        </StyledP>
+                    </Box>
+                    <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
+                        <Box marginRight={{sm: '40px', md: '0px'}}>
+                            <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada: </StyledStrong>
+                                        Sim
+                                    </Text>
+                                </ListItem>                               
+                            </UnorderedList>
+                        </Box>
+                        <Box>
+                            <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}} paddingRight={{xl: '55px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera água quente:</StyledStrong>
+                                        2
+                                    </Text>
+                                </ListItem>
+                            </UnorderedList>
+                        </Box>
+                    </Box>
+                    <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
+
+                        <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
+                            <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
+                                <MapPin />
+                            </Box>
+                            <Text w={{sm: '240px', lg: '185px', xl: '150px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Rua Xingú, 862 - Bairro São Bento - Bento Gonçalves - RS
                             </Text>
                         </Box>
                     </Box>

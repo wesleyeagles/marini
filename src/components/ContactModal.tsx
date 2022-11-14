@@ -26,12 +26,12 @@ export function ContactModal({Open, Close, isModalOpen}: any) {
 
                         <Box w={{lg: '320px'}} marginTop='50px'>
                             <Box>
-                                <Link display='flex' alignItems='center' href='mailto:imoveis@mariniconstruções.com.br' isExternal>
+                                <Link display='flex' alignItems='center' href='mailto:imoveis@mariniconstrucoes.com.br' isExternal>
                                 <Box marginRight='12px'>
                                 <MailIcon />
                                 </Box>
                                 <StyledSmall marginLeft='12px'>
-                                    imoveis@mariniconstruções.com.br
+                                    imoveis@mariniconstrucoes.com.br
                                 </StyledSmall>
                                 </Link>
                             </Box>
