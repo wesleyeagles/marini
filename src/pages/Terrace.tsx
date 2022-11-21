@@ -1291,7 +1291,7 @@ export const Terrace = () => {
                                 Preencha o <StyledStrong color='#860A10'>formulário abaixo</StyledStrong> e aguarde o retorno de nossos especialistas.
                             </StyledP>
                         </Box>
-                        <FormModal colorBg={true}/>
+                        <FormModal action='https://submit-form.com/dgUhEJm9' empreendimento='Terrace' colorBg={true}/>
                     </Box>
                 </Box>
             </Box>

@@ -1402,7 +1402,7 @@ export const EmpreendimentosResidenciais = () => {
                                 <MapPin />
                             </Box>
                             <Text w={{sm: '240px', lg: '185px', xl: '150px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
-                            Rua Xingú, 862 - Bairro São Bento - Bento Gonçalves - RS
+                                Rua Xingú, 862 - Bairro São Bento - Bento Gonçalves - RS
                             </Text>
                         </Box>
                     </Box>

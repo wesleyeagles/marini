@@ -74,7 +74,7 @@ export function Footer() {
 
                         <a href="mailto:imoveis@mariniconstrucoes.com.br"> 
                             <Text marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
-                            imoveis@marini construcoes.com.br
+                            imoveis@mariniconstrucoes.com.br
                             </Text>
                         </a>
 

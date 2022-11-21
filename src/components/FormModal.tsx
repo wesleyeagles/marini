@@ -4,7 +4,7 @@ import StyledButton from "../styledcomponents/Button";
 import { StyledInput } from "../styledcomponents/Input";
 import { StyledTextArea } from "../styledcomponents/TextArea";
 
-export function FormModal({formAction, colorBg = false}: any) {
+export function FormModal({formAction, colorBg = false, empreendimento}: any) {
 
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
@@ -19,6 +19,11 @@ export function FormModal({formAction, colorBg = false}: any) {
 
     return (
       <form action={formAction}>
+        <input type="hidden" name="_email.template.title" value="Formulário de Contato" />
+        <input type="hidden" name="_email.template.footer" value="false" />
+        <input type="hidden" name="_email.from" value="Marini" />
+        <input type="hidden" name="_email.subject" value={`Novo Contato! - Formulário - ${empreendimento}`} />
+        <input type="hidden" name="_redirect" value='https://mariniconstrucoes.com.br' />
       <FormControl isRequired marginTop='45px'>
       <StyledInput
         type='text'

@@ -103,7 +103,7 @@ export function ContactModal({Open, Close, isModalOpen}: any) {
                                 Preencha o <StyledStrong color='#3E5481'>formulário abaixo</StyledStrong> e aguarde o retorno de nossos especialistas.
                             </StyledP>
                         </Box>
-                        <FormModal />
+                        <FormModal action='https://submit-form.com/4k45qiW1' empreendimento='Marini'/>
                     </Box>
                 </Box>
             </Box>
