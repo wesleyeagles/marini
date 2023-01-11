@@ -265,7 +265,7 @@ export const Terrace = () => {
                             <Image src='/images/terrace/icons/Garage.png' />
                             </Box>
                             <Text h={{sm: '80px', lg: 'auto'}}  fontSize={{sm: '12px', lg: '16px'}} color='#646464' marginLeft={{lg: '14px'}} textAlign={{sm: 'center', lg: 'start'}}>
-                                Box na garagem com possiboilidade de vagas adicionais
+                                Box na garagem com possibilidade de vagas adicionais
                             </Text>
                         </Box>
 
