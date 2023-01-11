@@ -175,7 +175,7 @@ export const Terrace = () => {
                             O Terrace Residence encontra-se na melhor região de Bento Gonçalves para dispor aos seus moradores mais <Text fontFamily='FivoBold' as='strong'>praticidade</Text> e <Text fontFamily='FivoBold' as='strong'>tranquilidade.</Text>
                         </Text>
                         <Text fontSize={{sm: '15px', md: '16px'}} fontFamily='FivoRegular' as='p' color='#646464' marginTop='24px'>
-                        Localizado no Centro de Bento Gonsalves , o Terrace Residence oferece uma nova concepção em moradia, com completa comodidade <Text fontFamily='FivoBold' as='strong'>sofisticação</Text> e <Text fontFamily='FivoBold' as='strong'>qualidade de vida</Text> que você sempre sonhou. 
+                        Localizado no centro da cidade, o Terrace Residence oferece uma nova concepção em moradia, com completa comodidade sofisticação e qualidade de vida que você sempre sonhou.
                         </Text>
                         <Button onClick={onOpenMap} display='flex' fontFamily='FivoBold' variant='unstyled' color='#860A10' fontSize={{sm: '16px', md: '18px'}} marginTop='33px' rightIcon={<BiRightArrowCircle size={30} color='#860A10' />}>
                             Ver localização no mapa
@@ -186,7 +186,7 @@ export const Terrace = () => {
                                 <RiMapPinLine size={30} color='#860A10'/>
                             </Box>
                             <Text fontSize={{sm: '11px', md: '16px'}} marginLeft='14px' color='#646464' fontFamily='FivoMedium'>
-                                Rua Assis Brasil, 281, Centro - Bento Golçalves
+                                Rua Assis Brasil, 281, Centro - Bento Gonçalves
                             </Text>
                         </Box>
                     </Box>
