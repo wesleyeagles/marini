@@ -1073,7 +1073,7 @@ export const Terrace = () => {
                 <Box display='flex' justifyContent='space-between' paddingTop={{sm: '60px', md: '150px'}}>
                     <Stack direction={{sm: 'column', md: 'row'}} align='center' spacing='18px'>
                         <Box>
-                            <Image flex='none' src='images/terrace/logo-branco.png' />
+                            <Image flex='none' src='images/terrace/losgomaruaini.svg' />
                         </Box>
                         <Box>
                             <Image flex='none' src='images/terrace/logo-terrace.png' />
