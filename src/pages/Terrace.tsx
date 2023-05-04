@@ -513,8 +513,7 @@ export const Terrace = () => {
                         <Stack spacing='44px'>
                             <VStack align='start'>
                                 <Heading as='h3' h='25px' color='#860A10' fontSize='24px' fontFamily='FivoBold'>Apartamento 07</Heading>
-                                <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>Apartamento 07</Text>
-                                <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>42,35m²</Text>
+                                <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>42,35m² Privativos</Text>
                                 <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>Studio</Text>
                             </VStack>
                         </Stack>
@@ -559,7 +558,6 @@ export const Terrace = () => {
 
                         <VStack align='start'>
                             <Heading as='h3' h='25px' color='#860A10' fontSize='24px' fontFamily='FivoBold'>Apartamento 07</Heading>
-                            <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>Apartamento 07</Text>
                             <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>42,35m² Privativos</Text>
                             <Text as='span' h='25px' color='#860A10' fontSize='20px' fontFamily='FivoLight' display='block'>Studio</Text>
                         </VStack>
