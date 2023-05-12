@@ -86,7 +86,7 @@ export function Footer() {
 
                         <a target='_blank' href="https://www.google.com/maps/place/R.+Fernandes+Vi%C3%AAira,+146+-+Cidade+Alta,+Bento+Gon%C3%A7alves+-+RS,+95700-000/@-29.172232,-51.5185428,17z/data=!3m1!4b1!4m5!3m4!1s0x951c3cb39197ce8f:0xefc4cf54df6c6d50!8m2!3d-29.172232!4d-51.5185428">
                         <Text cursor='pointer' marginTop='24px' fontSize='15px' fontWeight='400' color='#ABABAB'>
-                            Rua Ferndes Viêira, 146<br/> Sala 03 - Cidade Alta,<br/> Bento Gonçalves - RS, 95700-372
+                            Rua Fernandes Viêira, 146<br/> Sala 03 - Cidade Alta,<br/> Bento Gonçalves - RS, 95700-372
                         </Text>
                         </a>
                     </Box>
