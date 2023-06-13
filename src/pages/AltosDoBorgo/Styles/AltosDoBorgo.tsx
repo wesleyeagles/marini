@@ -69,8 +69,8 @@ const AltosDoBorgo = () => {
 			</div>
 			<div className="section-two">
 				<Box className="box-images">
-				<ZoomImage w={{"sm": "45%"}} src="./images/altos/foto-rua-amadeo.png" />
-				<ZoomImage w={{"sm": "45%"}} src="./images/altos/foto-rua-amadeo.png" />
+				<ZoomImage w={{"sm": "48%", "md": "45%"}} src="./images/altos/foto-rua-amadeo.png" />
+				<ZoomImage w={{"sm": "48%", "md": "45%"}} src="./images/altos/foto-rua-antonio.png" />
 				</Box>
 				
 			</div>
