@@ -11,7 +11,7 @@ const AltosDoBorgo = () => {
 		<div className="altos-container">
 			<div className="section-one">
 				<div className="navigation">
-					<div className="logo"><Image w="90%" src="./public/images/altos/logo.png" /></div>
+					<div className="logo"><Image w="90%" src="./images/altos/logo.png" /></div>
 					<div className="anchors-links">
 						<div className="anchors">
 							<ul>
@@ -65,7 +65,7 @@ const AltosDoBorgo = () => {
                     <Button>Fale Conosco</Button>
                     <Button className="outlined">Características</Button>
                 </div>
-				<Image className="sun" src="/public/images/altos/sun.png" />
+				<Image className="sun" src="./images/altos/sun.png" />
 			</div>
 			<div className="section-two">
 				<Box className="box-images">
