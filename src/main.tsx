@@ -22,6 +22,7 @@ const breakpoints = {
   sm: '320px',
   md: '768px',
   lg: '960px',
+  "lg2": '1024px',
   xl: '1280px',
   '2xl': '1536px',
 }
@@ -32,7 +33,7 @@ const theme = extendTheme({
     heading: `'Poppins', sans-serif`,
     body: `'Poppins', sans-serif`,
     Nevrada: `'Nevrada'`,
-    Highlight: `'Highlight'`
+    Highlight: `'Highlight'`,
   },
 })
 

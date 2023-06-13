@@ -1,0 +1,231 @@
+.altos-container {
+    font-family: "Raleway";
+    background: #F7EDD6;
+    height: 100%;
+    .section-one {
+        height: 1000px;
+        position: relative;
+        overflow: hidden;
+
+        .sun {
+            position: absolute;
+            right: 0;
+            bottom: -10rem;
+            right: -15rem;
+
+            @media screen and (max-width: 1440px) {
+                bottom: -15rem;
+                right: -20rem;
+            }
+
+            @media screen and (max-width: 1280px) {
+                bottom: -20rem;
+                right: -20rem;
+            }
+
+            @media screen and (max-width: 1024px) {
+                width: 60%;
+                bottom: -20rem;
+                right: -20rem;
+            }
+        }
+
+        .navigation {
+            padding-top: 1.75rem;
+            padding-inline: 6.875rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .anchors-links {
+                display: flex;
+                gap: 3.5rem;
+
+                .anchors, .links {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        gap: 3.5rem;
+
+                        li {
+                            text-transform: uppercase;
+                            font-family: "Raleway";
+                            font-weight: 500;
+                            font-size: 0.94rem;
+                        }
+                    }
+                }
+
+                .links {
+                    ul {
+                        gap: 1rem;
+                    }
+                }
+
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+            }
+
+            .menu {
+                display: none;
+
+                button {
+                    &:focus-visible {
+                        box-shadow: none;
+                    }
+                }
+
+                @media screen and (max-width: 1024px) {
+                    display: block;
+                }
+            }
+            
+            @media screen and (max-width: 1280px) {
+                padding-inline: 3.875rem;
+            }
+
+            @media screen and (max-width: 600px) {
+                padding-inline: 1.875rem;
+            }
+        }
+
+        .text {
+            margin-top: 6.625rem;
+            margin-inline: auto;
+
+            h1 {
+                text-align: center;
+                width: 60rem;
+                margin-inline: auto;
+                font-size: 6rem;
+                line-height: 100%;
+                color: #212121;
+                font-family: "Anisver";
+                font-weight: 400;
+
+                @media screen and (max-width: 1024px) {
+                    width: 40rem;
+                    font-size: 4.8rem;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 26rem;
+                    font-size: 2.8rem;
+                }
+
+            }
+            
+            h3 {
+                text-align: center;
+                width: 35rem;
+                margin-inline: auto;
+                margin-top: 3.0rem;
+
+                @media screen and (max-width: 1024px) {
+                    width: 28rem;
+                    font-size: 1rem;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 22rem;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                margin-top: 6rem;
+            }
+        }
+
+        .btns {
+            margin-top: 3.0rem;
+            display: flex;
+            justify-content: center;
+            gap: .8rem;
+
+            button {
+                border-radius: 0%;
+                padding: 2rem;
+                text-transform: uppercase;
+                background: #F7BF8A;
+                color: #BA3718;
+                font-weight: 700;
+
+                &:hover {
+                    background: #e2ad7a;
+                }
+                
+                &:last-of-type {
+                    background: transparent;
+                    border: 1px solid #BA3718;
+                    color: #BA381F;
+                    
+
+                    &:hover {
+                        background: #BA3718;
+                        color: #FFF;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    padding: 1rem;
+                }
+            }
+
+
+            @media screen and (max-width: 600px) {
+                margin-top: 2.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1680px) {
+            height: 850px;
+        }
+
+        @media screen and (max-width: 1440px) {
+            height: 900px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            height: 800px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            height: 700px;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 500px;
+        }
+    }
+
+    .section-two {
+        background: url("../../../../public/images/altos/texture-section-2.png");
+        height: 676px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        @media screen and (max-width: 1440px) {
+            height: 500px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            height: 400px;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 160px;
+        }
+
+        .box-images {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
