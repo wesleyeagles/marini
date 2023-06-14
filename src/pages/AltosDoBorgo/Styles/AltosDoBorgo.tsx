@@ -194,7 +194,7 @@ const AltosDoBorgo = () => {
 									<Text>Com fireplace</Text>
 								</Box>
 							</Box>
-							<Slider imageArray={["./images/altos/Rooftop - 01.png", "./images/altos/Rooftop - 02.png", "./images/altos/Rooftop - 03.png", "./images/altos/Rooftop - 04.png", "./images/altos/Rooftop - 05.png", "./images/altos/Rooftop - 06.png", "./images/altos/Rooftop - 07.png"]} />
+							<Slider imageArray={["./images/altos/rooftop-1.png", "./images/altos/rooftop-2.png", "./images/altos/rooftop-3.png", "./images/altos/rooftop-4.png", "./images/altos/rooftop-5.png", "./images/altos/rooftop-6.png", "./images/altos/rooftop-7.png"]} />
 						</Box>
 					</Box>
 					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height="400px" />
