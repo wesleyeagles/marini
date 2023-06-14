@@ -8,9 +8,10 @@ interface IZoomImage {
 	legend?: string;
     sublegend?: string;
 	display?: any;
+	size?: any;
 }
 
-const ZoomImage = ({ src, w, legend, sublegend, h, display }: IZoomImage) => {
+const ZoomImage = ({ src, w, legend, sublegend, h, display, size = "3xl" }: IZoomImage) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
@@ -25,10 +26,10 @@ const ZoomImage = ({ src, w, legend, sublegend, h, display }: IZoomImage) => {
 				<Image display={display} w="100%" h={h} src={src} />
 			</Box>
 
-			<Modal size="3xl" isCentered isOpen={isOpen} onClose={onClose}>
+			<Modal size={size} isCentered isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<ModalContent p={0}>
-					<ModalCloseButton />
+					<ModalCloseButton color="white" />
 					<ModalBody p={0}>
 						<Image w="100%" src={src} />
 					</ModalBody>

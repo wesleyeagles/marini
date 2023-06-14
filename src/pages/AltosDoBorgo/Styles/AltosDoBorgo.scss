@@ -236,10 +236,50 @@
 
     .section-three {
         padding-block: 6rem;
-        padding-inline: 6rem;
 
         @media screen and (max-width: 600px) {
             padding-inline: 2rem;
+        }
+
+        .box {
+            display: inline-flex;
+            flex-direction: column;
+            line-height: 28px;
+            justify-content: center;
+            position: relative;
+            top: -27px;
+            margin-inline: 2px;
+
+            .tio {
+                font-family: "Raleway";
+                position: relative;
+                margin-left: 3px;
+            }
+        }
+
+        .slider {
+            width: 840px;
+
+            .swiper-button-prev, .swiper-button-next {
+                color: white;
+            }
+            
+            .swiper-button-prev {
+                left: 60px;
+            }
+
+            .swiper-button-next {
+                right: 60px;
+            }
+
+            .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+                content: url("./images/altos/arrow-slide.png");
+            }
+
+            .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+                content: url("./images/altos/arrow-slide.png");
+                transform: rotate(180deg);
+            }
         }
     }
 }
