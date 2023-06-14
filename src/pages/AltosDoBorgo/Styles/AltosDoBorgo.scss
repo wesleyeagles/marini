@@ -5,7 +5,7 @@
     .section-one {
         height: 1000px;
         position: relative;
-        overflow: hidden;
+        overflow: hidden;   
 
         .sun {
             position: absolute;
@@ -216,7 +216,7 @@
         }
 
         @media screen and (max-width: 600px) {
-            height: 180px;
+            height: auto;
         }
 
         .box-images {
@@ -231,6 +231,15 @@
                 flex-direction: column;
                 position: relative;
             }
+        }
+    }
+
+    .section-three {
+        padding-block: 6rem;
+        padding-inline: 6rem;
+
+        @media screen and (max-width: 600px) {
+            padding-inline: 2rem;
         }
     }
 }

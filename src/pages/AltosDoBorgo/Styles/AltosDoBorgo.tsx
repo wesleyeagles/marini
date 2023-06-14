@@ -1,4 +1,4 @@
-import { Box, Button, Image, Menu, MenuButton, MenuDivider, MenuItem, MenuList } from "@chakra-ui/react";
+import { Box, Button, Image, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Text } from "@chakra-ui/react";
 import "./AltosDoBorgo.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -73,6 +73,12 @@ const AltosDoBorgo = () => {
 				<ZoomImage legend="Acesso Residencial" sublegend="Rua Antônio Picolli" w={{"sm": "100%", "md": "45%"}} src="./images/altos/foto-rua-antonio.png" />
 				</Box>
 				
+			</div>
+			<div className="section-three">
+				<Box display="flex" flexDirection={{sm: "column", "lg2": "row"}} justifyContent="space-between" gap={{sm: "2rem", "lg2": 0}}>
+					<Text width={{"lg2": "21rem"}} lineHeight="120%" fontFamily="Anisver" fontSize="2.5rem" as="h2">SOBRE O EMPREENDIMENTO</Text>
+					<Text w={{"lg2": "30rem", xl: "44rem"}} fontSize="1.2rem" as="p">O Altos do borgo residencial oferece um local aconchegante para morar com tranquilidade, com uma vista incrível da cidade, podendo apreciar o pôr do sol do alto do prédio através do Rooftop</Text>
+				</Box>
 			</div>
 		</div>
 	);
