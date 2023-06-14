@@ -183,7 +183,7 @@ const AltosDoBorgo = () => {
 									<Text>Com brinquedoteca</Text>
 								</Box>
 							</Box>
-							<Slider imageArray={["./images/altos/Salão de Festas - 1.png", "./images/altos/Salão de Festas - 2.png", "./images/altos/Salão de Festas - 3.png", "./images/altos/Salão de Festas - 4.png", "./images/altos/Salão de Festas + Brinquedoteca.png"]} />
+							<Slider imageArray={["./images/altos/salao-1.png", "./images/altos/salao-2.png", "./images/altos/salao-3.png", "./images/altos/salao-4.png", "./images/altos/salao-5.png"]} />
 						</Box>
 						<Box>
 							<Box display="flex" alignItems="center" gap={8}>

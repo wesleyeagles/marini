@@ -273,11 +273,11 @@
             }
 
             .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-                content: url("./images/altos/arrow-slide.png");
+                content: url("/images/altos/arrow-slide.png");
             }
 
             .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-                content: url("./images/altos/arrow-slide.png");
+                content: url("/images/altos/arrow-slide.png");
                 transform: rotate(180deg);
             }
         }
