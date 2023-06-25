@@ -15,8 +15,8 @@ interface ISliderProps {
 
 const Slider = ({ imageArray }: ISliderProps) => {
 	return (
-		<Box w="100%" marginTop={12}>
-			<Swiper className="slider" centeredSlides={true} centerInsufficientSlides={true} navigation={true} modules={[Navigation]} spaceBetween={0}>
+		<Box w={{sm: "100%", "lg2": "40vw", "2xl": "43vw"}} marginTop={12}>
+			<Swiper className="slider" centeredSlides navigation modules={[Navigation]} spaceBetween={0} style={{ width: "100%"}}>
 				{imageArray.map((image) => {
 					return (
 						<SwiperSlide>

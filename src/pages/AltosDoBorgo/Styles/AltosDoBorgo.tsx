@@ -84,7 +84,7 @@ const AltosDoBorgo = () => {
 				</Box>
 			</div>
 			<div className="section-three">
-				<Box display="flex" flexDirection={{ sm: "column", lg2: "row" }} justifyContent="space-between" gap={{ sm: "2rem", lg2: 0 }} paddingInline={24}>
+				<Box display="flex" flexDirection={{ sm: "column", lg2: "row" }} justifyContent="space-between" gap={{ sm: "2rem", lg2: 0 }} paddingInline={{sm: 6, "md": 24}}>
 					<Text width={{ lg2: "21rem" }} lineHeight="120%" fontFamily="Anisver" fontSize="2.5rem" as="h2">
 						SOBRE O EMPREENDIMENTO
 					</Text>
@@ -93,7 +93,7 @@ const AltosDoBorgo = () => {
 						através do Rooftop
 					</Text>
 				</Box>
-				<Box display="flex" flexWrap={{ sm: "wrap", xl: "nowrap" }} gap={7} marginTop={{ sm: "60px", md: "136px" }} justifyContent={{ md: "center", xl: "start" }} paddingInline={24}>
+				<Box display="flex" flexWrap={{ sm: "wrap", xl: "nowrap" }} gap={7} marginTop={{ sm: "60px", md: "136px" }} justifyContent={{ md: "center", xl: "start" }} paddingInline={{sm: 6, "md": 24}}>
 					<Box w={{ md: "300px", lg2: "400px", xl: "100%" }} border="1px solid #F7BF8A" paddingInline={{ sm: 6, "2xl": 14 }} paddingBlock={{ sm: 10, md: 20, "2xl": 20 }}>
 						<Box marginBottom={7} className="icon">
 							<Pin />
@@ -134,7 +134,7 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box display="flex" flexDirection={{ sm: "column", xl: "row" }} justifyContent={{ lg2: "space-between" }} marginTop={{ sm: "80px", md: "160px" }} paddingInline={24}>
+				<Box display="flex" flexDirection={{ sm: "column", xl: "row" }} justifyContent={{ lg2: "space-between" }} marginTop={{ sm: "80px", md: "160px" }} paddingInline={{sm: 6, "md": 24}}>
 					<Box w={{ xl: "40%", "2xl": "auto" }}>
 						<ZoomImage src="/images/altos/do-empreendimento.png" />
 					</Box>
@@ -167,11 +167,11 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box position="relative" marginTop="160px">
-					<Box display="flex" justifyContent="space-between" paddingInline={24} alignItems="end">
+				<Box position="relative" marginTop={{sm: "40px", md: "160px"}} >
+					<Box display="flex" flexDirection={{sm: "column", "lg2": "row"}} justifyContent={{sm: "center", "lg2": "space-between" }} paddingInline={{sm: 6, "md": 24}} alignItems={{"lg2": "end"}}>
 						<Box>
-							<Box display="flex" alignItems="center" gap={8}>
-								<Text fontFamily="Anisver" fontSize="3rem" as="h2">
+							<Box display="flex" flexDirection={{sm: "column", "2xl": "row"}} alignItems={{sm: "start", "2xl": "center"}} gap={{sm: 1, "2xl": 8}}>
+								<Text fontFamily="Anisver" fontSize={{sm: "2.5rem", md: "3rem" }} as="h2">
 									SAL
 									<span className="box">
 										<span className="tio">~</span>
@@ -185,9 +185,9 @@ const AltosDoBorgo = () => {
 							</Box>
 							<Slider imageArray={["./images/altos/salao-1.png", "./images/altos/salao-2.png", "./images/altos/salao-3.png", "./images/altos/salao-4.png", "./images/altos/salao-5.png"]} />
 						</Box>
-						<Box>
-							<Box display="flex" alignItems="center" gap={8}>
-								<Text fontFamily="Anisver" fontSize="3rem" as="h2">
+						<Box marginTop={{sm: "30px", "lg2": 0}}>
+							<Box display="flex" flexDirection={{sm: "column", "2xl": "row"}} alignItems={{sm: "start", "2xl": "center"}} gap={{sm: 1, "2xl": 8}}>
+								<Text fontFamily="Anisver" fontSize={{sm: "2.5rem", md: "3rem" }} as="h2">
 								ROOFTOP
 								</Text>
 								<Box border="1px solid #BA381F" borderRadius="100px" display="flex" justifyContent="center" alignItems="center" paddingInline={3} paddingBlock={1}>
@@ -197,7 +197,7 @@ const AltosDoBorgo = () => {
 							<Slider imageArray={["./images/altos/rooftop-1.png", "./images/altos/rooftop-2.png", "./images/altos/rooftop-3.png", "./images/altos/rooftop-4.png", "./images/altos/rooftop-5.png", "./images/altos/rooftop-6.png", "./images/altos/rooftop-7.png"]} />
 						</Box>
 					</Box>
-					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height="400px" />
+					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{sm: "40vw", "lg2": "20vw"}} />
 				</Box>
 			</div>
 		</div>
