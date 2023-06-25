@@ -200,6 +200,19 @@ const AltosDoBorgo = () => {
 					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{sm: "40vw", "lg2": "20vw"}} />
 				</Box>
 			</div>
+			<div className="section-four">
+				<Box display="flex" justifyContent="center">
+					<Text fontFamily="Anisver" textTransform="uppercase" fontSize={{sm: "2.5rem", md: "3rem" }} as="h2">Planta Baixa</Text>
+				</Box>
+				<Box display="flex" gap={{sm: "10px", "lg2": "100px"}} justifyContent="center" alignItems="center">
+					<Text w="5%" as="span" className="horizontal-text">RUA ANTÔNIO PICOLLI</Text>
+					<Box w={{sm: "80%", md: "70%"}}>
+						<ZoomImage size="6xl" src="./images/altos/planta.png" />
+					</Box>
+					<Text w="5%" as="span" className="horizontal-text">RUA AMADÉO ZAMBON</Text>
+				</Box>
+
+			</div>
 		</div>
 	);
 };

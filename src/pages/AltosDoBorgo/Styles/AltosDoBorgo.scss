@@ -294,4 +294,22 @@
             }
         }
     }
+
+    .section-four {
+        margin-top: 100px;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 40px;
+
+            span {
+                font-size: 9px;
+            }
+        }
+
+        .horizontal-text {
+            width: max-content;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+    }
 }
