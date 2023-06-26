@@ -9,15 +9,17 @@ interface IZoomImage {
     sublegend?: string;
 	display?: any;
 	size?: any;
+	legendWidth?: any;
+	legendHeight?: any;
 }
 
-const ZoomImage = ({ src, w, legend, sublegend, h, display, size = "3xl" }: IZoomImage) => {
+const ZoomImage = ({ src, w, legend, sublegend, h, display, size = "3xl", legendWidth, legendHeight }: IZoomImage) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
 			<Box onClick={onOpen} w={w} cursor="pointer" position="relative">
 				{legend ? (
-					<Box position="absolute" display="flex" flexDirection="column" background={`url("./images/altos/geometric-square.png")`} backgroundPosition={{md: "right"}} backgroundSize="cover" padding={{md: 6}} paddingRight={8}>
+					<Box position="absolute" display="flex" flexDirection="column" justifyContent="center" background={`url("./images/altos/geometric-square.png")`} backgroundPosition={{md: "right"}} backgroundSize="cover" padding={{md: 6}} paddingRight={8} w={legendWidth} h={legendHeight}>
 						<span className="legend">{legend}</span>
                         <span className="sublegend">{sublegend}</span>
 					</Box>

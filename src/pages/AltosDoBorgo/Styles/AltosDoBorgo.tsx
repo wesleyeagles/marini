@@ -9,6 +9,14 @@ import Pin from "../../../svgs/altos/Pin";
 import Lazer from "../../../svgs/altos/Lazer";
 import Selo from "../../../svgs/altos/Selo";
 import Slider from "../../../components/Altos/Slider/Slider";
+import Padaria from "../../../svgs/altos/Padaria";
+import Car from "../../../svgs/altos/Car";
+import Mercado from "../../../svgs/altos/Mercado";
+import Posto from "../../../svgs/altos/Posto";
+import Farmacia from "../../../svgs/altos/Farmacia";
+import Hospital from "../../../svgs/altos/Hospital";
+import Escola from "../../../svgs/altos/Escola";
+import Shopping from "../../../svgs/altos/Shopping";
 
 const AltosDoBorgo = () => {
 	return (
@@ -84,7 +92,7 @@ const AltosDoBorgo = () => {
 				</Box>
 			</div>
 			<div className="section-three">
-				<Box display="flex" flexDirection={{ sm: "column", lg2: "row" }} justifyContent="space-between" gap={{ sm: "2rem", lg2: 0 }} paddingInline={{sm: 6, "md": 24}}>
+				<Box display="flex" flexDirection={{ sm: "column", lg2: "row" }} justifyContent="space-between" gap={{ sm: "2rem", lg2: 0 }} paddingInline={{ sm: 6, md: 24 }}>
 					<Text width={{ lg2: "21rem" }} lineHeight="120%" fontFamily="Anisver" fontSize="2.5rem" as="h2">
 						SOBRE O EMPREENDIMENTO
 					</Text>
@@ -93,7 +101,14 @@ const AltosDoBorgo = () => {
 						através do Rooftop
 					</Text>
 				</Box>
-				<Box display="flex" flexWrap={{ sm: "wrap", xl: "nowrap" }} gap={7} marginTop={{ sm: "60px", md: "136px" }} justifyContent={{ md: "center", xl: "start" }} paddingInline={{sm: 6, "md": 24}}>
+				<Box
+					display="flex"
+					flexWrap={{ sm: "wrap", xl: "nowrap" }}
+					gap={7}
+					marginTop={{ sm: "60px", md: "136px" }}
+					justifyContent={{ md: "center", xl: "start" }}
+					paddingInline={{ sm: 6, md: 24 }}
+				>
 					<Box w={{ md: "300px", lg2: "400px", xl: "100%" }} border="1px solid #F7BF8A" paddingInline={{ sm: 6, "2xl": 14 }} paddingBlock={{ sm: 10, md: 20, "2xl": 20 }}>
 						<Box marginBottom={7} className="icon">
 							<Pin />
@@ -134,7 +149,7 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box display="flex" flexDirection={{ sm: "column", xl: "row" }} justifyContent={{ lg2: "space-between" }} marginTop={{ sm: "80px", md: "160px" }} paddingInline={{sm: 6, "md": 24}}>
+				<Box display="flex" flexDirection={{ sm: "column", xl: "row" }} justifyContent={{ lg2: "space-between" }} marginTop={{ sm: "80px", md: "160px" }} paddingInline={{ sm: 6, md: 24 }}>
 					<Box w={{ xl: "40%", "2xl": "auto" }}>
 						<ZoomImage src="/images/altos/do-empreendimento.png" />
 					</Box>
@@ -167,11 +182,17 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box position="relative" marginTop={{sm: "40px", md: "160px"}} >
-					<Box display="flex" flexDirection={{sm: "column", "lg2": "row"}} justifyContent={{sm: "center", "lg2": "space-between" }} paddingInline={{sm: 6, "md": 24}} alignItems={{"lg2": "end"}}>
+				<Box position="relative" marginTop={{ sm: "40px", md: "160px" }}>
+					<Box
+						display="flex"
+						flexDirection={{ sm: "column", lg2: "row" }}
+						justifyContent={{ sm: "center", lg2: "space-between" }}
+						paddingInline={{ sm: 6, md: 24 }}
+						alignItems={{ lg2: "end" }}
+					>
 						<Box>
-							<Box display="flex" flexDirection={{sm: "column", "2xl": "row"}} alignItems={{sm: "start", "2xl": "center"}} gap={{sm: 1, "2xl": 8}}>
-								<Text fontFamily="Anisver" fontSize={{sm: "2.5rem", md: "3rem" }} as="h2">
+							<Box display="flex" flexDirection={{ sm: "column", "2xl": "row" }} alignItems={{ sm: "start", "2xl": "center" }} gap={{ sm: 1, "2xl": 8 }}>
+								<Text fontFamily="Anisver" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
 									SAL
 									<span className="box">
 										<span className="tio">~</span>
@@ -183,36 +204,310 @@ const AltosDoBorgo = () => {
 									<Text>Com brinquedoteca</Text>
 								</Box>
 							</Box>
-							<Slider imageArray={["./images/altos/salao-1.png", "./images/altos/salao-2.png", "./images/altos/salao-3.png", "./images/altos/salao-4.png", "./images/altos/salao-5.png"]} />
+							<Slider
+								imageArray={["./images/altos/salao-1.png", "./images/altos/salao-2.png", "./images/altos/salao-3.png", "./images/altos/salao-4.png", "./images/altos/salao-5.png"]}
+							/>
 						</Box>
-						<Box marginTop={{sm: "30px", "lg2": 0}}>
-							<Box display="flex" flexDirection={{sm: "column", "2xl": "row"}} alignItems={{sm: "start", "2xl": "center"}} gap={{sm: 1, "2xl": 8}}>
-								<Text fontFamily="Anisver" fontSize={{sm: "2.5rem", md: "3rem" }} as="h2">
-								ROOFTOP
+						<Box marginTop={{ sm: "30px", lg2: 0 }}>
+							<Box display="flex" flexDirection={{ sm: "column", "2xl": "row" }} alignItems={{ sm: "start", "2xl": "center" }} gap={{ sm: 1, "2xl": 8 }}>
+								<Text fontFamily="Anisver" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
+									ROOFTOP
 								</Text>
 								<Box border="1px solid #BA381F" borderRadius="100px" display="flex" justifyContent="center" alignItems="center" paddingInline={3} paddingBlock={1}>
 									<Text>Com fireplace</Text>
 								</Box>
 							</Box>
-							<Slider imageArray={["./images/altos/rooftop-1.png", "./images/altos/rooftop-2.png", "./images/altos/rooftop-3.png", "./images/altos/rooftop-4.png", "./images/altos/rooftop-5.png", "./images/altos/rooftop-6.png", "./images/altos/rooftop-7.png"]} />
+							<Slider
+								imageArray={[
+									"./images/altos/rooftop-1.png",
+									"./images/altos/rooftop-2.png",
+									"./images/altos/rooftop-3.png",
+									"./images/altos/rooftop-4.png",
+									"./images/altos/rooftop-5.png",
+									"./images/altos/rooftop-6.png",
+									"./images/altos/rooftop-7.png",
+								]}
+							/>
 						</Box>
 					</Box>
-					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{sm: "40vw", "lg2": "20vw"}} />
+					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{ sm: "40vw", lg2: "20vw" }} />
 				</Box>
 			</div>
 			<div className="section-four">
 				<Box display="flex" justifyContent="center">
-					<Text fontFamily="Anisver" textTransform="uppercase" fontSize={{sm: "2.5rem", md: "3rem" }} as="h2">Planta Baixa</Text>
+					<Text fontFamily="Anisver" textTransform="uppercase" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
+						Planta Baixa
+					</Text>
 				</Box>
-				<Box display="flex" gap={{sm: "10px", "lg2": "100px"}} justifyContent="center" alignItems="center">
-					<Text w="5%" as="span" className="horizontal-text">RUA ANTÔNIO PICOLLI</Text>
-					<Box w={{sm: "80%", md: "70%"}}>
+				<Box display="flex" gap={{ sm: "10px", lg2: "100px" }} justifyContent="center" alignItems="center">
+					<Text w="5%" as="span" className="horizontal-text">
+						RUA ANTÔNIO PICOLLI
+					</Text>
+					<Box w={{ sm: "80%", md: "70%" }}>
 						<ZoomImage size="6xl" src="./images/altos/planta.png" />
 					</Box>
-					<Text w="5%" as="span" className="horizontal-text">RUA AMADÉO ZAMBON</Text>
+					<Text w="5%" as="span" className="horizontal-text">
+						RUA AMADÉO ZAMBON
+					</Text>
 				</Box>
+				<Box
+					display="flex"
+					justifyContent={{ sm: "center", lg: "space-between" }}
+					flexDirection={{ sm: "column", lg: "row" }}
+					maxWidth="1300px"
+					margin="0 auto"
+					marginTop="80px"
+					paddingInline={{ lg: 16, "2xl": 0 }}
+				>
+					<Box margin="0 auto" w={{ sm: "100%", lg: "27%" }}>
+						<Image margin="0 auto" src="./images/altos/rosa.png" />
+						<Text marginTop={{ sm: "20px", md: 0 }} margin="0 auto" textAlign="center" w={{ sm: "80%", md: "60%", lg: "100%" }} as="p">
+							O projeto arquitetônico priorizou a posição solar para as áreas de uso íntimo nos mínimos detalhes para acompanhar a vida
+						</Text>
+					</Box>
+					<Box
+						display="flex"
+						flexWrap="wrap"
+						gap={{ sm: 8, md: 16 }}
+						alignItems="center"
+						w={{ lg: "60%" }}
+						justifyContent={{ sm: "center", lg: "start" }}
+						marginTop={{ sm: "60px", lg: "0" }}
+					>
+						<Box>
+							<Text className="apto-title">Aptos. Final 01</Text>
+							<Text className="apto-subtitle">67,82m² Privativos</Text>
+							<Text className="apto-desc">02 Dormitórios com suíte</Text>
+						</Box>
+						<Box>
+							<Text className="apto-title">Aptos. Final 02</Text>
+							<Text className="apto-subtitle">69,49m² Privativos</Text>
+							<Text className="apto-desc">02 Dormitórios com suíte</Text>
+						</Box>
+						<Box>
+							<Text className="apto-title">Aptos. Final 03</Text>
+							<Text className="apto-subtitle">57,08m² Privativos</Text>
+							<Text className="apto-desc">02 Dormitórios com suíte</Text>
+						</Box>
+						<Box>
+							<Text className="apto-title">Aptos. Final 04</Text>
+							<Text className="apto-subtitle">35,09m² Privativos</Text>
+							<Text className="apto-desc">01 Dormitórios com suíte</Text>
+						</Box>
+						<Box>
+							<Text className="apto-title">Aptos. Final 05</Text>
+							<Text className="apto-subtitle">48,92m² Privativos</Text>
+							<Text className="apto-desc">02 Dormitórios com suíte</Text>
+						</Box>
+						<Box>
+							<Text className="apto-title">Aptos. Final 06</Text>
+							<Text className="apto-subtitle">48,89m² Privativos</Text>
+							<Text className="apto-desc">02 Dormitórios com suíte</Text>
+						</Box>
+						<Box>
+							<Text className="apto-title">Aptos. Final 07</Text>
+							<Text className="apto-subtitle">55,62m² Privativos</Text>
+							<Text className="apto-desc">02 Dormitórios com suíte</Text>
+						</Box>
+					</Box>
+				</Box>
+				<Box display="flex" justifyContent="center" marginTop="150px">
+					<Text w={{ lg2: "85%", "2xl": "35%" }} fontFamily="Anisver" textTransform="uppercase" textAlign="center" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
+						AMBIENTES COMPLETOS PARA OS MORADORES
+					</Text>
+				</Box>
+				<Box className="grade-images" maxWidth="90%" margin="0 auto" marginTop="100px">
+					<div className="grade-1">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 01"
+							sublegend="Sala de estar e jantar"
+							src="./images/altos/grade-1.png"
+						/>
+					</div>
+					<div className="grade-2">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 01"
+							sublegend="Dormitório"
+							src="./images/altos/grade-2.png"
+						/>
+					</div>
+					<div className="grade-3">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 01"
+							sublegend="Suíte"
+							src="./images/altos/grade-3.png"
+						/>
+					</div>
 
+					<div className="grade-4">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 02"
+							sublegend="Suíte"
+							src="./images/altos/grade-4.png"
+						/>
+					</div>
+					<div className="grade-5">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 02"
+							sublegend="Sala de estar"
+							src="./images/altos/grade-5.png"
+						/>
+					</div>
+					<div className="grade-6">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 02"
+							sublegend="Sala de jantar e cozinha"
+							src="./images/altos/grade-6.png"
+						/>
+					</div>
+
+					<div className="grade-7">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 03 e 07"
+							sublegend="Dormitório"
+							src="./images/altos/grade-7.png"
+						/>
+					</div>
+					<div className="grade-8">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 03 e 07"
+							sublegend="Suíte"
+							src="./images/altos/grade-8.png"
+						/>
+					</div>
+					<div className="grade-9">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 03 e 07"
+							sublegend="Sala de estar e jantar"
+							src="./images/altos/grade-9.png"
+						/>
+					</div>
+
+					<div className="grade-10">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 04"
+							sublegend="Dormitório casal"
+							src="./images/altos/grade-10.png"
+						/>
+					</div>
+					<div className="grade-11">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 04"
+							sublegend="Sala de estar e jantar"
+							src="./images/altos/grade-11.png"
+						/>
+					</div>
+					<div className="grade-12">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 04"
+							sublegend="Dormitório solteiro"
+							src="./images/altos/grade-12.png"
+						/>
+					</div>
+
+					<div className="grade-13">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 05 e 06"
+							sublegend="Sala de estar"
+							src="./images/altos/grade-13.png"
+						/>
+					</div>
+					<div className="grade-14">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 05 e 06"
+							sublegend="Dormitório casal"
+							src="./images/altos/grade-14.png"
+						/>
+					</div>
+					<div className="grade-15">
+						<ZoomImage
+							legendWidth={{ lg2: "190px", "2xl": "240px" }}
+							legendHeight={{ lg2: "50px", xl: "60px", "2xl": "80px" }}
+							legend="Apto. Final 05 e 06"
+							sublegend="Sala de jantar"
+							src="./images/altos/grade-15.png"
+						/>
+					</div>
+				</Box>
+				<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{ sm: "40vw", lg2: "20vw" }} />
 			</div>
+			<Box marginTop="190px" className="section-five">
+				<Box display="flex" justifyContent="center">
+					<Text fontFamily="Anisver" textAlign="center" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
+						LOCALIZAÇ
+						<span className="box">
+							<span className="tio">~</span>
+							<span>A</span>
+						</span>
+						O PRIVILEGIADA
+					</Text>
+				</Box>
+				<Box display="flex" flexDirection={{sm: "column-reverse", "lg2": "row"}} gap={{sm: "80px", "lg2": 0}} justifyContent="space-between" paddingInline={{sm: 4, "lg2": 24}} marginTop={{sm: "60px", "lg2": "200px"}}>
+					<Box>
+						<ZoomImage src="./images/altos/map.png" />
+					</Box>
+					<Box w={{"lg2": "25%"}}>
+						<Box display="flex" flexDirection={{"lg2": "column"}} gap={6} flexWrap={{sm: "wrap", "lg2": "nowrap"}} justifyContent="center">
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Padaria /> Padaria</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 1min</Box>
+							</Box>
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Mercado /> Mercado</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 2min</Box>
+							</Box>
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Posto/> Posto de gasolina</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 3min</Box>
+							</Box>
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Farmacia /> Farmácia</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 4min</Box>
+							</Box>
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Hospital /> Hospital</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 6min</Box>
+							</Box>
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Escola /> Escola/Creche</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 3min</Box>
+							</Box>
+							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
+								<Box display="flex" gap={2} alignItems="center"><Shopping /> Shopping</Box>
+								<Box display="flex" gap={2} alignItems="center"><Car /> 7min</Box>
+							</Box>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
 		</div>
 	);
 };

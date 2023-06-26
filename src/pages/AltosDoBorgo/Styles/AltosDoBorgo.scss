@@ -1,315 +1,491 @@
 .altos-container {
-    font-family: "Raleway";
-    background: #F7EDD6;
-    height: 100%;
-    .section-one {
-        height: 1000px;
+	font-family: "Raleway";
+	background: #f7edd6;
+	height: 100%;
+	.section-one {
+		height: 1000px;
+		position: relative;
+		overflow: hidden;
+
+		.sun {
+			position: absolute;
+			right: 0;
+			bottom: -10rem;
+			right: -15rem;
+
+			@media screen and (max-width: 1440px) {
+				bottom: -15rem;
+				right: -20rem;
+			}
+
+			@media screen and (max-width: 1280px) {
+				bottom: -20rem;
+				right: -20rem;
+			}
+
+			@media screen and (max-width: 1024px) {
+				width: 60%;
+				bottom: -20rem;
+				right: -20rem;
+			}
+		}
+
+		.navigation {
+			padding-top: 1.75rem;
+			padding-inline: 6.875rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.anchors-links {
+				display: flex;
+				gap: 3.5rem;
+
+				.anchors,
+				.links {
+					ul {
+						display: flex;
+						list-style: none;
+						gap: 3.5rem;
+
+						li {
+							text-transform: uppercase;
+							font-family: "Raleway";
+							font-weight: 500;
+							font-size: 0.94rem;
+						}
+					}
+				}
+
+				.links {
+					ul {
+						gap: 1rem;
+					}
+				}
+
+				@media screen and (max-width: 1024px) {
+					display: none;
+				}
+			}
+
+			.menu {
+				display: none;
+
+				button {
+					&:focus-visible {
+						box-shadow: none;
+					}
+				}
+
+				@media screen and (max-width: 1024px) {
+					display: block;
+				}
+			}
+
+			@media screen and (max-width: 1280px) {
+				padding-inline: 3.875rem;
+			}
+
+			@media screen and (max-width: 600px) {
+				padding-inline: 1.875rem;
+			}
+		}
+
+		.text {
+			margin-top: 6.625rem;
+			margin-inline: auto;
+
+			h1 {
+				text-align: center;
+				width: 60rem;
+				margin-inline: auto;
+				font-size: 6rem;
+				line-height: 100%;
+				color: #212121;
+				font-family: "Anisver";
+				font-weight: 400;
+
+				@media screen and (max-width: 1024px) {
+					width: 40rem;
+					font-size: 4.8rem;
+				}
+
+				@media screen and (max-width: 600px) {
+					width: 26rem;
+					font-size: 3rem;
+				}
+			}
+
+			h3 {
+				text-align: center;
+				width: 35rem;
+				margin-inline: auto;
+				margin-top: 3rem;
+
+				@media screen and (max-width: 1024px) {
+					width: 28rem;
+					font-size: 1rem;
+				}
+
+				@media screen and (max-width: 600px) {
+					width: 22rem;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				margin-top: 6rem;
+			}
+		}
+
+		.btns {
+			margin-top: 3rem;
+			display: flex;
+			justify-content: center;
+			gap: 0.8rem;
+
+			button {
+				border-radius: 0%;
+				padding: 2rem;
+				text-transform: uppercase;
+				background: #f7bf8a;
+				color: #ba3718;
+				font-weight: 700;
+
+				&:hover {
+					background: #e2ad7a;
+				}
+
+				&:last-of-type {
+					background: transparent;
+					border: 1px solid #ba3718;
+					color: #ba381f;
+
+					&:hover {
+						background: #ba3718;
+						color: #fff;
+					}
+				}
+
+				@media screen and (max-width: 600px) {
+					padding: 1rem;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				margin-top: 2.5rem;
+			}
+		}
+
+		@media screen and (max-width: 1680px) {
+			height: 850px;
+		}
+
+		@media screen and (max-width: 1440px) {
+			height: 900px;
+		}
+
+		@media screen and (max-width: 1280px) {
+			height: 800px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			height: 700px;
+		}
+
+		@media screen and (max-width: 600px) {
+			height: 500px;
+		}
+	}
+
+	.section-two {
+		background: url("../../../../public/images/altos/texture-section-2.png");
+		height: 676px;
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+
+		@media screen and (max-width: 1440px) {
+			height: 500px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			height: 400px;
+		}
+
+		@media screen and (max-width: 600px) {
+			height: auto;
+		}
+
+		.box-images {
+			display: flex;
+			overflow: hidden;
+			justify-content: center;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+
+			@media screen and (max-width: 600px) {
+				flex-direction: column;
+				position: relative;
+			}
+		}
+	}
+
+	.section-three {
+		padding-block: 6rem;
+
+		@media screen and (max-width: 600px) {
+			padding-inline: 0rem;
+		}
+
+		.box {
+			display: inline-flex;
+			flex-direction: column;
+			line-height: 28px;
+			justify-content: center;
+			position: relative;
+			top: -27px;
+			margin-inline: 2px;
+
+			@media screen and (max-width: 600px) {
+				line-height: 20px;
+				top: -19px;
+			}
+
+			.tio {
+				font-family: "Raleway";
+				position: relative;
+				margin-left: 3px;
+			}
+		}
+
+		.slider {
+			.swiper-button-prev,
+			.swiper-button-next {
+				color: white;
+			}
+
+			.swiper-button-prev {
+				left: 60px;
+
+				@media screen and (max-width: 600px) {
+					left: 10px;
+				}
+			}
+
+			.swiper-button-next {
+				right: 60px;
+
+				@media screen and (max-width: 600px) {
+					right: 10px;
+				}
+			}
+
+			.swiper-button-prev:after,
+			.swiper-rtl .swiper-button-next:after {
+				content: url("/images/altos/arrow-slide.png");
+			}
+
+			.swiper-button-next:after,
+			.swiper-rtl .swiper-button-prev:after {
+				content: url("/images/altos/arrow-slide.png");
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.section-four {
+		margin-top: 100px;
         position: relative;
-        overflow: hidden;   
 
-        .sun {
-            position: absolute;
-            right: 0;
-            bottom: -10rem;
-            right: -15rem;
+		@media screen and (max-width: 600px) {
+			margin-top: 40px;
 
-            @media screen and (max-width: 1440px) {
-                bottom: -15rem;
-                right: -20rem;
+			span {
+				font-size: 9px;
+			}
+		}
+
+		.horizontal-text {
+			width: max-content;
+			writing-mode: vertical-lr;
+			transform: rotate(180deg);
+		}
+
+		.apto-title {
+			font-size: 1.5rem;
+			color: #ba381f;
+			font-family: Raleway;
+			font-weight: 700;
+
+            @media screen and (max-width: 600px) {
+                font-size: 1.3rem;
+            }
+		}
+
+		.apto-subtitle {
+			font-size: 1.2rem;
+			color: #ba381f;
+			font-family: Raleway;
+			font-weight: 500;
+
+            @media screen and (max-width: 600px) {
+                font-size: 1.1rem;
+            }
+		}
+
+		.apto-desc {
+			color: #212121;
+			font-size: 1.05rem;
+			font-family: Raleway;
+
+            @media screen and (max-width: 600px) {
+                font-size: 0.8rem;
+            }
+		}
+
+        .grade-images {
+            display: grid;
+            position: relative;
+            z-index: 999;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "grade-1 grade-2 grade-3"
+            "grade-4 grade-5 grade-6"
+            "grade-7 grade-8 grade-9"
+            "grade-10 grade-11 grade-12"
+            "grade-13 grade-14 grade-15";
+
+            .legend {
+                @media screen and (max-width: 1536px) {
+                    font-size: 14px;
+                }
             }
 
-            @media screen and (max-width: 1280px) {
-                bottom: -20rem;
-                right: -20rem;
+            .sublegend {
+                @media screen and (max-width: 1536px) {
+                    font-size: 13px;
+                }
+            }
+
+
+            .grade-1 {
+                grid-area: grade-1;
+            }
+
+            .grade-2 {
+                grid-area: grade-2;
+            }
+
+            .grade-3 {
+                grid-area: grade-3;
+            }
+
+            .grade-4 {
+                grid-area: grade-4;
+            }
+
+            .grade-5 {
+                grid-area: grade-5;
+            }
+
+            .grade-6 {
+                grid-area: grade-6;
+            }
+
+            .grade-7 {
+                grid-area: grade-7;
+            }
+
+            .grade-8 {
+                grid-area: grade-8;
+            }
+
+            .grade-9 {
+                grid-area: grade-9;
+            }
+
+            .grade-10 {
+                grid-area: grade-10;
+            }
+
+            .grade-11 {
+                grid-area: grade-11;
+            }
+
+            .grade-12 {
+                grid-area: grade-12;
+            }
+
+            
+            .grade-13 {
+                grid-area: grade-13;
+            }
+
+            .grade-14 {
+                grid-area: grade-14;
+            }
+
+            .grade-15 {
+                grid-area: grade-15;
             }
 
             @media screen and (max-width: 1024px) {
-                width: 60%;
-                bottom: -20rem;
-                right: -20rem;
-            }
-        }
-
-        .navigation {
-            padding-top: 1.75rem;
-            padding-inline: 6.875rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .anchors-links {
-                display: flex;
-                gap: 3.5rem;
-
-                .anchors, .links {
-                    ul {
-                        display: flex;
-                        list-style: none;
-                        gap: 3.5rem;
-
-                        li {
-                            text-transform: uppercase;
-                            font-family: "Raleway";
-                            font-weight: 500;
-                            font-size: 0.94rem;
-                        }
-                    }
-                }
-
-                .links {
-                    ul {
-                        gap: 1rem;
-                    }
-                }
-
-                @media screen and (max-width: 1024px) {
-                    display: none;
-                }
-            }
-
-            .menu {
-                display: none;
-
-                button {
-                    &:focus-visible {
-                        box-shadow: none;
-                    }
-                }
-
-                @media screen and (max-width: 1024px) {
-                    display: block;
-                }
-            }
-            
-            @media screen and (max-width: 1280px) {
-                padding-inline: 3.875rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "grade-1 grade-2"
+                "grade-3 grade-4"
+                "grade-5 grade-6"
+                "grade-7 grade-8"
+                "grade-9 grade-10"
+                "grade-11 grade-12"
+                "grade-13 grade-14"
+                "grade-15 .";
             }
 
             @media screen and (max-width: 600px) {
-                padding-inline: 1.875rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "grade-1 grade-1"
+                "grade-2 grade-2"
+                "grade-3 grade-3"
+                "grade-4 grade-4"
+                "grade-5 grade-5"
+                "grade-6 grade-6"
+                "grade-7 grade-7"
+                "grade-8 grade-8"
+                "grade-9 grade-9"
+                "grade-10 grade-10"
+                "grade-11 grade-11"
+                "grade-12 grade-12"
+                "grade-13 grade-13"
+                "grade-14 grade-14"
+                "grade-15 grade-15";
             }
         }
+	}
 
-        .text {
-            margin-top: 6.625rem;
-            margin-inline: auto;
-
-            h1 {
-                text-align: center;
-                width: 60rem;
-                margin-inline: auto;
-                font-size: 6rem;
-                line-height: 100%;
-                color: #212121;
-                font-family: "Anisver";
-                font-weight: 400;
-
-                @media screen and (max-width: 1024px) {
-                    width: 40rem;
-                    font-size: 4.8rem;
-                }
-
-                @media screen and (max-width: 600px) {
-                    width: 26rem;
-                    font-size: 3rem;
-                }
-
-            }
-            
-            h3 {
-                text-align: center;
-                width: 35rem;
-                margin-inline: auto;
-                margin-top: 3.0rem;
-
-                @media screen and (max-width: 1024px) {
-                    width: 28rem;
-                    font-size: 1rem;
-                }
-
-                @media screen and (max-width: 600px) {
-                    width: 22rem;
-                }
-            }
-
-            @media screen and (max-width: 600px) {
-                margin-top: 6rem;
-            }
-        }
-
-        .btns {
-            margin-top: 3.0rem;
-            display: flex;
-            justify-content: center;
-            gap: .8rem;
-
-            button {
-                border-radius: 0%;
-                padding: 2rem;
-                text-transform: uppercase;
-                background: #F7BF8A;
-                color: #BA3718;
-                font-weight: 700;
-
-                &:hover {
-                    background: #e2ad7a;
-                }
-                
-                &:last-of-type {
-                    background: transparent;
-                    border: 1px solid #BA3718;
-                    color: #BA381F;
-                    
-
-                    &:hover {
-                        background: #BA3718;
-                        color: #FFF;
-                    }
-                }
-
-                @media screen and (max-width: 600px) {
-                    padding: 1rem;
-                }
-            }
-
-
-            @media screen and (max-width: 600px) {
-                margin-top: 2.5rem;
-            }
-        }
-
-        @media screen and (max-width: 1680px) {
-            height: 850px;
-        }
-
-        @media screen and (max-width: 1440px) {
-            height: 900px;
-        }
-
-        @media screen and (max-width: 1280px) {
-            height: 800px;
-        }
-
-        @media screen and (max-width: 1024px) {
-            height: 700px;
-        }
-
-        @media screen and (max-width: 600px) {
-            height: 500px;
-        }
-    }
-
-    .section-two {
-        background: url("../../../../public/images/altos/texture-section-2.png");
-        height: 676px;
-        width: 100%;
-        background-size: cover;
-        background-position: center center;
-        position: relative;
-
-        @media screen and (max-width: 1440px) {
-            height: 500px;
-        }
-
-        @media screen and (max-width: 1024px) {
-            height: 400px;
-        }
-
-        @media screen and (max-width: 600px) {
-            height: auto;
-        }
-
-        .box-images {
-            display: flex;
-            overflow: hidden;
-            justify-content: center;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-
-            @media screen and (max-width: 600px) {
-                flex-direction: column;
-                position: relative;
-            }
-        }
-    }
-
-    .section-three {
-        padding-block: 6rem;
-
-        @media screen and (max-width: 600px) {
-            padding-inline: 0rem;
-        }
-
+    .section-five {
         .box {
-            display: inline-flex;
-            flex-direction: column;
-            line-height: 28px;
-            justify-content: center;
-            position: relative;
-            top: -27px;
-            margin-inline: 2px;
+			display: inline-flex;
+			flex-direction: column;
+			line-height: 28px;
+			justify-content: center;
+			position: relative;
+			top: -27px;
+			margin-inline: 2px;
 
-            @media screen and (max-width: 600px) {
-                line-height: 20px;
-                top: -19px;
-            }
+			@media screen and (max-width: 600px) {
+				line-height: 20px;
+				top: -19px;
+			}
 
-            .tio {
-                font-family: "Raleway";
-                position: relative;
-                margin-left: 3px;
-            }
-        }
-
-        .slider {
-
-            .swiper-button-prev, .swiper-button-next {
-                color: white;
-            }
-            
-            .swiper-button-prev {
-                left: 60px;
-
-                @media screen and (max-width: 600px) {
-                    left: 10px;
-                }
-            }
-
-            .swiper-button-next {
-                right: 60px;
-
-                @media screen and (max-width: 600px) {
-                    right: 10px;
-                }
-            }
-
-            .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-                content: url("/images/altos/arrow-slide.png");
-            }
-
-            .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-                content: url("/images/altos/arrow-slide.png");
-                transform: rotate(180deg);
-            }
-        }
-    }
-
-    .section-four {
-        margin-top: 100px;
-
-        @media screen and (max-width: 600px) {
-            margin-top: 40px;
-
-            span {
-                font-size: 9px;
-            }
-        }
-
-        .horizontal-text {
-            width: max-content;
-            writing-mode: vertical-lr;
-            transform: rotate(180deg);
+			.tio {
+				font-family: "Raleway";
+				position: relative;
+				margin-left: 5px;
+			}
         }
     }
 }
