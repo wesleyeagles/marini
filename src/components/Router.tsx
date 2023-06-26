@@ -14,7 +14,7 @@ export function Router() {
             <Route path='/empreendimentos-em-andamento' element={<EmpreendimentosEmAndamento/>}/>
             <Route path='/empreendimentos-entregues' element={<EmpreendimentosResidenciais/>}/>
             <Route path='/terrace' element={<Terrace/>}/>
-            <Route path='/altos-do-borgo' element={<AltosDoBorgo/>}/>
+            <Route path='/4dqwdq98s4qs84q89s' element={<AltosDoBorgo/>}/>
         </Routes>
         </AnimatePresence>
     )

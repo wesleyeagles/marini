@@ -17,8 +17,44 @@ import Farmacia from "../../../svgs/altos/Farmacia";
 import Hospital from "../../../svgs/altos/Hospital";
 import Escola from "../../../svgs/altos/Escola";
 import Shopping from "../../../svgs/altos/Shopping";
+import { Mail } from "tabler-icons-react";
+import Phone from "../../../svgs/altos/Phone";
+import PinMap from "../../../svgs/altos/PinMap";
+import BackToTopArrow from "../../../svgs/altos/BackToTopArrow";
+import { Link } from "react-router-dom";
+
+import { animated, useSpring } from "react-spring";
+import ScrollToTopBtn from "../../../components/Altos/ScrollToTopBtn";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
 
 const AltosDoBorgo = () => {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
+	const h1Animation = useSpring({
+		config: { duration: 600 },
+		from: { opacity: 0, top: -100 },
+		to: { opacity: 1, top: 0 },
+	});
+
+	const textAnimaOpacity = useSpring({
+		config: { duration: 600 },
+		from: { opacity: 0 },
+		to: { opacity: 1 },
+	});
+
+	const scrollToSection = (id: string) => {
+		const element: any = document.getElementById(id);
+		element.scrollIntoView({ behavior: "smooth" });
+	};
+
+	const [inView, setInView] = useState(false);
+
 	return (
 		<div className="altos-container">
 			<div className="section-one">
@@ -29,20 +65,20 @@ const AltosDoBorgo = () => {
 					<div className="anchors-links">
 						<div className="anchors">
 							<ul>
-								<li>Características</li>
-								<li>Áreas do empreendimento</li>
-								<li>Localização</li>
+								<li onClick={() => scrollToSection("caracteristicas")}>Características</li>
+								<li onClick={() => scrollToSection("areas")}>Áreas do empreendimento</li>
+								<li onClick={() => scrollToSection("localization")}>Localização</li>
 							</ul>
 						</div>
 						<div className="links">
 							<ul>
 								<li>
-									<a target="_blank" href="">
+									<a target="_blank" href="https://www.facebook.com/mariniconstrucoes">
 										<Facebook />
 									</a>
 								</li>
 								<li>
-									<a target="_blank" href="">
+									<a target="_blank" href="https://www.instagram.com/mariniconstrucoes/">
 										<Instagram />
 									</a>
 								</li>
@@ -57,16 +93,44 @@ const AltosDoBorgo = () => {
 										{isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
 									</MenuButton>
 									<MenuList>
-										<MenuItem>Características</MenuItem>
-										<MenuItem>Áreas do empreendimento</MenuItem>
-										<MenuItem>Localização</MenuItem>
+										<MenuItem
+											onClick={() =>
+												setTimeout(() => {
+													scrollToSection("caracteristicas");
+												}, 100)
+											}
+										>
+											Características
+										</MenuItem>
+										<MenuItem
+											onClick={() =>
+												setTimeout(() => {
+													scrollToSection("areas");
+												}, 100)
+											}
+										>
+											Áreas do empreendimento
+										</MenuItem>
+										<MenuItem
+											onClick={() =>
+												setTimeout(() => {
+													scrollToSection("localization");
+												}, 100)
+											}
+										>
+											Localização
+										</MenuItem>
 										<MenuDivider marginInline={3} />
 										<Box display="flex">
 											<MenuItem w="max-content">
-												<Facebook />
+												<a href="https://www.facebook.com/mariniconstrucoes" target="_blank">
+													<Facebook />
+												</a>
 											</MenuItem>
 											<MenuItem w="50%">
-												<Instagram />
+												<a href="https://www.instagram.com/mariniconstrucoes/">
+													<Instagram />
+												</a>
 											</MenuItem>
 										</Box>
 									</MenuList>
@@ -76,12 +140,16 @@ const AltosDoBorgo = () => {
 					</div>
 				</div>
 				<div className="text">
-					<h1>ALTOS DO BORGO RESIDENCIAL</h1>
+					<animated.div className="text" style={h1Animation}>
+						<h1>ALTOS DO BORGO RESIDENCIAL</h1>
+					</animated.div>
 					<h3>Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade</h3>
 				</div>
 				<div className="btns">
 					<Button>Fale Conosco</Button>
-					<Button className="outlined">Características</Button>
+					<Button className="outlined" onClick={() => scrollToSection("caracteristicas")}>
+						Características
+					</Button>
 				</div>
 				<Image className="sun" src="./images/altos/sun.png" />
 			</div>
@@ -149,7 +217,15 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box display="flex" flexDirection={{ sm: "column", xl: "row" }} justifyContent={{ lg2: "space-between" }} marginTop={{ sm: "80px", md: "160px" }} paddingInline={{ sm: 6, md: 24 }}>
+				<Box
+					display="flex"
+					flexDirection={{ sm: "column", xl: "row" }}
+					justifyContent={{ lg2: "space-between" }}
+					marginTop={{ sm: "80px", md: "160px" }}
+					paddingInline={{ sm: 6, md: 24 }}
+					id="caracteristicas"
+					scrollMarginTop="40px"
+				>
 					<Box w={{ xl: "40%", "2xl": "auto" }}>
 						<ZoomImage src="/images/altos/do-empreendimento.png" />
 					</Box>
@@ -182,7 +258,7 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box position="relative" marginTop={{ sm: "40px", md: "160px" }}>
+				<Box position="relative" marginTop={{ sm: "40px", md: "160px" }} id="areas" scrollMarginTop="40px">
 					<Box
 						display="flex"
 						flexDirection={{ sm: "column", lg2: "row" }}
@@ -259,9 +335,9 @@ const AltosDoBorgo = () => {
 					marginTop="80px"
 					paddingInline={{ lg: 16, "2xl": 0 }}
 				>
-					<Box margin="0 auto" w={{ sm: "100%", lg: "27%" }}>
-						<Image margin="0 auto" src="./images/altos/rosa.png" />
-						<Text marginTop={{ sm: "20px", md: 0 }} margin="0 auto" textAlign="center" w={{ sm: "80%", md: "60%", lg: "100%" }} as="p">
+					<Box margin={{ sm: "0 auto", lg2: "0" }} w={{ sm: "100%", lg: "27%" }}>
+						<Image margin={{ sm: "0 auto", lg2: "0" }} src="./images/altos/rosa.png" />
+						<Text marginTop={{ sm: "20px", md: 0 }} margin={{ sm: "0 auto", lg2: "0" }} textAlign={{ sm: "center", lg2: "start" }} w={{ sm: "80%", md: "60%", lg: "100%" }} as="p">
 							O projeto arquitetônico priorizou a posição solar para as áreas de uso íntimo nos mínimos detalhes para acompanhar a vida
 						</Text>
 					</Box>
@@ -459,55 +535,171 @@ const AltosDoBorgo = () => {
 				</Box>
 				<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{ sm: "40vw", lg2: "20vw" }} />
 			</div>
-			<Box marginTop="190px" className="section-five">
-				<Box display="flex" justifyContent="center">
-					<Text fontFamily="Anisver" textAlign="center" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
-						LOCALIZAÇ
-						<span className="box">
-							<span className="tio">~</span>
-							<span>A</span>
-						</span>
-						O PRIVILEGIADA
-					</Text>
-				</Box>
-				<Box display="flex" flexDirection={{sm: "column-reverse", "lg2": "row"}} gap={{sm: "80px", "lg2": 0}} justifyContent="space-between" paddingInline={{sm: 4, "lg2": 24}} marginTop={{sm: "60px", "lg2": "200px"}}>
+			<Box marginTop="190px" className="section-five" id="localization" scrollMarginTop="40px">
+				<Waypoint onEnter={() => setInView(true)}>
+					<Box display="flex" justifyContent="center">
+						<Text fontFamily="Anisver" textAlign="center" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
+							LOCALIZAÇ
+							<span className="box">
+								<span className="tio">~</span>
+								<span>A</span>
+							</span>
+							O PRIVILEGIADA
+						</Text>
+					</Box>
+				</Waypoint>
+				<Box
+					display="flex"
+					flexDirection={{ sm: "column-reverse", lg2: "row" }}
+					gap={{ sm: "80px", lg2: 0 }}
+					justifyContent="space-between"
+					paddingInline={{ sm: 4, lg2: 24 }}
+					marginTop={{ sm: "60px", lg2: "200px" }}
+				>
 					<Box>
 						<ZoomImage src="./images/altos/map.png" />
 					</Box>
-					<Box w={{"lg2": "25%"}}>
-						<Box display="flex" flexDirection={{"lg2": "column"}} gap={6} flexWrap={{sm: "wrap", "lg2": "nowrap"}} justifyContent="center">
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Padaria /> Padaria</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 1min</Box>
+					<Box w={{ lg2: "25%" }}>
+						<Box display="flex" flexDirection={{ lg2: "column" }} gap={6} flexWrap={{ sm: "wrap", lg2: "nowrap" }} justifyContent="center">
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Padaria /> Padaria
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 1min
+								</Box>
 							</Box>
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Mercado /> Mercado</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 2min</Box>
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Mercado /> Mercado
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 2min
+								</Box>
 							</Box>
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Posto/> Posto de gasolina</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 3min</Box>
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Posto /> Posto de gasolina
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 3min
+								</Box>
 							</Box>
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Farmacia /> Farmácia</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 4min</Box>
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Farmacia /> Farmácia
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 4min
+								</Box>
 							</Box>
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Hospital /> Hospital</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 6min</Box>
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Hospital /> Hospital
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 6min
+								</Box>
 							</Box>
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Escola /> Escola/Creche</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 3min</Box>
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Escola /> Escola/Creche
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 3min
+								</Box>
 							</Box>
-							<Box w={{sm: "320px", md: "auto"}} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{sm: "30px", "lg2": 0}}>
-								<Box display="flex" gap={2} alignItems="center"><Shopping /> Shopping</Box>
-								<Box display="flex" gap={2} alignItems="center"><Car /> 7min</Box>
+							<Box w={{ sm: "320px", md: "auto" }} display="flex" borderBottom="solid 1px #00000026" lineHeight={10} justifyContent="space-between" gap={{ sm: "30px", lg2: 0 }}>
+								<Box display="flex" gap={2} alignItems="center">
+									<Shopping /> Shopping
+								</Box>
+								<Box display="flex" gap={2} alignItems="center">
+									<Car /> 7min
+								</Box>
 							</Box>
 						</Box>
 					</Box>
 				</Box>
 			</Box>
+			<footer>
+				<Box display="flex" justifyContent="space-between" alignItems="end" paddingInline={{ sm: 8, md: 16, xl: 0 }} paddingLeft={{ xl: 24 }} marginTop="150px">
+					<Box w={{ xl: "42%" }} marginBottom="80px">
+						<Text
+							w={{ "2xl": "86%" }}
+							fontFamily="Anisver"
+							textAlign={{ sm: "center", md: "start" }}
+							textTransform="uppercase"
+							fontSize={{ sm: "2.5rem", md: "3rem" }}
+							as="h2"
+							marginBottom={{ sm: "50px", md: "100px" }}
+						>
+							CONSULTE SEU CORRETOR DE CONFIANÇA
+						</Text>
+						<Box display="flex" alignItems="center" gap={8} marginBottom={{ sm: "40px", md: "70px" }}>
+							<Link to="/">
+								<Image w={{ sm: "60%", md: "auto" }} src="./images/altos/marini.png" />
+							</Link>
+							<Image w={{ sm: "60%", md: "auto" }} src="./images/altos/logo.png" />
+						</Box>
+						<Text as="p" marginBottom="70px">
+							Todas as imagens deste material tem caráter meramente ilustrativo por se tratar de bem a ser construído. Os móveis, equipamentos e utensílios domésticos presentes no
+							apartamento decorado e plantas baixas não fazem parte do contrato de aquisição. As áreas de lazer serão entregues conforme memorial descritivo. Os materiais e cores poderão
+							sofrer alterações sem aviso prévio em função da disponibilidade dos mesmos no mercado. A assinatura do contrato de financiamento bancário depende de aprovação do crédito do
+							cliente pela construtora e pelo agente financeiro. As condições ora indicadas poderão sofrer alterações sem prévia comunicação ou anuência dos interessados.{" "}
+						</Text>
+						<Box display="flex" alignItems="center" gap={2}>
+							<Box color="#AA2210">
+								<Mail />
+							</Box>{" "}
+							imoveis@mariniconstruções.com.br
+						</Box>
+						<Box marginTop="30px" display="flex" alignItems="center" gap={2}>
+							<Phone /> 54 3452.2244
+						</Box>
+						<Box marginTop="30px" display="flex" alignItems="center" gap={2}>
+							<Box>
+								<PinMap />
+							</Box>{" "}
+							<Text w={{ xl: "50%" }} as="p">
+								R. Fernandes Viêira, 146 - Sala 03 - Cidade Alta, Bento Gonçalves - RS, 95700-372
+							</Text>
+						</Box>
+					</Box>
+
+					<Box w="50%" display={{ sm: "none", xl: "flex" }} alignItems="end" h="100%">
+						<Image src="./images/altos/footer-image.png" />
+					</Box>
+				</Box>
+				<Box
+					background="#F7BF8A"
+					h="100px"
+					display="flex"
+					flexDirection={{ sm: "column", md: "row" }}
+					justifyContent={{ sm: "center", md: "space-between" }}
+					gap={{ sm: 6, md: 0 }}
+					alignItems="center"
+					paddingInline={{ sm: 8, md: 16, xl: 24 }}
+				>
+					<Text color="#FFF" as="span">
+						©2023 Marini. Todos os direitos reservados
+					</Text>
+					<Box color="#BA3718" display={{ sm: "none", md: "flex" }} alignItems="center" gap={2} onClick={() => scrollToTop()}>
+						<Text fontWeight="600">Voltar ao topo</Text>
+						<BackToTopArrow />
+					</Box>
+					<Box display="flex" alignItems="center" gap={2}>
+						<Text color="#FFF" as="span">
+							Design by:
+						</Text>
+						<Box>
+							<a href="https://eaglesx.com" target="_blank">
+								<Image src="./images/altos/eagles.png" />
+							</a>
+						</Box>
+					</Box>
+				</Box>
+			</footer>
+			<ScrollToTopBtn inView={inView} setInView={setInView} />
 		</div>
 	);
 };
