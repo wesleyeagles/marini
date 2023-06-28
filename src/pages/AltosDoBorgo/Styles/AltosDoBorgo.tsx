@@ -144,7 +144,7 @@ const AltosDoBorgo = () => {
 					</div>
 					<div className="text">
 							<h1>ALTOS DO BORGO RESIDENCIAL</h1>
-						<h3>Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade</h3>
+						<h3>Um empreendimento em Bento Gonçalves pensado para o bem-estar dos moradores, com vista e localização privilegiada</h3>
 					</div>
 					<div className="btns">
 						<Button>Fale Conosco</Button>
@@ -166,8 +166,7 @@ const AltosDoBorgo = () => {
 							SOBRE O EMPREENDIMENTO
 						</Text>
 						<Text w={{ lg2: "30rem", xl: "44rem" }} fontSize="1.2rem" as="p">
-							O Altos do borgo residencial oferece um local aconchegante para morar com tranquilidade, com uma vista incrível da cidade, podendo apreciar o pôr do sol do alto do prédio
-							através do Rooftop
+						O Altos do Borgo residencial oferece uma experiência de moradia elevada para quem deseja viver com mais qualidade de vida na cidade do vinho.
 						</Text>
 					</Box>
 					<Box
@@ -200,7 +199,7 @@ const AltosDoBorgo = () => {
 									Amplas opções de lazer
 								</Text>
 								<Text w={{ "2xl": "90%" }} fontSize="1.1rem" as="p">
-									Salão de festas, churrasqueira e áreas de convivência para diversão e relaxamento
+									Salão de festas, churrasqueira e áreas de convivência para diversão e lazer
 								</Text>
 							</Box>
 						</Box>
@@ -339,7 +338,7 @@ const AltosDoBorgo = () => {
 						<Box margin={{ sm: "0 auto", lg2: "0" }} w={{ sm: "100%", lg: "27%" }}>
 							<Image margin={{ sm: "0 auto", lg2: "0" }} src="./images/altos/rosa.png" alt="rosas"/>
 							<Text marginTop={{ sm: "20px", md: 0 }} margin={{ sm: "0 auto", lg2: "0" }} textAlign={{ sm: "center", lg2: "start" }} w={{ sm: "80%", md: "60%", lg: "100%" }} as="p">
-								O projeto arquitetônico priorizou a posição solar para as áreas de uso íntimo nos mínimos detalhes para acompanhar a vida
+							A arquitetura traz conforto através de iluminação natural para áreas pessoais como varanda e áreas de lazer como salão de festas.
 							</Text>
 						</Box>
 						<Box
