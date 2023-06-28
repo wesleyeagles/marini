@@ -37,7 +37,7 @@ const AltosDoBorgo = () => {
 	};
 
 	const h1Animation = useSpring({
-		config: { duration: 600 },
+		config: { duration: 300 },
 		from: { opacity: 0, top: -100 },
 		to: { opacity: 1, top: 0 },
 	});
