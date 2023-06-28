@@ -33,7 +33,7 @@ const ZoomImage = ({ src, w, legend, sublegend, h, display, size = "3xl", legend
 				<ModalContent p={0}>
 					<ModalCloseButton color="white" />
 					<ModalBody p={0}>
-						<Image w="100%" src={src} />
+						<Image w="100%" src={src} alt={src} />
 					</ModalBody>
 				</ModalContent>
 			</Modal>

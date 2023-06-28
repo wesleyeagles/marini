@@ -27,6 +27,7 @@ import { animated, useSpring } from "react-spring";
 import ScrollToTopBtn from "../../../components/Altos/ScrollToTopBtn";
 import { useState } from "react";
 import { Waypoint } from "react-waypoint";
+import { Helmet } from "react-helmet";
 
 const AltosDoBorgo = () => {
 	const scrollToTop = () => {
@@ -51,11 +52,18 @@ const AltosDoBorgo = () => {
 
 	return (
 		<animated.div style={textAnimaOpacity}>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<meta name="author" content="Eagles"/>
+				<meta name="description" content="Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade"/>
+				<title>Altos do Borgo | Marini Construções</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+			</Helmet>
 			<div className="altos-container">
 				<div className="section-one">
 					<div className="navigation">
 						<div className="logo">
-							<Image w="90%" src="./images/altos/logo.png" />
+							<Image w="90%" src="./images/altos/logo.png" alt="logo" />
 						</div>
 						<div className="anchors-links">
 							<div className="anchors">
@@ -144,7 +152,7 @@ const AltosDoBorgo = () => {
 							Características
 						</Button>
 					</div>
-					<Image className="sun" src="./images/altos/sun.png" />
+					<Image className="sun" src="./images/altos/sun.png" alt="sun" />
 				</div>
 				<div className="section-two">
 					<Box className="box-images">
@@ -329,7 +337,7 @@ const AltosDoBorgo = () => {
 						paddingInline={{ lg: 16, "2xl": 0 }}
 					>
 						<Box margin={{ sm: "0 auto", lg2: "0" }} w={{ sm: "100%", lg: "27%" }}>
-							<Image margin={{ sm: "0 auto", lg2: "0" }} src="./images/altos/rosa.png" />
+							<Image margin={{ sm: "0 auto", lg2: "0" }} src="./images/altos/rosa.png" alt="rosas"/>
 							<Text marginTop={{ sm: "20px", md: 0 }} margin={{ sm: "0 auto", lg2: "0" }} textAlign={{ sm: "center", lg2: "start" }} w={{ sm: "80%", md: "60%", lg: "100%" }} as="p">
 								O projeto arquitetônico priorizou a posição solar para as áreas de uso íntimo nos mínimos detalhes para acompanhar a vida
 							</Text>
@@ -630,9 +638,9 @@ const AltosDoBorgo = () => {
 							</Text>
 							<Box display="flex" alignItems="center" gap={8} marginBottom={{ sm: "40px", md: "70px" }}>
 								<Link to="/">
-									<Image w={{ sm: "60%", md: "auto" }} src="./images/altos/marini.png" />
+									<Image w={{ sm: "60%", md: "auto" }} src="./images/altos/marini.png" alt="marini-logo" />
 								</Link>
-								<Image w={{ sm: "60%", md: "auto" }} src="./images/altos/logo.png" />
+								<Image w={{ sm: "60%", md: "auto" }} src="./images/altos/logo.png" alt="logo" />
 							</Box>
 							<Text as="p" marginBottom="70px">
 								Todas as imagens deste material tem caráter meramente ilustrativo por se tratar de bem a ser construído. Os móveis, equipamentos e utensílios domésticos presentes no
@@ -661,7 +669,7 @@ const AltosDoBorgo = () => {
 						</Box>
 
 						<Box w="50%" display={{ sm: "none", xl: "flex" }} alignItems="end" h="100%">
-							<Image src="./images/altos/footer-image.png" />
+							<Image src="./images/altos/footer-image.png" alt="footer-image" />
 						</Box>
 					</Box>
 					<Box
@@ -687,7 +695,7 @@ const AltosDoBorgo = () => {
 							</Text>
 							<Box>
 								<a href="https://eaglesx.com" target="_blank">
-									<Image src="./images/altos/eagles.png" />
+									<Image src="./images/altos/eagles.png" alt="eagles" />
 								</a>
 							</Box>
 						</Box>
