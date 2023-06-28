@@ -36,12 +36,6 @@ const AltosDoBorgo = () => {
 		});
 	};
 
-	const h1Animation = useSpring({
-		config: { duration: 300 },
-		from: { opacity: 0, top: -100 },
-		to: { opacity: 1, top: 0 },
-	});
-
 	const textAnimaOpacity = useSpring({
 		config: { duration: 1000 },
 		from: { opacity: 0 },
@@ -141,9 +135,7 @@ const AltosDoBorgo = () => {
 						</div>
 					</div>
 					<div className="text">
-						<animated.div className="text" style={h1Animation}>
 							<h1>ALTOS DO BORGO RESIDENCIAL</h1>
-						</animated.div>
 						<h3>Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade</h3>
 					</div>
 					<div className="btns">
