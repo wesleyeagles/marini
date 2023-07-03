@@ -67,7 +67,7 @@ export function Footer() {
                         </Text>
                     </Box>
 
-                    <Box w={{md:'45%', lg:'256px'}} flex='none' marginRight={{lg: '50px'}} marginTop={{sm: '60px', md: '0'}}>
+                    <Box w={{md:'45%', lg:'290px'}} flex='none' marginRight={{lg: '50px'}} marginTop={{sm: '60px', md: '0'}}>
                         <Text w='max-content' as='span' display='block' fontWeight='500' fontSize='17px' color='#ABABAB'>
                             Fale conosco
                         </Text>

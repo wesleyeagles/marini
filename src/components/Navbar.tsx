@@ -28,6 +28,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Context } from "../App";
 import { HashLink } from "react-router-hash-link";
+import { ArrowRight } from "tabler-icons-react";
+import { BiArrowToRight } from "react-icons/bi";
 
 export function Navbar() {
 	function removeHash() {
@@ -89,8 +91,11 @@ export function Navbar() {
 										</MenuButton>
 										<MenuList zIndex="9999">
 											<Menu isOpen={submenuOpen} placement="right-end" onClose={closeSubmenu}>
-												<MenuButton as={MenuItem} onClick={toggleSubmenu}>
+												<MenuButton fontSize="14px" as={MenuItem} onClick={toggleSubmenu}>
+													<Box fontWeight="500" display="flex" alignItems="center" justifyContent="space-between">
 													Em Andamento
+													<BiArrowToRight />
+													</Box>
 												</MenuButton>
 												<MenuList marginTop="28px">
 													<Link to="/terrace">
