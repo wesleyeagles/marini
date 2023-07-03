@@ -1,4 +1,4 @@
-import { Box, Button, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Button, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import "./AltosDoBorgo.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -22,12 +22,24 @@ import Phone from "../../../svgs/altos/Phone";
 import PinMap from "../../../svgs/altos/PinMap";
 import BackToTopArrow from "../../../svgs/altos/BackToTopArrow";
 import { Link } from "react-router-dom";
+import { Link as LinkChakra } from "@chakra-ui/react";
 
 import { animated, useSpring } from "react-spring";
 import ScrollToTopBtn from "../../../components/Altos/ScrollToTopBtn";
 import { useState } from "react";
 import { Waypoint } from "react-waypoint";
 import { Helmet } from "react-helmet";
+import { StyledH2 } from "../../../styledcomponents/Typograph";
+
+import { ModalCloseButton } from "@chakra-ui/react";
+import { StyledP, StyledSmall, StyledStrong } from "../../../styledcomponents/Typograph";
+
+import MailIcon from "../../../svgs/mailicon";
+import PhoneIcon from "../../../svgs/phoneicon";
+import WhatsIcon from "../../../svgs/whatsicon";
+import PinIcon from "../../../svgs/pinicon";
+import ClockIcon from "../../../svgs/clockicon";
+import { FormModal } from "../../../components/FormModal";
 
 const AltosDoBorgo = () => {
 	const scrollToTop = () => {
@@ -48,16 +60,18 @@ const AltosDoBorgo = () => {
 		element.scrollIntoView({ behavior: "smooth" });
 	};
 
+	const { isOpen, onOpen, onClose } = useDisclosure();
+
 	const [inView, setInView] = useState(false);
 
 	return (
 		<animated.div style={textAnimaOpacity}>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<meta name="author" content="Eagles"/>
-				<meta name="description" content="Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade"/>
+				<meta name="author" content="Eagles" />
+				<meta name="description" content="Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade" />
 				<title>Altos do Borgo | Marini Construções</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+				<link rel="canonical" href="http://mysite.com/example" />
 			</Helmet>
 			<div className="altos-container">
 				<div className="section-one">
@@ -143,11 +157,11 @@ const AltosDoBorgo = () => {
 						</div>
 					</div>
 					<div className="text">
-							<h1>ALTOS DO BORGO RESIDENCIAL</h1>
+						<h1>ALTOS DO BORGO RESIDENCIAL</h1>
 						<h3>Um empreendimento em Bento Gonçalves pensado para o bem-estar dos moradores, com vista e localização privilegiada</h3>
 					</div>
 					<div className="btns">
-						<Button>Fale Conosco</Button>
+						<Button onClick={() => onOpen()}>Fale Conosco</Button>
 						<Button className="outlined" onClick={() => scrollToSection("caracteristicas")}>
 							Características
 						</Button>
@@ -166,7 +180,7 @@ const AltosDoBorgo = () => {
 							SOBRE O EMPREENDIMENTO
 						</Text>
 						<Text w={{ lg2: "30rem", xl: "44rem" }} fontSize="1.2rem" as="p">
-						O Altos do Borgo residencial oferece uma experiência de moradia elevada para quem deseja viver com mais qualidade de vida na cidade do vinho.
+							O Altos do Borgo residencial oferece uma experiência de moradia elevada para quem deseja viver com mais qualidade de vida na cidade do vinho.
 						</Text>
 					</Box>
 					<Box
@@ -336,9 +350,9 @@ const AltosDoBorgo = () => {
 						paddingInline={{ lg: 16, "2xl": 0 }}
 					>
 						<Box margin={{ sm: "0 auto", lg2: "0" }} w={{ sm: "100%", lg: "27%" }}>
-							<Image margin={{ sm: "0 auto", lg2: "0" }} src="./images/altos/rosa.png" alt="rosas"/>
+							<Image margin={{ sm: "0 auto", lg2: "0" }} src="./images/altos/rosa.png" alt="rosas" />
 							<Text marginTop={{ sm: "20px", md: 0 }} margin={{ sm: "0 auto", lg2: "0" }} textAlign={{ sm: "center", lg2: "start" }} w={{ sm: "80%", md: "60%", lg: "100%" }} as="p">
-							A arquitetura traz conforto através de iluminação natural para áreas pessoais como varanda e áreas de lazer como salão de festas.
+								A arquitetura traz conforto através de iluminação natural para áreas pessoais como varanda e áreas de lazer como salão de festas.
 							</Text>
 						</Box>
 						<Box
@@ -702,6 +716,37 @@ const AltosDoBorgo = () => {
 				</footer>
 				<ScrollToTopBtn inView={inView} setInView={setInView} />
 			</div>
+
+			<Modal isOpen={isOpen} onClose={onClose}>
+				<ModalOverlay backdropFilter="blur(5px) hue-rotate(90deg)" />
+				<ModalContent maxW={{ sm: "90%", lg: "940px", xl: "1040px", "2xl": "1140px" }} h={{ lg: "720px" }} overflow="hidden">
+					<ModalBody padding={0} overflow="hidden">
+						<Box display="flex" flexDirection={{ sm: "column", lg: "row" }}>
+							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "480px", lg: "720px" }} className="bg-modal-altos">
+								<Box h="100%" display="flex" justifyContent="center" alignItems="end" paddingInline="60px">
+									<Image flex="none" src="/images/altos/contactModal.png" />
+								</Box>
+							</Box>
+
+							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "670px", md: "720px" }} paddingLeft={{ sm: "20px", md: "70px", lg: "0px" }} paddingRight={{ sm: "20px", md: "0px" }}>
+								<Box className="close-btn">
+									<ModalCloseButton border="2px" borderColor={{ sm: "#FFF", lg: "#3E5481" }} color={{ sm: "#FFF", lg: "#3E5481" }} />
+								</Box>
+
+								<Box paddingLeft={{ sm: "0px", md: "60px", lg: "60px", xl: "90px" }} marginTop={{ sm: "30px", md: "78px" }} w={{ sm: "100%", md: "80%", lg: "420px", xl: "455px" }}>
+									<Text fontFamily="Anisver" textTransform="uppercase" textAlign="center" fontSize="1.8rem">
+										Entre em contato
+									</Text>
+									<Box marginTop="33px">
+										<Text color="#000" textAlign="center"><strong>Preencha o formulário abaixo</strong> e aguarde o retorno de nossos especialistas.</Text>
+									</Box>
+									<FormModal action="https://submit-form.com/4k45qiW1" empreendimento="Marini" />
+								</Box>
+							</Box>
+						</Box>
+					</ModalBody>
+				</ModalContent>
+			</Modal>
 		</animated.div>
 	);
 };
