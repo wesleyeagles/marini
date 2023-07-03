@@ -368,7 +368,7 @@ const AltosDoBorgo = () => {
 							<Box>
 								<Text className="apto-title">Aptos. Final 01</Text>
 								<Text className="apto-subtitle">67,82m² Privativos</Text>
-								<Text className="apto-desc">02 Dormitórios com suíte</Text>
+								<Text className="apto-desc">01 Dormitório</Text>
 							</Box>
 							<Box>
 								<Text className="apto-title">Aptos. Final 02</Text>
@@ -383,17 +383,17 @@ const AltosDoBorgo = () => {
 							<Box>
 								<Text className="apto-title">Aptos. Final 04</Text>
 								<Text className="apto-subtitle">35,09m² Privativos</Text>
-								<Text className="apto-desc">01 Dormitórios com suíte</Text>
+								<Text className="apto-desc">01 Dormitório</Text>
 							</Box>
 							<Box>
 								<Text className="apto-title">Aptos. Final 05</Text>
 								<Text className="apto-subtitle">48,92m² Privativos</Text>
-								<Text className="apto-desc">02 Dormitórios com suíte</Text>
+								<Text className="apto-desc">02 Dormitórios</Text>
 							</Box>
 							<Box>
 								<Text className="apto-title">Aptos. Final 06</Text>
 								<Text className="apto-subtitle">48,89m² Privativos</Text>
-								<Text className="apto-desc">02 Dormitórios com suíte</Text>
+								<Text className="apto-desc">02 Dormitórios</Text>
 							</Box>
 							<Box>
 								<Text className="apto-title">Aptos. Final 07</Text>
