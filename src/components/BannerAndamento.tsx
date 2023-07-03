@@ -8,7 +8,7 @@ export const BannerAndamento = () => {
             <Container maxW={{sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl' : '1247px'}}>
                 <Box>
                     <StyledH1 w={{lg: '50%'}} secondary>
-                        Empreendimentos em andamento
+                        Jardim San Paulo
                     </StyledH1>
                 </Box>
             </Container>

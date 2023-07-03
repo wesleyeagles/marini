@@ -11,10 +11,10 @@ export function Router() {
         <AnimatePresence>
         <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/empreendimentos-em-andamento' element={<EmpreendimentosEmAndamento/>}/>
+            <Route path='/san-paulo' element={<EmpreendimentosEmAndamento/>}/>
             <Route path='/empreendimentos-entregues' element={<EmpreendimentosResidenciais/>}/>
             <Route path='/terrace' element={<Terrace/>}/>
-            <Route path='/4dqwdq98s4qs84q89s' element={<AltosDoBorgo/>}/>
+            <Route path='/altos-do-borgo' element={<AltosDoBorgo/>}/>
         </Routes>
         </AnimatePresence>
     )

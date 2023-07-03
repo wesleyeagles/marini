@@ -44,7 +44,7 @@ export function Empreendimentos() {
                 </Box>
 
                 <Box display={{sm: 'none', lg: 'flex'}} marginTop='80px'>
-                    <Link to='' onClick={scrollToTop}>
+                    <Link to='altos-do-borgo' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
@@ -55,14 +55,14 @@ export function Empreendimentos() {
                     </Box>
                     </Link>
 
-                    <Link to='/empreendimentos-em-andamento' onClick={scrollToTop}>
+                    <Link to='/terrace' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
                                 EM ANDAMENTO
                             </Text>
                         </Box>
-                        <img className="empreendimentos__img" src="images/sanpaulo-andamento.png" alt="" />
+                        <img className="empreendimentos__img" src="images/andamento.png" alt="" />
                     </Box>
                     </Link>
 
