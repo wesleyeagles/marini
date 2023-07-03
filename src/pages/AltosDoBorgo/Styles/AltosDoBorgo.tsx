@@ -722,13 +722,13 @@ const AltosDoBorgo = () => {
 				<ModalContent maxW={{ sm: "90%", lg: "940px", xl: "1040px", "2xl": "1140px" }} h={{ lg: "720px" }} overflow="hidden">
 					<ModalBody padding={0} overflow="hidden">
 						<Box display="flex" flexDirection={{ sm: "column", lg: "row" }}>
-							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "480px", lg: "720px" }} className="bg-modal-altos">
-								<Box h="100%" display="flex" justifyContent="center" alignItems="end" paddingInline="60px">
+							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "300px", lg: "720px" }} className="bg-modal-altos">
+								<Box h="100%" display="flex" justifyContent="center" alignItems="end" paddingInline={{md: "60px"}}>
 									<Image flex="none" src="/images/altos/contactModal.png" />
 								</Box>
 							</Box>
 
-							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "670px", md: "720px" }} paddingLeft={{ sm: "20px", md: "70px", lg: "0px" }} paddingRight={{ sm: "20px", md: "0px" }}>
+							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "570px", md: "720px" }} paddingLeft={{ sm: "20px", md: "70px", lg: "0px" }} paddingRight={{ sm: "20px", md: "0px" }}>
 								<Box className="close-btn">
 									<ModalCloseButton border="2px" borderColor={{ sm: "#FFF", lg: "#3E5481" }} color={{ sm: "#FFF", lg: "#3E5481" }} />
 								</Box>
