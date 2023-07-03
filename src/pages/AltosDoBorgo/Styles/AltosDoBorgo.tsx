@@ -1,4 +1,4 @@
-import { Box, Button, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, FormControl, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import "./AltosDoBorgo.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -738,9 +738,34 @@ const AltosDoBorgo = () => {
 										Entre em contato
 									</Text>
 									<Box marginTop="33px">
-										<Text color="#000" textAlign="center"><strong>Preencha o formulário abaixo</strong> e aguarde o retorno de nossos especialistas.</Text>
+										<Text color="#000" textAlign="center">
+											<strong>Preencha o formulário abaixo</strong> e aguarde o retorno de nossos especialistas.
+										</Text>
 									</Box>
-									<FormModal action="https://submit-form.com/SMkO0anQ" empreendimento="Altos do Borgo" />
+									<form action="https://submit-form.com/SMkO0anQ">
+										<input type="hidden" name="_email.template.title" value="Formulário de Contato" />
+										<input type="hidden" name="_email.template.footer" value="false" />
+										<input type="hidden" name="_email.from" value="Marini" />
+										<input type="hidden" name="_email.subject" value={`Novo Contato! - Formulário - Altos do Borgo`} />
+										<input type="hidden" name="_redirect" value="https://mariniconstrucoes.com.br" />
+										<FormControl isRequired marginTop="45px">
+											<input className="input-style" type="text" name="Nome" placeholder="Nome" />
+										</FormControl>
+										<FormControl marginTop="10px" isRequired>
+											<input className="input-style" type="email" name="Email" placeholder="Email" />
+										</FormControl>
+										<FormControl marginTop="10px" isRequired>
+											<input className="input-style" type="phone" name="Telefone" placeholder="Telefone" />
+										</FormControl>
+										<FormControl marginTop="10px" isRequired>
+											<textarea className="textarea-style" name="Mensagem" placeholder="Escreva sua mensagem:" />
+										</FormControl>
+										<Box marginTop="10px" display="flex" justifyContent="flex-end">
+											<Button type="submit" backgroundColor="#BA3718" color="#FFF" borderRadius="0" fontWeight="normal" paddingInline={16} paddingBlock={7}>
+												ENVIAR
+											</Button>
+										</Box>
+									</form>
 								</Box>
 							</Box>
 						</Box>

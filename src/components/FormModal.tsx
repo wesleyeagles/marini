@@ -18,7 +18,7 @@ export function FormModal({formAction, colorBg = false, empreendimento}: any) {
   
 
     return (
-      <form action={formAction}>
+      <form onSubmit={(e: any) => e.preventDefault()} action={formAction}>
         <input type="hidden" name="_email.template.title" value="Formulário de Contato" />
         <input type="hidden" name="_email.template.footer" value="false" />
         <input type="hidden" name="_email.from" value="Marini" />
