@@ -368,7 +368,7 @@ const AltosDoBorgo = () => {
 							<Box>
 								<Text className="apto-title">Aptos. Final 01</Text>
 								<Text className="apto-subtitle">67,82m² Privativos</Text>
-								<Text className="apto-desc">01 Dormitório</Text>
+								<Text className="apto-desc">02 Dormitórios com suíte</Text>
 							</Box>
 							<Box>
 								<Text className="apto-title">Aptos. Final 02</Text>
