@@ -69,7 +69,8 @@ const AltosDoBorgo = () => {
 			<Helmet>
 				<meta charSet="utf-8" />
 				<meta name="author" content="Eagles" />
-				<meta name="description" content="Pensado com excelência do terraço ao hall de entrada para o bem-estar dos moradores e conexão com a cidade" />
+				<meta name="keywords" content="Bento Gonçalves, Empreendimento, Localização Privilegiada, Borgo, Marini, Altos do Borgo, Apartamento, prédio." />
+				<meta name="description" content="O Altos do Borgo é empreendimento em Bento Gonçalves pensado para o bem-estar dos moradores, com vista e localização privilegiada." />
 				<title>Altos do Borgo | Marini Construções</title>
 				<link rel="canonical" href="http://mysite.com/example" />
 			</Helmet>
