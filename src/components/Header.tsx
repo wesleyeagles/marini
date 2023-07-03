@@ -26,8 +26,8 @@ export function Header() {
 				<SwiperSlide>
 					<Box display="flex" justifyContent="space-between" alignItems="center" className="bg-altos" h={{ sm: "420px", md: "577px", lg: "577px", "2xl": "800px" }}>
 						<Box w="100%" h="100%" display="flex" alignItems="center" justifyContent="space-between">
-                            <Box display="flex" justifyContent="space-between" w="100%">
-							<Box marginLeft="300px" w="max-content">
+                            <Box paddingInline={{sm: "40px", md: "0"}} display="flex" justifyContent="space-between" w="100%">
+							<Box marginLeft={{lg: "40px", "2xl": "300px"}} w="max-content">
 								<Box>
 									<Image src="/images/title-altos-banner.png" />
 								</Box>
@@ -44,13 +44,13 @@ export function Header() {
 									</HashLink>
 								</Box>
 							</Box>
-							<Box w="max-content" marginBottom="60px" justifySelf="right" flex="none" position="relative" right="-265px">
+							<Box display={{sm: "none", md: "block"}} w="max-content" marginBottom="60px" justifySelf="right" flex="none" position="relative" right="-265px">
 								<Image maxW="80%" w="80%" src="/images/bullet-banner.png" />
 								<Image maxW="80%" w="80%" marginTop="40px" src="/images/bullet-banner-2.png" />
 								<Image maxW="80%" w="80%" marginTop="40px" src="/images/bullet-banner-3.png" />
 							</Box>
                             </Box>
-							<Box flex="none" h="100%" display="flex" alignItems="end" position="relative" right="80px">
+							<Box display={{sm: "none", md: "flex"}} flex="none" h="100%" alignItems="end" position="relative" right="80px">
 								<Image w="100%" overflow="hidden" src="/images/predio-banner.png" />
 							</Box>
 						</Box>

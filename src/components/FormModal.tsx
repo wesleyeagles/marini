@@ -28,6 +28,7 @@ export function FormModal({formAction, colorBg = false, empreendimento}: any) {
       <StyledInput
         type='text'
         value={name}
+        name="Nome"
         placeholder='Nome'
         onChange={handleNameChange}
       />
@@ -36,6 +37,7 @@ export function FormModal({formAction, colorBg = false, empreendimento}: any) {
       <StyledInput
         type='email'
         value={mail}
+        name="Email"
         placeholder='Email'
         onChange={handleMailChange}
       />
@@ -43,6 +45,7 @@ export function FormModal({formAction, colorBg = false, empreendimento}: any) {
     <FormControl marginTop='10px' isRequired>
       <StyledInput
         type='phone'
+        name="Telefone"
         value={phone}
         placeholder='Telefone'
         onChange={handlePhoneChange}
@@ -50,7 +53,8 @@ export function FormModal({formAction, colorBg = false, empreendimento}: any) {
     </FormControl>
     <FormControl marginTop='10px' isRequired>
       <StyledTextArea
-        type='phone'
+        type='text'
+        name="Mensagem"
         value={message}
         placeholder='Escreva sua mensagem:'
         onChange={handleMessageChange}
