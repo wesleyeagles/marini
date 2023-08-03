@@ -289,13 +289,13 @@ export function EmpreendimentosEmAndamento() {
                                     <StyledStrong display='block' margin='0px 4px 0px 0px'>
                                         Data de início:
                                     </StyledStrong>
-                                        20/08/2020
+                                        2021
                                 </Text>
                                 <Text marginTop='3px'>
                                     <StyledStrong display='block' margin='0px 4px 0px 0px'>
                                         Data de entrega:
                                     </StyledStrong>
-                                        Torre A = 20/09/2023 e Torre B = 20/12/2024
+                                        2024
                                 </Text>
                                 <Text marginTop='3px'>
                                     <StyledStrong display='block' margin='0px 4px 0px 0px'>
