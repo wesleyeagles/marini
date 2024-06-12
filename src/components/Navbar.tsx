@@ -21,14 +21,11 @@ import {
 import { Link } from "react-router-dom";
 import { NavLink } from "../styledcomponents/Typograph";
 
-import Logo from "../svgs/logo";
 import DropdownArrow from "../svgs/dropdownarrow";
 import { ContactModal } from "./ContactModal";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import { Context } from "../App";
 import { HashLink } from "react-router-hash-link";
-import { ArrowRight } from "tabler-icons-react";
 import { BiArrowToRight } from "react-icons/bi";
 
 export function Navbar() {
@@ -39,12 +36,6 @@ export function Navbar() {
 	}
 
 	const [submenuOpen, setSubmenuOpen] = useState<boolean>(false);
-
-	const openSubmenu = () => {
-		if (!submenuOpen) {
-			setSubmenuOpen(true);
-		}
-	};
 
 	const closeSubmenu = () => {
 		if (submenuOpen) {
@@ -108,6 +99,11 @@ export function Navbar() {
 															<NavLink>San Paulo</NavLink>
 														</MenuItem>
 													</Link>
+													<Link to="/altos-do-borgo">
+														<MenuItem>
+															<NavLink>Altos do Borgo</NavLink>
+														</MenuItem>
+													</Link>
 												</MenuList>
 											</Menu>
 											<Link to="/empreendimentos-entregues">
@@ -115,11 +111,11 @@ export function Navbar() {
 													<NavLink>Entregues</NavLink>
 												</MenuItem>
 											</Link>
-											<Link to="/altos-do-borgo">
+											{/* <Link to="/altos-do-borgo">
 												<MenuItem disabled>
 													<NavLink>Lançamento</NavLink>
 												</MenuItem>
-											</Link>
+											</Link> */}
 										</MenuList>
 									</Menu>
 								</ListItem>

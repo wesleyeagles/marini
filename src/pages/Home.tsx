@@ -7,7 +7,6 @@ import { Header } from "../components/Header";
 import { Lead } from "../components/Lead";
 import { Sobre } from "../components/Sobre";
 import { Helmet } from "react-helmet";
-import { motion } from "framer-motion";
 import { Navbar } from "../components/Navbar";
 
 export function Home() {
@@ -46,7 +45,7 @@ export function Home() {
 				<meta content="pt_BR" property="og:locale" />
 			</Helmet>
 			<Navbar />
-			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1.6 } }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
+			<div>
 				<Header />
 				<Sobre />
 				<Banner />
@@ -55,7 +54,7 @@ export function Home() {
 				<Lead />
 				<ContactBanner />
 				<Footer />
-			</motion.div>
+			</div>
 		</>
 	);
 }

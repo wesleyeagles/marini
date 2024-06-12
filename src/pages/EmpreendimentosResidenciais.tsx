@@ -6,7 +6,6 @@ import { Footer } from "../components/Footer"
 import { StyledEmpreendimentosResidencias } from "../styledcomponents/StyledEmpreendimentosResidenciais"
 import { StyledH3, StyledP, StyledStrong } from "../styledcomponents/Typograph"
 import {Helmet} from "react-helmet";
-import {motion} from "framer-motion"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -64,7 +63,7 @@ export const EmpreendimentosResidenciais = () => {
         <meta content="pt_BR" property="og:locale" />
         </Helmet>
         <Navbar />
-        <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 1.6}}} exit={{opacity: 0, transition: {duration: 0.1} }}>
+        <div>
         <StyledEmpreendimentosResidencias>
             <BannerResidenciais />
             <Box paddingTop='97px' paddingBottom='187px'>
@@ -1414,7 +1413,7 @@ export const EmpreendimentosResidenciais = () => {
             </Box>
             <Footer />
         </StyledEmpreendimentosResidencias>
-        </motion.div>
+        </div>
         </>
     )
 }

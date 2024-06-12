@@ -4,7 +4,6 @@ import { Box, Container, Image, Modal, ModalBody, ModalCloseButton, ModalContent
 import { BannerAndamento } from "../components/BannerAndamento";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Helmet} from "react-helmet";
-import {motion} from "framer-motion"
 
 
 // Import Swiper styles
@@ -71,7 +70,7 @@ export function EmpreendimentosEmAndamento() {
         <meta content="pt_BR" property="og:locale" />
         </Helmet>
         <Navbar />
-        <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 1.6}}} exit={{opacity: 0, transition: {duration: 0.1} }}>
+        <div>
         <StyledEmpreendimentosAndamento>
         <BannerAndamento />
         <Box paddingTop='72px' paddingBottom='124px'>
@@ -539,7 +538,7 @@ export function EmpreendimentosEmAndamento() {
       </Modal>
 
 
-        </motion.div>
+        </div>
         </>
     )
 }
