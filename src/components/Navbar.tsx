@@ -14,7 +14,9 @@ import {
 	Menu,
 	MenuButton,
 	MenuItem,
+	MenuItemOption,
 	MenuList,
+	MenuOptionGroup,
 	UnorderedList,
 	useDisclosure,
 } from "@chakra-ui/react";
@@ -84,8 +86,8 @@ export function Navbar() {
 											<Menu isOpen={submenuOpen} placement="right-end" onClose={closeSubmenu}>
 												<MenuButton fontSize="14px" as={MenuItem} onClick={toggleSubmenu}>
 													<Box fontWeight="500" display="flex" alignItems="center" justifyContent="space-between">
-													Em Andamento
-													<BiArrowToRight />
+														Em Andamento
+														<BiArrowToRight />
 													</Box>
 												</MenuButton>
 												<MenuList marginTop="28px">
@@ -155,20 +157,40 @@ export function Navbar() {
 								<MenuButton bg="transparent" padding={0} margin={0} as={Button} rightIcon={<DropdownArrow />} _hover={{ bg: "none" }} _active={{ bg: "transparent" }}>
 									<NavLink>Empreendimentos</NavLink>
 								</MenuButton>
-								<MenuList>
-									<MenuItem>
-										<Link onClick={onDrawerClose} to="/empreendimentos-em-andamento">
-											<NavLink>Em andamento</NavLink>
-										</Link>
-									</MenuItem>
-									<MenuItem>
-										<Link onClick={onDrawerClose} to="/empreendimentos-residenciais">
-											<NavLink>Residenciais</NavLink>
-										</Link>
-									</MenuItem>
-									<MenuItem disabled>
-										<NavLink>Lançamento (Em Breve)</NavLink>
-									</MenuItem>
+								<MenuList zIndex="9999">
+									<MenuOptionGroup fontSize='14px' title='Em Andamento' type='radio'>
+										<MenuItemOption value='terrace'>
+											<Link to="/terrace">
+												<span style={{
+													fontSize: '14px',
+												}}>Terrace</span>
+											</Link>
+										</MenuItemOption>
+										<MenuItemOption value='san paulo'>
+											<Link to="/san-paulo">
+												<span style={{
+													fontSize: '14px',
+												}}>San Paulo</span>
+											</Link>
+										</MenuItemOption>
+										<MenuItemOption value='altos'>
+											<Link to="/altos-do-borgo">
+												<span style={{
+													fontSize: '14px',
+												}}>Altos do Borgo</span>
+											</Link>
+										</MenuItemOption>
+									</MenuOptionGroup>
+									<Link to="/empreendimentos-entregues">
+										<MenuItem fontSize='14px'>
+											<span>Entregues</span>
+										</MenuItem>
+									</Link>
+									{/* <Link to="/altos-do-borgo">
+												<MenuItem disabled>
+													<NavLink>Lançamento</NavLink>
+												</MenuItem>
+											</Link> */}
 								</MenuList>
 							</Menu>
 
