@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, FormControl, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import "./AltosDoBorgo.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -40,6 +40,7 @@ import WhatsIcon from "../../../svgs/whatsicon";
 import PinIcon from "../../../svgs/pinicon";
 import ClockIcon from "../../../svgs/clockicon";
 import { FormModal } from "../../../components/FormModal";
+import ImageMagnifier from "../../../components/ImageMagnifier";
 
 const AltosDoBorgo = () => {
 	const scrollToTop = () => {
@@ -550,6 +551,42 @@ const AltosDoBorgo = () => {
 					</Box>
 					<Box position="absolute" bottom={-24} backgroundImage={`url("./images/altos/texture-section-3.png")`} backgroundSize="cover" w="100%" height={{ sm: "40vw", lg2: "20vw" }} />
 				</div>
+				<div className="andamento-das-obras">
+					<Box paddingInline={{ xl: 12 }}>
+						<Text w={{ lg2: "85%", "2xl": "35%" }} fontFamily="Anisver" textTransform="uppercase" textAlign="center" fontSize={{ sm: "2.5rem", md: "3rem" }} as="h2">
+							ANDAMENTO DAS OBRAS
+						</Text>
+
+						<Box paddingInline={{ xl: 10 }} marginTop={16}>
+							<Tabs>
+								<TabList className="tablist-altos">
+									<Tab className="tab-altos">Fotos</Tab>
+									<Tab className="tab-altos">Vídeos</Tab>
+								</TabList>
+
+								<TabPanels className="tabpanels-altos">
+									<TabPanel className="tab-panel-fotos">
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/altos/imagem-1.png" largeImageUrl="./images/galeria-fotos/altos/imagem-large-1.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/altos/imagem-2.png" largeImageUrl="./images/galeria-fotos/altos/imagem-large-2.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/altos/imagem-3.png" largeImageUrl="./images/galeria-fotos/altos/imagem-large-3.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/altos/imagem-4.png" largeImageUrl="./images/galeria-fotos/altos/imagem-large-4.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/altos/imagem-5.png" largeImageUrl="./images/galeria-fotos/altos/imagem-large-5.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/altos/imagem-6.png" largeImageUrl="./images/galeria-fotos/altos/imagem-large-6.png" />
+									</TabPanel>
+
+									<TabPanel className="tab-panel-videos">
+										<div className="video-1">
+											<iframe src="https://www.youtube.com/embed/2Znc5TltqlQ?si=Xzj0YNH-zuHxewUd" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
+										<div className="video-2">
+											<iframe src="https://youtube.com/embed/Sa9HGpm_JfI?si=IG6XdqITVODJwnTi" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
+									</TabPanel>
+								</TabPanels>
+							</Tabs>
+						</Box>
+					</Box>
+				</div>
 				<Box marginTop="190px" className="section-five" id="localization" scrollMarginTop="40px">
 					<Waypoint onEnter={() => setInView(true)}>
 						<Box display="flex" justifyContent="center">
@@ -724,7 +761,7 @@ const AltosDoBorgo = () => {
 					<ModalBody padding={0} overflow="hidden">
 						<Box display="flex" flexDirection={{ sm: "column", lg: "row" }}>
 							<Box w={{ sm: "100%", lg: "50%" }} h={{ sm: "300px", lg: "720px" }} className="bg-modal-altos">
-								<Box h="100%" display="flex" justifyContent="center" alignItems="end" paddingInline={{md: "60px"}}>
+								<Box h="100%" display="flex" justifyContent="center" alignItems="end" paddingInline={{ md: "60px" }}>
 									<Image flex="none" src="/images/altos/contactModal.png" />
 								</Box>
 							</Box>

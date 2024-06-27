@@ -489,4 +489,110 @@
 			}
         }
     }
+
+	.andamento-das-obras {
+		margin-top: 15rem;
+
+		.tablist-altos {
+			border: #21212116!important;
+		}
+
+		.tab-altos {
+			color: #21212150;
+			padding-inline-start: 0;
+			font-weight: 500;
+			border-color: #ffffff16!important;
+			padding-bottom: 1.5rem;
+
+			&[aria-selected="true"] {
+				color: #212121;
+				font-weight: bold;
+				border-color: #ffffff15!important;
+			}
+		}
+
+		.tabpanels-altos {
+			border-color: #2121212f!important;
+			border-top: 1px solid;
+			box-shadow: none;
+			outline: none;
+		}
+
+		.tab-panel-fotos {
+			padding: 0;
+			margin-top: 3rem;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 1rem;
+
+			.imagem-container {
+				object-fit: cover;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			@media screen and (max-width: 1024px) {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				
+			}
+		}
+
+		.tab-panel-videos {
+			padding: 0;
+			margin-top: 3rem;
+			display: grid;
+			grid-template-columns: repeat(9, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 1rem;
+
+			.video-1 {
+				grid-column: 1/7;
+
+				@media screen and (max-width: 1024px) {
+					grid-column: auto;	
+				}
+
+				iframe {
+					@media screen and (max-width: 600px) {
+						height: 280px;
+					}
+				}
+			}
+
+			.video-2 {
+				grid-column: 7/10;
+
+				@media screen and (max-width: 1024px) {
+					grid-column: auto;	
+				}
+			}
+
+			iframe {
+				width: 100%;
+				height: 740px;
+
+				@media screen and (max-width: 1480px) {
+					height: 500px;
+				}
+			}
+
+			@media screen and (max-width: 1024px) {
+				grid-template-columns: 1fr;
+				grid-template-rows: repeat(1, 1fr);
+			}
+		}
+
+		@media screen and (max-width: 1280px) {
+			padding-inline: 60px;
+		}
+
+		@media screen and (max-width: 600px) {
+			padding-inline: 20px;
+		}
+	}
 }
+
