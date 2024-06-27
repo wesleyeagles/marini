@@ -1,6 +1,5 @@
 import { useCallback, useState } from 'react'
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
-import { FiZoomIn } from "react-icons/fi";
 import 'react-medium-image-zoom/dist/styles.css'
 
 interface IImageMagnifierProps {
@@ -16,13 +15,18 @@ const ImageMagnifier = ({ largeImageUrl, smallImageUrl }: IImageMagnifierProps) 
     }, [])
 
     return (
-        <ControlledZoom canSwipeToUnzoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
+        <ControlledZoom
+            canSwipeToUnzoom
+            isZoomed={isZoomed}
+            onZoomChange={handleZoomChange}
+            zoomImg={{ src: largeImageUrl }}
+        >
             <img
                 style={{
                     width: '100%',
                 }}
                 alt=""
-                src={isZoomed ? largeImageUrl : smallImageUrl}
+                src={smallImageUrl}
             />
         </ControlledZoom>
     )
