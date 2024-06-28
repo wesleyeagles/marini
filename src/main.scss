@@ -29,18 +29,18 @@ body {
 }
 
 .input-style {
-	font-size: 0.938rem!important;
-    color: #000;
+	font-size: 0.938rem !important;
+	color: #000;
 	width: 100%;
 	border-radius: 5px;
 	border: 1px solid rgba(0, 0, 0, 0.20);
 	padding: 15px;
-    height: 52px!important;
-    
+	height: 52px !important;
 
-    &::placeholder {
-        color: #ABABAB;
-    }
+
+	&::placeholder {
+		color: #ABABAB;
+	}
 }
 
 .empreendimentos__img {
@@ -48,35 +48,35 @@ body {
 }
 
 .textarea-style {
-	font-size: 0.938rem!important;
-    color: #000;
+	font-size: 0.938rem !important;
+	color: #000;
 	width: 100%;
 	border-radius: 5px;
 	border: 1px solid rgba(0, 0, 0, 0.20);
 	padding: 15px;
-    height: 108px!important;
-    
+	height: 108px !important;
 
-    &::placeholder {
-        color: #ABABAB;
-    }
+
+	&::placeholder {
+		color: #ABABAB;
+	}
 }
 
 .btn-altos-banner {
-	background: #ba381f!important;
-	color: #fff!important;
-	text-align: center!important;
-	font-family: Raleway!important;
-	font-style: normal!important;
-	font-weight: 700!important;
-    text-transform: uppercase!important;
-	font-size: 15px!important;
-    border-radius: 0!important;
-    padding: 32px!important;
+	background: #ba381f !important;
+	color: #fff !important;
+	text-align: center !important;
+	font-family: Raleway !important;
+	font-style: normal !important;
+	font-weight: 700 !important;
+	text-transform: uppercase !important;
+	font-size: 15px !important;
+	border-radius: 0 !important;
+	padding: 32px !important;
 
-    &:hover {
-        background: #ca4b32!important;
-    }
+	&:hover {
+		background: #ca4b32 !important;
+	}
 }
 
 .bg-terrace {
@@ -149,8 +149,203 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
 	html,
 	body {
 		font-size: 85%;
+	}
+}
+
+.andamento-das-obras-terrace {
+	margin-top: 15rem;
+
+	.tablist-altos {
+		border: #21212116 !important;
+	}
+
+	.tab-altos {
+		color: #21212150;
+		padding-inline-start: 0;
+		font-weight: 500;
+		border-color: #ffffff16 !important;
+		padding-bottom: 1.5rem;
+
+		&[aria-selected="true"] {
+			color: #212121;
+			font-weight: bold;
+			border-color: #ffffff15 !important;
+		}
+	}
+
+	.tabpanels-altos {
+		border-color: #2121212f !important;
+		border-top: 1px solid;
+		box-shadow: none;
+		outline: none;
+	}
+
+	.tab-panel-fotos {
+		padding: 0;
+		margin-top: 3rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 1rem;
+
+		.imagem-container {
+			object-fit: cover;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+
+		}
+	}
+
+	.tab-panel-videos {
+		padding: 0;
+		margin-top: 3rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 1rem;
+
+		.video-1 {
+
+			@media screen and (max-width: 1024px) {
+				grid-column: auto;
+			}
+		}
+
+		.video-2 {
+
+			@media screen and (max-width: 1024px) {
+				grid-column: auto;
+			}
+		}
+
+		iframe {
+			width: 100%;
+			height: 740px;
+
+			@media screen and (max-width: 1480px) {
+				height: 500px;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(1, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		padding-inline: 60px;
+	}
+
+	@media screen and (max-width: 600px) {
+		padding-inline: 20px;
+	}
+}
+
+.andamento-das-obras-san-paulo {
+	margin-top: 15rem;
+
+	.tablist-altos {
+		border: #21212116 !important;
+	}
+
+	.tab-altos {
+		color: #21212150;
+		padding-inline-start: 0;
+		font-weight: 500;
+		border-color: #ffffff16 !important;
+		padding-bottom: 1.5rem;
+
+		&[aria-selected="true"] {
+			color: #212121;
+			font-weight: bold;
+			border-color: #ffffff15 !important;
+		}
+	}
+
+	.tabpanels-altos {
+		border-color: #2121212f !important;
+		border-top: 1px solid;
+		box-shadow: none;
+		outline: none;
+	}
+
+	.tab-panel-fotos {
+		padding: 0;
+		margin-top: 3rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 1rem;
+
+		.imagem-container {
+			object-fit: cover;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+
+		}
+	}
+
+	.tab-panel-videos {
+		padding: 0;
+		margin-top: 3rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 1rem;
+
+		.video-1 {
+
+			@media screen and (max-width: 1024px) {
+				grid-column: auto;
+			}
+		}
+
+		.video-2 {
+
+			@media screen and (max-width: 1024px) {
+				grid-column: auto;
+			}
+		}
+
+		iframe {
+			width: 100%;
+			height: 330px;
+
+			@media screen and (max-width: 600px) {
+				height: 250px;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(1, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		padding-inline: 60px;
+	}
+
+	@media screen and (max-width: 600px) {
+		padding-inline: 20px;
 	}
 }

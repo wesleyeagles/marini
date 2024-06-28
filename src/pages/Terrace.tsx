@@ -1,4 +1,4 @@
-import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Heading, HStack, Image, Link, Menu, MenuButton, MenuItem, MenuList, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Stack, Text, useDisclosure, VStack } from "@chakra-ui/react"
+import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Heading, HStack, Image, Link, Menu, MenuButton, MenuItem, MenuList, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Stack, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure, VStack } from "@chakra-ui/react"
 import { HashLink } from "react-router-hash-link"
 import { NavLink, StyledH2, StyledP, StyledSmall, StyledStrong } from "../styledcomponents/Typograph"
 import { FormModal } from "../components/FormModal"
@@ -28,6 +28,7 @@ import WhatsIcon from '../svgs/whatsicon'
 import PinIcon from '../svgs/pinicon'
 import ClockIcon from '../svgs/clockicon'
 import { useEffect, useRef, useState } from "react"
+import ImageMagnifier from "../components/ImageMagnifier"
 
 
 export const Terrace = () => {
@@ -1043,6 +1044,46 @@ export const Terrace = () => {
                             </Box>
                         </Box>
                     </Box>
+
+                    <div className="andamento-das-obras-terrace">
+					<Box>
+						<Text fontFamily="Nevrada" fontWeight='400' fontSize={{ sm: "2.5rem", md: "2.5rem" }} as="h2" color='#860A10'>
+							Andamento das obras
+						</Text>
+
+						<Box marginTop={16}>
+							<Tabs>
+								<TabList className="tablist-altos">
+									<Tab className="tab-altos">Fotos</Tab>
+									<Tab className="tab-altos">Vídeos</Tab>
+								</TabList>
+
+								<TabPanels className="tabpanels-altos">
+									<TabPanel className="tab-panel-fotos">
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-1.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-1.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-2.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-2.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-3.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-3.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-4.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-4.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-5.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-5.png" />
+										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-6.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-6.png" />
+									</TabPanel>
+
+									<TabPanel className="tab-panel-videos">
+										<div className="video-1">
+											<iframe src="https://www.youtube.com/embed/EBLQNMcsHwQ?si=8uTUKxtLsKOEcS_z" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
+										<div className="video-2">
+											<iframe src="https://youtube.com/embed/1B5AM1laJ5g?si=XBHVCD4Bdam_Fw4W" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
+                                        <div className="video-3">
+											<iframe src="https://youtube.com/embed/9RAciASafmU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
+									</TabPanel>
+								</TabPanels>
+							</Tabs>
+						</Box>
+					</Box>
+				</div>
 
                     <Box marginTop={{ sm: '80px', lg: '200px' }} w='100%' h='400px' borderRadius='5px' bg='#860A10' display='flex' justifyContent='space-between'>
                         <Box display='flex' w={{ lg: '55%' }} flexDirection='column' justifyContent='center' paddingLeft={{ sm: '12px', lg: '68px' }} paddingRight={{ sm: '12px', lg: '0px' }}>
