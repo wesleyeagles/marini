@@ -26,6 +26,8 @@
             display: none;
         }
     }
+
+    
 }
 
 .mobile-nav {
@@ -44,3 +46,21 @@
         }
     }
 }
+
+.rotate-animate {
+    display: flex;
+    margin-right: 4px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: spin 2s infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
