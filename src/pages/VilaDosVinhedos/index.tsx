@@ -12,7 +12,7 @@ export default function VilaDosVinhedos() {
 
     useEffect(() => {
         setTimeout(() => {
-            setIsLoading(true);
+            setIsLoading(false);
         }, 2000)
 
         return () => {
