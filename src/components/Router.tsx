@@ -5,6 +5,7 @@ import { EmpreendimentosResidenciais } from "../pages/EmpreendimentosResidenciai
 import { Home } from "../pages/Home";
 import { Terrace } from "../pages/Terrace";
 import AltosDoBorgo from "../pages/AltosDoBorgo/Styles/AltosDoBorgo";
+import VilaDosVinhedos from "../pages/VilaDosVinhedos";
 
 export function Router() {
     return (
@@ -15,6 +16,7 @@ export function Router() {
             <Route path='/empreendimentos-entregues' element={<EmpreendimentosResidenciais/>}/>
             <Route path='/terrace' element={<Terrace/>}/>
             <Route path='/altos-do-borgo' element={<AltosDoBorgo/>}/>
+            <Route path='/vale-dos-vinhedos' element={<VilaDosVinhedos/>}/>
         </Routes>
         </AnimatePresence>
     )
