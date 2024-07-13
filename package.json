@@ -16,6 +16,7 @@
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "@fontsource/poppins": "4.5.9",
+    "@lordicon/react": "^1.6.0",
     "@types/react-helmet": "6.1.5",
     "@types/react-router-hash-link": "2.4.5",
     "@types/styled-components": "5.1.26",
