@@ -589,7 +589,7 @@ const AltosDoBorgo = () => {
 					</Box>
 				</div>
 				<Box maxWidth={{ xl: '88%', '2xl': '91%' }} marginInline={{ xl: "auto" }} marginTop={'5rem'}>
-					<div className="bg-[url('./images/textura-alto-dos-borgos.png')] p-12 py-20">
+					<div className="bg-progress p-12 py-20">
 						<div className="flex items-center gap-7">
 							<Text fontFamily="Anisver" textTransform='uppercase' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
 							<div className="bg-[#BA381F] w-[3px] h-[20px] hidden md:block" />
