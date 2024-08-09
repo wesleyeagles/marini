@@ -1103,7 +1103,7 @@ export const Terrace = () => {
 							<ProgressBar value="2.9" label="Instalação hidráulica" />
 							<ProgressBar value="1.29" label="Instalação elétrica" />
 							<ProgressBar value="1.54" label="Revestimentos internos" />
-							<ProgressBar value="0" label="Revestimento externos" />
+							<ProgressBar value="0" label="Revestimentos externos" />
 							<ProgressBar value="0" label="Pisos azulejos" />
 							<ProgressBar value="0" label="Pinturas" />
 							<ProgressBar value="0" label="Paisagismo" />
