@@ -1096,7 +1096,7 @@ export const Terrace = () => {
 						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-10 mt-16 terrace-progress">
 							<ProgressBar value="100" label="Cronograma geral" />
 							<ProgressBar value="100" label="Projetos" />
-							<ProgressBar value="100" label="Preparo terreno" />
+							<ProgressBar value="100" label="Preparação terreno" />
 							<ProgressBar value="100" label="Fundações" />
 							<ProgressBar value="53.43" label="Estruturas concreto" />
 							<ProgressBar value="17.27" label="Alvenarias" />
@@ -1104,7 +1104,7 @@ export const Terrace = () => {
 							<ProgressBar value="1.29" label="Instalação elétrica" />
 							<ProgressBar value="1.54" label="Revestimentos internos" />
 							<ProgressBar value="0" label="Revestimentos externos" />
-							<ProgressBar value="0" label="Pisos azulejos" />
+							<ProgressBar value="0" label="Pisos e azulejos" />
 							<ProgressBar value="0" label="Pinturas" />
 							<ProgressBar value="0" label="Paisagismo" />
 						</div>

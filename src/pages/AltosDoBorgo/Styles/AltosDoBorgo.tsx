@@ -599,7 +599,7 @@ const AltosDoBorgo = () => {
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 gap-y-10 mt-16">
 							<ProgressBar value="100" label="Cronograma geral" />
 							<ProgressBar value="100" label="Projetos" />
-							<ProgressBar value="100" label="Preparo terreno" />
+							<ProgressBar value="100" label="Preparação terreno" />
 							<ProgressBar value="100" label="Fundações" />
 							<ProgressBar value="74.15" label="Estruturas concreto" />
 							<ProgressBar value="19.67" label="Alvenarias" />
@@ -607,7 +607,7 @@ const AltosDoBorgo = () => {
 							<ProgressBar value="18.55" label="Instalação elétrica" />
 							<ProgressBar value="5.10" label="Revestimentos internos" />
 							<ProgressBar value="0" label="Revestimentos externos" />
-							<ProgressBar value="0" label="Pisos azulejos" />
+							<ProgressBar value="0" label="Pisos e azulejos" />
 							<ProgressBar value="0" label="Pinturas" />
 							<ProgressBar value="0" label="Paisagismo" />
 						</div>
