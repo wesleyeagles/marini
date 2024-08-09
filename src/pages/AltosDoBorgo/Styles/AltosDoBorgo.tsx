@@ -41,6 +41,7 @@ import PinIcon from "../../../svgs/pinicon";
 import ClockIcon from "../../../svgs/clockicon";
 import { FormModal } from "../../../components/FormModal";
 import ImageMagnifier from "../../../components/ImageMagnifier";
+import ProgressBar from "../ProgressBar";
 
 const AltosDoBorgo = () => {
 	const scrollToTop = () => {
@@ -587,6 +588,31 @@ const AltosDoBorgo = () => {
 						</Box>
 					</Box>
 				</div>
+				<Box maxWidth={{ xl: '88%', '2xl': '91%' }} marginInline={{ xl: "auto" }} marginTop={'5rem'}>
+					<div className="bg-[url('./images/textura-alto-dos-borgos.png')] p-12 py-20">
+						<div className="flex items-center gap-7">
+							<Text fontFamily="Anisver" textTransform='uppercase' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
+							<div className="bg-[#BA381F] w-[3px] h-[20px] hidden md:block" />
+							<Image className="hidden md:block" w={{ sm: "150px", md: "150px" }} src="./images/altos/logo.png" alt="logo" />
+						</div>
+
+						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 gap-y-10 mt-16">
+							<ProgressBar value="100" label="Cronograma geral" />
+							<ProgressBar value="100" label="Projetos" />
+							<ProgressBar value="100" label="Preparo terreno" />
+							<ProgressBar value="100" label="Fundações" />
+							<ProgressBar value="74.15" label="Estruturas concreto" />
+							<ProgressBar value="19.67" label="Alvenarias" />
+							<ProgressBar value="4.94" label="Instalação hidráulica" />
+							<ProgressBar value="18.55" label="Instalação elétrica" />
+							<ProgressBar value="5.10" label="Revestimentos internos" />
+							<ProgressBar value="0" label="Revestimento externos" />
+							<ProgressBar value="0" label="Pisos azulejos" />
+							<ProgressBar value="0" label="Pinturas" />
+							<ProgressBar value="0" label="Paisagismo" />
+						</div>
+					</div>
+				</Box>
 				<Box marginTop="190px" className="section-five" id="localization" scrollMarginTop="40px">
 					<Waypoint onEnter={() => setInView(true)}>
 						<Box display="flex" justifyContent="center">

@@ -29,6 +29,7 @@ import PinIcon from '../svgs/pinicon'
 import ClockIcon from '../svgs/clockicon'
 import { useEffect, useRef, useState } from "react"
 import ImageMagnifier from "../components/ImageMagnifier"
+import ProgressBar from "./ProgressBarTerrace"
 
 
 export const Terrace = () => {
@@ -1084,6 +1085,30 @@ export const Terrace = () => {
 						</Box>
 					</Box>
 				</div>
+
+                <Box maxW={{ sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl': '1247px' }} m='0 auto'>
+                    <div className="flex items-center gap-7 mt-20">
+							<Text fontFamily="Nevrada" color='#860A10' fontWeight='500' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
+							<div className="bg-[#BA381F] w-[3px] h-[25px] hidden md:block" />
+							<Image className="hidden md:block" w={{ sm: "150px", md: "180px" }} src="./images/terrace-progress.png" alt="logo" />
+						</div>
+
+						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-10 mt-16 terrace-progress">
+							<ProgressBar value="100" label="Cronograma geral" />
+							<ProgressBar value="100" label="Projetos" />
+							<ProgressBar value="100" label="Preparo terreno" />
+							<ProgressBar value="100" label="Fundações" />
+							<ProgressBar value="53.43" label="Estruturas concreto" />
+							<ProgressBar value="17.27" label="Alvenarias" />
+							<ProgressBar value="2.9" label="Instalação hidráulica" />
+							<ProgressBar value="1.29" label="Instalação elétrica" />
+							<ProgressBar value="1.54" label="Revestimentos internos" />
+							<ProgressBar value="0" label="Revestimento externos" />
+							<ProgressBar value="0" label="Pisos azulejos" />
+							<ProgressBar value="0" label="Pinturas" />
+							<ProgressBar value="0" label="Paisagismo" />
+						</div>
+                </Box>
 
                     <Box marginTop={{ sm: '80px', lg: '200px' }} w='100%' h='400px' borderRadius='5px' bg='#860A10' display='flex' justifyContent='space-between'>
                         <Box display='flex' w={{ lg: '55%' }} flexDirection='column' justifyContent='center' paddingLeft={{ sm: '12px', lg: '68px' }} paddingRight={{ sm: '12px', lg: '0px' }}>
