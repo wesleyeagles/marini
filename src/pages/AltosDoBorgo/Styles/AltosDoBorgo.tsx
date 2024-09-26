@@ -601,11 +601,11 @@ const AltosDoBorgo = () => {
 							<ProgressBar value="100" label="Projetos" />
 							<ProgressBar value="100" label="Preparação terreno" />
 							<ProgressBar value="100" label="Fundações" />
-							<ProgressBar value="74.15" label="Estruturas concreto" />
-							<ProgressBar value="19.67" label="Alvenarias" />
-							<ProgressBar value="4.94" label="Instalação hidráulica" />
-							<ProgressBar value="18.55" label="Instalação elétrica" />
-							<ProgressBar value="5.10" label="Revestimentos internos" />
+							<ProgressBar value="84.91" label="Estruturas concreto" />
+							<ProgressBar value="27.53" label="Alvenarias" />
+							<ProgressBar value="12.35" label="Instalação hidráulica" />
+							<ProgressBar value="22.74" label="Instalação elétrica" />
+							<ProgressBar value="12.12" label="Revestimentos internos" />
 							<ProgressBar value="0" label="Revestimentos externos" />
 							<ProgressBar value="0" label="Pisos e azulejos" />
 							<ProgressBar value="0" label="Pinturas" />
