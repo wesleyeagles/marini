@@ -96,11 +96,11 @@ export function Navbar() {
 															<NavLink>Terrace</NavLink>
 														</MenuItem>
 													</Link>
-													<Link to="/san-paulo">
+													{/* <Link to="/san-paulo">
 														<MenuItem>
 															<NavLink>San Paulo</NavLink>
 														</MenuItem>
-													</Link>
+													</Link> */}
 													<Link to="/altos-do-borgo">
 														<MenuItem>
 															<NavLink>Altos do Borgo</NavLink>
@@ -166,13 +166,13 @@ export function Navbar() {
 												}}>Terrace</span>
 											</Link>
 										</MenuItemOption>
-										<MenuItemOption value='san paulo'>
+										{/* <MenuItemOption value='san paulo'>
 											<Link to="/san-paulo">
 												<span style={{
 													fontSize: '14px',
 												}}>San Paulo</span>
 											</Link>
-										</MenuItemOption>
+										</MenuItemOption> */}
 										<MenuItemOption value='altos'>
 											<Link to="/altos-do-borgo">
 												<span style={{
