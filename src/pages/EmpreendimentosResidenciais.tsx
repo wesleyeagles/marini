@@ -182,7 +182,7 @@ export const EmpreendimentosResidenciais = () => {
                             13400m²
                     </Text>
                     </Box>
-                    <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
+                    <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between' gap={{sm: '0px', lg: '20px', xl: '20px'}}>
                         <Box marginRight={{sm: '40px', md: '0px'}}>
                             <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
                                 <ListItem>
