@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Box, Container, ListItem, Text, UnorderedList } from "@chakra-ui/react"
+import { Box, Button, Container, ListItem, Text, UnorderedList } from "@chakra-ui/react"
 import { BannerResidenciais } from "../components/BannerResidenciais"
 import { Footer } from "../components/Footer"
 import { StyledEmpreendimentosResidencias } from "../styledcomponents/StyledEmpreendimentosResidenciais"
@@ -20,9 +20,12 @@ import "swiper/css/thumbs";
 
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import { Navbar } from "../components/Navbar";
+import { Link } from "react-router-dom";
+import StyledButton from "../styledcomponents/Button";
 
 export const EmpreendimentosResidenciais = () => {
 
+    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
     const [thumbsSwiper2, setThumbsSwiper2] = useState<any>(null);
     const [thumbsSwiper3, setThumbsSwiper3] = useState<any>(null);
     const [thumbsSwiper4, setThumbsSwiper4] = useState<any>(null);
@@ -32,6 +35,15 @@ export const EmpreendimentosResidenciais = () => {
     const [thumbsSwiper8, setThumbsSwiper8] = useState<any>(null);
     const [thumbsSwiper9, setThumbsSwiper9] = useState<any>(null);
     const [thumbsSwiper10, setThumbsSwiper10] = useState<any>(null);
+
+    const scrollToTop = () => {
+        setTimeout(() => {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: 0
+            })  
+        }, 200) 
+    }
 
 
     return (
@@ -71,6 +83,184 @@ export const EmpreendimentosResidenciais = () => {
                 <StyledH3>
                     Confira nossos empreendimentos entregues
                 </StyledH3>
+
+                <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
+                <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
+                <Swiper
+
+                breakpoints={{
+                    768: {
+                        centerInsufficientSlides: false,
+                        centeredSlides: true
+                    }
+                }}
+                spaceBetween={10}
+                navigation={true}
+                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                modules={[FreeMode, Navigation, Thumbs]}
+                centeredSlides={true}
+                >
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/sanpaulo-image-1.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/sanpaulo-image-2.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/sanpaulo-image-3.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/sanpaulo-image-4.png" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className="andamento__slide">
+                        <img src="images/sanpaulo-image-5.png" />
+                    </SwiperSlide>
+                </Swiper>
+
+                <Box marginTop='13px'>
+                            <Swiper
+                            slidesPerView={3}
+                            breakpoints={{
+                                960: {
+                                    slidesPerView: 3
+                                },  
+                                
+                                768: {
+                                    slidesPerView: 5
+                                    
+                                } 
+                            }}
+                            onSwiper={setThumbsSwiper}
+                            spaceBetween={20}
+                            freeMode={true}
+                            watchSlidesProgress={true}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            >
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-1.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-2.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-3.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-4.png" />
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <img src="images/sanpaulo-image-thumb-5.png" />
+                                </SwiperSlide>
+                            </Swiper>
+                            </Box>
+                </Box>
+
+                <Box w={{lg: '53%', xl: '57%'}}>
+                    <Box bg='#3E5481' w='100%' paddingBlock={{sm: '14px', lg: '5px', xl: '14px'}} paddingLeft='12px' borderRadius='0px 0px 30px 0px'>
+                        <Text as='h4' fontSize={{sm: '1.5rem', lg: '1.3rem', xl: '1.5rem'}} fontWeight='400' color='#F0F0F0'>
+                            Residencial Jardim San Paulo
+                        </Text>
+                    </Box>
+                    <Box marginTop='18px' w={{md: '90%', lg: '100%'}}>
+                        <StyledP black='true'>
+                        São apartamentos que priorizam o bem estar, buscando valorização das unidades com excelentes orientações solares em perfeito contato com a natureza.                     
+                        </StyledP>
+                    </Box>
+                    <Box marginTop={{sm: '20px', lg: '20px', xl: '40px'}}>
+                    <Text>
+                        <StyledStrong display='block' margin='0px 4px 0px 0px'>
+                            Área Construída:
+                        </StyledStrong>
+                            13400m²
+                    </Text>
+                    </Box>
+                    <Box w='100%' marginTop={{sm: '20px', lg: '20px', xl: '40px'}} display='flex' justifyContent='space-between'>
+                        <Box marginRight={{sm: '40px', md: '0px'}}>
+                            <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Área Privativa:</StyledStrong>
+                                        Apartamentos de 49,92m² até 53,54m²
+                                    </Text>
+                                </ListItem>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Previlegiada:</StyledStrong>
+                                        01 ou 02 vagas
+                                    </Text>
+                                </ListItem>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Salão de Festas:</StyledStrong>
+                                        Sim
+                                    </Text>
+                                </ListItem>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Esquadrias:</StyledStrong>
+                                        Aluminio
+                                    </Text>
+                                </ListItem>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Espera Água Quente:</StyledStrong>
+                                        2
+                                    </Text>
+                                </ListItem>
+                            </UnorderedList>
+                        </Box>
+                        <Box>
+                            <UnorderedList spacing={{sm: '11px', lg: '11px', xl: '13px'}} paddingRight={{xl: '55px'}}>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Dormitórios:</StyledStrong>
+                                        02
+                                    </Text>
+                                </ListItem>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Porcelanato:</StyledStrong>
+                                        Nas áreas sociais
+                                    </Text>
+                                </ListItem>
+                                <ListItem>
+                                    <Text fontSize={{lg: '15px', xl: '17px'}}>
+                                        <StyledStrong semibold display='block' margin='0px 4px 0px 0px'>Localização Privilegiada:</StyledStrong>
+                                        Sim
+                                    </Text>
+                                </ListItem>
+                            </UnorderedList>
+                        </Box>
+                    </Box>
+                    <Box display='flex' flexDirection={{sm: 'column', md: 'row'}} justifyContent='space-between' marginTop={{sm: '25px', lg: '25px', xl: '50px'}} alignItems='center'>
+                        <Box display='flex' marginTop={{sm: '15px', md: '0px'}} flexDirection={{lg: 'column', xl: 'row'}} alignItems={{lg: 'center', xl: 'start'}}>
+                            <Box marginRight={{xl: '6px'}} marginBottom={{lg: '2px', xl: '0px'}}>
+                                <MapPin />
+                            </Box>
+                            <Text w={{sm: '240px', lg: '185px', xl: '285px'}} textAlign='center' fontWeight='400px' fontSize='14px' color='#000'>
+                            Rua Marcelino Champagnat, 540 - Bairro Borgo - Bento Gonçalves - RS
+                            </Text>
+                        </Box>
+
+                        <Link to='/san-paulo'>
+                            <StyledButton marginTop={{sm: '15px', md: '0px'}} marginRight="24px" onClick={scrollToTop}>Saber mais</StyledButton>
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+            
+
+
+
+
 
                 <Box marginTop={{sm: '45px', md: '120px'}} display='flex' justifyContent='space-between' flexDirection={{sm: 'column-reverse', lg: 'row'}}>
                 <Box w={{sm: '100%', lg: '45%', xl: '40%'}} marginTop={{sm: '32px', lg: '0px'}}>
