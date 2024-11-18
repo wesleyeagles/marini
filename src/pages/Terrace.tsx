@@ -1098,11 +1098,11 @@ export const Terrace = () => {
 							<ProgressBar value="100" label="Projetos" />
 							<ProgressBar value="100" label="Preparação terreno" />
 							<ProgressBar value="100" label="Fundações" />
-							<ProgressBar value="64.72" label="Estruturas concreto" />
-							<ProgressBar value="23.00" label="Alvenarias" />
-							<ProgressBar value="5.88" label="Instalação hidráulica" />
-							<ProgressBar value="8.69" label="Instalação elétrica" />
-							<ProgressBar value="8.00" label="Revestimentos internos" />
+							<ProgressBar value="79.26" label="Estruturas concreto" />
+							<ProgressBar value="54.56" label="Alvenarias" />
+							<ProgressBar value="9.45" label="Instalação hidráulica" />
+							<ProgressBar value="11.97" label="Instalação elétrica" />
+							<ProgressBar value="34.27" label="Revestimentos internos" />
 							<ProgressBar value="0" label="Revestimentos externos" />
 							<ProgressBar value="0" label="Pisos e azulejos" />
 							<ProgressBar value="0" label="Pinturas" />
