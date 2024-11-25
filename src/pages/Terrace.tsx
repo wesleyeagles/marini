@@ -1079,6 +1079,9 @@ export const Terrace = () => {
                                         <div className="video-3">
 											<iframe src="https://youtube.com/embed/9RAciASafmU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 										</div>
+                                        <div className="video-4">
+											<iframe src="https://youtube.com/embed/S9hYcOaMuO0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
 									</TabPanel>
 								</TabPanels>
 							</Tabs>
