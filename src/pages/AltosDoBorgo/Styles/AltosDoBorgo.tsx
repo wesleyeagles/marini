@@ -582,6 +582,9 @@ const AltosDoBorgo = () => {
 										<div className="video-2">
 											<iframe src="https://youtube.com/embed/Sa9HGpm_JfI?si=IG6XdqITVODJwnTi" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 										</div>
+										<div className="video-3">
+											<iframe src="https://youtube.com/embed/KFYtutNrSiI" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+										</div>
 									</TabPanel>
 								</TabPanels>
 							</Tabs>
