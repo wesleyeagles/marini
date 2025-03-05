@@ -6,6 +6,7 @@ import { Home } from "../pages/Home";
 import { Terrace } from "../pages/Terrace";
 import AltosDoBorgo from "../pages/AltosDoBorgo/Styles/AltosDoBorgo";
 import VilaDosVinhedos from "../pages/VilaDosVinhedos";
+import Villagio from "../pages/Villagio";
 
 export function Router() {
     return (
@@ -17,6 +18,7 @@ export function Router() {
             <Route path='/terrace' element={<Terrace/>}/>
             <Route path='/altos-do-borgo' element={<AltosDoBorgo/>}/>
             <Route path='/vale-dos-vinhedos' element={<VilaDosVinhedos/>}/>
+            <Route path='/villagio-di-borgo' element={<Villagio/>}/>
         </Routes>
         </AnimatePresence>
     )
