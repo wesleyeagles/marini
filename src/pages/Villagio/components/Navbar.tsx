@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import logo from '../images/Logo.png'
 
-const Navbar = ({ bgOpacity, sections, scrollToSection, activeSection }: { bgOpacity: number, sections: string[], scrollToSection: (id: string) => void, activeSection: string }) => {
+const Navbar = ({ bgOpacity, sections, scrollToSection, activeSection, onOpen }: { bgOpacity: number, sections: string[], scrollToSection: (id: string) => void, activeSection: string, onOpen: any}) => {
 
     return (
         <>
@@ -41,7 +41,7 @@ const Navbar = ({ bgOpacity, sections, scrollToSection, activeSection }: { bgOpa
                                     {id}
                                 </Button>
                             ))}
-                            <Button sx={{ color: '#092B20', backgroundColor: '#FFF', paddingBlock: '22px', fontWeight: 'medium', borderRadius: '100px' }}>
+                            <Button onClick={onOpen} sx={{ color: '#092B20', backgroundColor: '#FFF', paddingBlock: '22px', fontWeight: 'medium', borderRadius: '100px' }}>
                                 Contato
                             </Button>
                         </Flex>
@@ -67,7 +67,7 @@ const Navbar = ({ bgOpacity, sections, scrollToSection, activeSection }: { bgOpa
                                                 {id}
                                             </Button>
                                         ))}
-                                        <Button sx={{ color: '#FFF', backgroundColor: '#092B20', paddingBlock: '15px', fontWeight: 'medium', borderRadius: '100px', marginTop: '8px' }}>
+                                        <Button onClick={onOpen} sx={{ color: '#FFF', backgroundColor: '#092B20', paddingBlock: '15px', fontWeight: 'medium', borderRadius: '100px', marginTop: '8px' }}>
                                             Contato
                                         </Button>
                                     </Flex>
