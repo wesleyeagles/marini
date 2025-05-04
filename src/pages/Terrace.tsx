@@ -1,4 +1,4 @@
-import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Heading, HStack, Image, Link, Menu, MenuButton, MenuItem, MenuList, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Stack, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure, VStack } from "@chakra-ui/react"
+import { Box, Button, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Heading, HStack, Image, Link, Menu, MenuButton, MenuItem, MenuList, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Progress, Stack, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useDisclosure, VStack } from "@chakra-ui/react"
 import { HashLink } from "react-router-hash-link"
 import { NavLink, StyledH2, StyledP, StyledSmall, StyledStrong } from "../styledcomponents/Typograph"
 import { FormModal } from "../components/FormModal"
@@ -1047,71 +1047,79 @@ export const Terrace = () => {
                     </Box>
 
                     <div className="andamento-das-obras-terrace">
-					<Box>
-						<Text fontFamily="Nevrada" fontWeight='400' fontSize={{ sm: "2.5rem", md: "2.5rem" }} as="h2" color='#860A10'>
-							Andamento das obras
-						</Text>
+                        <Box>
+                            <Text fontFamily="Nevrada" fontWeight='400' fontSize={{ sm: "2.5rem", md: "2.5rem" }} as="h2" color='#860A10'>
+                                Andamento das obras
+                            </Text>
 
-						<Box marginTop={16}>
-							<Tabs>
-								<TabList className="tablist-altos">
-									<Tab className="tab-altos">Fotos</Tab>
-									<Tab className="tab-altos">Vídeos</Tab>
-								</TabList>
+                            <Box marginTop={16}>
+                                <Tabs>
+                                    <TabList className="tablist-altos">
+                                        <Tab className="tab-altos">Fotos</Tab>
+                                        <Tab className="tab-altos">Vídeos</Tab>
+                                    </TabList>
 
-								<TabPanels className="tabpanels-altos">
-									<TabPanel className="tab-panel-fotos">
-										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-1.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-1.png" />
-										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-2.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-2.png" />
-										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-3.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-3.png" />
-										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-4.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-4.png" />
-										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-5.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-5.png" />
-										<ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-6.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-6.png" />
-									</TabPanel>
+                                    <TabPanels className="tabpanels-altos">
+                                        <TabPanel className="tab-panel-fotos">
+                                            <ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-1.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-1.png" />
+                                            <ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-2.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-2.png" />
+                                            <ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-3.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-3.png" />
+                                            <ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-4.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-4.png" />
+                                            <ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-5.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-5.png" />
+                                            <ImageMagnifier smallImageUrl="./images/galeria-fotos/terrace/imagem-6.png" largeImageUrl="./images/galeria-fotos/terrace/imagem-large-6.png" />
+                                        </TabPanel>
 
-									<TabPanel className="tab-panel-videos">
-										<div className="video-1">
-											<iframe src="https://www.youtube.com/embed/EBLQNMcsHwQ?si=8uTUKxtLsKOEcS_z" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-										</div>
-										<div className="video-2">
-											<iframe src="https://youtube.com/embed/1B5AM1laJ5g?si=XBHVCD4Bdam_Fw4W" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-										</div>
-                                        <div className="video-3">
-											<iframe src="https://youtube.com/embed/9RAciASafmU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-										</div>
-                                        <div className="video-4">
-											<iframe src="https://youtube.com/embed/S9hYcOaMuO0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-										</div>
-									</TabPanel>
-								</TabPanels>
-							</Tabs>
-						</Box>
-					</Box>
-				</div>
+                                        <TabPanel className="tab-panel-videos">
+                                            <div className="video-1">
+                                                <iframe src="https://www.youtube.com/embed/EBLQNMcsHwQ?si=8uTUKxtLsKOEcS_z" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                            </div>
+                                            <div className="video-2">
+                                                <iframe src="https://youtube.com/embed/1B5AM1laJ5g?si=XBHVCD4Bdam_Fw4W" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                            </div>
+                                            <div className="video-3">
+                                                <iframe src="https://youtube.com/embed/9RAciASafmU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                            </div>
+                                            <div className="video-4">
+                                                <iframe src="https://youtube.com/embed/S9hYcOaMuO0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                            </div>
+                                        </TabPanel>
+                                    </TabPanels>
+                                </Tabs>
+                            </Box>
+                        </Box>
+                    </div>
 
-                <Box maxW={{ sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl': '1247px' }} m='0 auto'>
-                    <div className="flex items-center gap-7 mt-20">
-							<Text fontFamily="Nevrada" color='#860A10' fontWeight='500' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
-							<div className="bg-[#BA381F] w-[3px] h-[25px] hidden md:block" />
-							<Image className="hidden md:block" w={{ sm: "150px", md: "180px" }} src="./images/terrace-progress.png" alt="logo" />
-						</div>
+                    <Box maxW={{ sm: '93%', md: '738px', lg: '960px', xl: '1247px', '2xl': '1247px' }} m='0 auto'>
+                        <Box flexDirection={{ sm: 'column', lg: 'row', }} className="flex items-center gap-7 mt-20">
+                            <Box className="flex items-center gap-7">
+                                <Text fontFamily="Nevrada" color='#860A10' fontWeight='500' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
+                                <div className="bg-[#BA381F] w-[3px] h-[25px] hidden md:block" />
+                                <Image className="hidden md:block" w={{ sm: "150px", md: "180px" }} src="./images/terrace-progress.png" alt="logo" />
+                            </Box>
+                            <Box flexDirection={{ sm: 'column', lg: 'row', }} className="flex gap-2 items-center terrace-progress ml-10">
+                                <Text className="text-[#212121] font-medium">Geral</Text>
+                                <Text className="text-[#860A10] font-bold text-lg">46,08%</Text>
+                                <div>
+                                    <Progress sx={{ borderRadius: '12px', backgroundColor: '#DFDFDF' }} width='200px' value={Number(46.08)} />
+                                </div>
+                            </Box>
+                        </Box>
 
-						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-10 mt-16 terrace-progress">
-							<ProgressBar value="100" label="Cronograma geral" />
-							<ProgressBar value="100" label="Projetos" />
-							<ProgressBar value="100" label="Preparação terreno" />
-							<ProgressBar value="100" label="Fundações" />
-							<ProgressBar value="91.75" label="Estruturas concreto" />
-							<ProgressBar value="65.58" label="Alvenarias" />
-							<ProgressBar value="12.65" label="Instalação hidráulica" />
-							<ProgressBar value="18.76" label="Instalação elétrica" />
-							<ProgressBar value="41" label="Revestimentos internos" />
-							<ProgressBar value="0" label="Revestimentos externos" />
-							<ProgressBar value="0" label="Pisos e azulejos" />
-							<ProgressBar value="0" label="Pinturas" />
-							<ProgressBar value="0" label="Paisagismo" />
-						</div>
-                </Box>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-10 mt-16 terrace-progress">
+                            <ProgressBar value="100" label="Projetos" />
+                            <ProgressBar value="100" label="Preparação terreno" />
+                            <ProgressBar value="100" label="Fundações" />
+                            <ProgressBar value="100" label="Estruturas concreto" />
+                            <ProgressBar value="82.69" label="Alvenarias" />
+                            <ProgressBar value="41.39" label="Revestimentos internos" />
+                            <ProgressBar value="22.12" label="Instalação elétrica" />
+                            <ProgressBar value="15.56" label="Instalação hidráulica" />
+                            <ProgressBar value="0" label="Revestimentos externos" />
+                            <ProgressBar value="0" label="Pisos e azulejos" />
+                            <ProgressBar value="0" label="Pinturas" />
+                            <ProgressBar value="0" label="Paisagismo" />
+                        </div>
+                    </Box>
 
                     <Box marginTop={{ sm: '80px', lg: '200px' }} w='100%' h='400px' borderRadius='5px' bg='#860A10' display='flex' justifyContent='space-between'>
                         <Box display='flex' w={{ lg: '55%' }} flexDirection='column' justifyContent='center' paddingLeft={{ sm: '12px', lg: '68px' }} paddingRight={{ sm: '12px', lg: '0px' }}>

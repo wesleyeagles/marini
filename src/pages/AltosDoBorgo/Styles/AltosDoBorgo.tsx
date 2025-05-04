@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Tab, TabList, TabPanel, TabPanels, Tabs, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, FormControl, Image, ListItem, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Modal, ModalBody, ModalContent, ModalOverlay, Progress, Tab, TabList, TabPanel, TabPanels, Tabs, Text, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import "./AltosDoBorgo.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -593,25 +593,35 @@ const AltosDoBorgo = () => {
 				</div>
 				<Box maxWidth={{ xl: '88%', '2xl': '91%' }} marginInline={{ xl: "auto" }} marginTop={'5rem'}>
 					<div className="bg-progress p-12 py-20">
-						<div className="flex items-center gap-7">
-							<Text fontFamily="Anisver" textTransform='uppercase' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
-							<div className="bg-[#BA381F] w-[3px] h-[20px] hidden md:block" />
-							<Image className="hidden md:block" w={{ sm: "150px", md: "150px" }} src="./images/altos/logo.png" alt="logo" />
-						</div>
+						<Box flexDirection={{ sm: 'column', lg: 'row', }} className="flex items-center gap-7 mt-20">
+							<Box className="flex items-center gap-7">
+								<Text fontFamily="Anisver" textTransform='uppercase' fontSize={{ sm: "2.5rem", md: "1.8rem" }} as="h2">Cronograma</Text>
+								<div className="bg-[#BA381F] w-[3px] h-[20px] hidden md:block" />
+								<Image className="hidden md:block" w={{ sm: "150px", md: "150px" }} src="./images/altos/logo.png" alt="logo" />
+							</Box>
+
+							<Box flexDirection={{ sm: 'column', lg: 'row', }} className="flex gap-2 items-center ml-10">
+								<Text className="text-[#212121] font-medium">Geral</Text>
+								<Text className="text-[#BA3718] font-bold text-lg">46,08%</Text>
+								<div>
+									<Progress sx={{ borderRadius: '12px', backgroundColor: '#F7BF8A' }} width='200px' value={Number(56.01)} />
+								</div>
+							</Box>
+						</Box>
 
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 gap-y-10 mt-16">
-							<ProgressBar value="100" label="Cronograma geral" />
 							<ProgressBar value="100" label="Projetos" />
 							<ProgressBar value="100" label="Preparação terreno" />
 							<ProgressBar value="100" label="Fundações" />
 							<ProgressBar value="100" label="Estruturas concreto" />
-							<ProgressBar value="95" label="Paredes externas" />
-							<ProgressBar value="0" label="Paredes internas" />
-							<ProgressBar value="29.76" label="Instalação hidráulica" />
-							<ProgressBar value="28.39" label="Instalação elétrica" />
-							<ProgressBar value="56.09" label="Revestimentos internos" />
-							<ProgressBar value="0" label="Revestimentos externos" />
-							<ProgressBar value="0" label="Pisos e azulejos" />
+							<ProgressBar value="100" label="Alvenaria" />
+							<ProgressBar value="76.64" label="Revestimentos internos" />
+							<ProgressBar value="54.75" label="Instalação hidráulica" />
+							<ProgressBar value="32.12" label="Instalação elétrica" />
+							<ProgressBar value="21.60" label="Revestimentos externos" />
+							<ProgressBar value="16.85" label="Azulejos paredes" />
+							<ProgressBar value="7" label="Drywall" />
+							<ProgressBar value="0" label="Pisos" />
 							<ProgressBar value="0" label="Pinturas" />
 							<ProgressBar value="0" label="Paisagismo" />
 						</div>
