@@ -276,7 +276,7 @@ const Villagio = () => {
     return (
         <>
             <ToastContainer />
-            <Box sx={{ fontFamily: "Lexend Giga" }}>
+            <Box sx={{ fontFamily: "Lexend", fontWeight: '800' }}>
                 <Box as="header">
                     <Navbar bgOpacity={bgOpacity} sections={sections} scrollToSection={scrollToSection} activeSection={activeSection} onOpen={onOpen} />
                     <Box bgImage={banner} bgPosition='center' bgRepeat='no-repeat' bgSize='cover' sx={{ paddingBlock: '60px' }}>
@@ -299,7 +299,7 @@ const Villagio = () => {
                                                     <Box sx={{ marginTop: '2px' }}><FaMapMarkerAlt color="#FFF" /></Box>
                                                     <Text sx={{ color: '#FFF', fontWeight: 'light', fontSize: '12px' }}>
                                                         R. São Paulo, 685 Bairro Borgo
-                                                        <br />
+                                                        |
                                                         Bento Gonçalves/RS
                                                     </Text>
                                                 </Flex>
@@ -317,7 +317,7 @@ const Villagio = () => {
                                 <GridItem display={{ base: 'none', lg: 'block' }} colSpan={6} sx={{ marginLeft: 'auto' }}>
                                     <Image src={fachadalateral} alt="Fachada lateral" />
                                     <Flex sx={{ justifyContent: 'flex-end', marginTop: '10px' }}>
-                                        <Text as='span' sx={{ color: '#FFF', fontSize: '14px' }}>• Fachada Lateral</Text>
+                                        <Text as='span' sx={{ color: '#FFF', fontSize: '14px' }}>• Fachada Frontal</Text>
                                     </Flex>
                                 </GridItem>
                             </Grid>
@@ -359,7 +359,7 @@ const Villagio = () => {
                                 </Flex>
                                 <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(2, 1fr)' }} sx={{ marginTop: '20px', gap: '32px' }}>
                                     <GridItem>
-                                        <DestaqueIcon icon={<FaBed />} text="Apartamentos com dois dormitórios" />
+                                        <DestaqueIcon icon={<FaBed />} text="Apartamentos com dois dormitórios (com ou sem suíte) e um dormitório" />
                                     </GridItem>
                                     <GridItem>
                                         <DestaqueIcon icon={<TbDisabled />} text="Acessibilidade: apartamentos adaptados para PNE" />
@@ -430,7 +430,7 @@ const Villagio = () => {
                                     </Text>
                                 </Flex>
                                 <Heading sx={{ fontSize: '24px', color: '#131812', fontWeight: 'medium', textTransform: 'uppercase', letterSpacing: '4px' }}>Conhecendo os Ambientes</Heading>
-                                <Text sx={{ color: '#13181295', fontWeight: 'light', marginTop: '32px' }}>No Villaggio Di Borgo, conforto e elegância se encontram em ambientes integrados e bem planejados. O design contemporâneo e os acabamentos de alto padrão criam um lar que proporciona praticidade e aconchego para o dia a dia.</Text>
+                                <Text sx={{ color: '#13181295', fontWeight: 'light', marginTop: '32px' }}>No Villaggio di Borgo, conforto e elegância se encontram em espaços integrados e cuidadosamente planejados, com um design contemporâneo que atende às necessidades do dia a dia.</Text>
                             </Box>
                         </Flex>
 
@@ -509,8 +509,8 @@ const Villagio = () => {
                                 <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }} sx={{ marginTop: '20px', gap: '32px' }}>
                                     <GridItem>
                                         <Box height={{ base: '265px' }} paddingInline={{ base: '35px' }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#092B20', borderRadius: '5px' }}>
-                                            <Box sx={{ backgroundColor: '#FFFFFF80', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
-                                                <FaCarSide color="#092B20" size='32px' />
+                                            <Box sx={{ border: 'solid 1px #FFFFFF32', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
+                                                <FaCarSide color="#FFF" size='32px' />
                                             </Box>
                                             <Text as='span' sx={{ display: 'block', color: '#FFF', fontWeight: 'bold', fontSize: '18px', marginTop: '20px', marginBottom: '12px' }}>Vagas Cobertas</Text>
                                             <Text as='p' sx={{ color: '#FFFFFF70', fontWeight: 'light', fontSize: '12px' }}>Proteção e comodidade para seu veículo</Text>
@@ -518,8 +518,8 @@ const Villagio = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Box height={{ base: '265px' }} paddingInline={{ base: '35px' }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#092B20', borderRadius: '5px' }}>
-                                            <Box sx={{ backgroundColor: '#FFFFFF80', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
-                                                <MdOutlineWbSunny color="#092B20" size='32px' />
+                                            <Box sx={{ border: 'solid 1px #FFFFFF32', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
+                                                <MdOutlineWbSunny color="#FFF" size='32px' />
                                             </Box>
                                             <Text as='span' sx={{ display: 'block', color: '#FFF', fontWeight: 'bold', fontSize: '18px', marginTop: '20px', marginBottom: '12px' }}>Sacadas Abertas</Text>
                                             <Text as='p' sx={{ color: '#FFFFFF70', fontWeight: 'light', fontSize: '12px' }}>Amplitude e liberdade ao ar livre</Text>
@@ -527,8 +527,8 @@ const Villagio = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Box height={{ base: '265px' }} paddingInline={{ base: '35px' }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#092B20', borderRadius: '5px' }}>
-                                            <Box sx={{ backgroundColor: '#FFFFFF80', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
-                                                <FaRegBuilding color="#092B20" size='32px' />
+                                            <Box sx={{ border: 'solid 1px #FFFFFF32', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
+                                                <FaRegBuilding color="#FFF" size='32px' />
                                             </Box>
                                             <Text as='span' sx={{ display: 'block', color: '#FFF', fontWeight: 'bold', fontSize: '18px', marginTop: '20px', marginBottom: '12px' }}>Rooftop</Text>
                                             <Text as='p' sx={{ color: '#FFFFFF70', fontWeight: 'light', fontSize: '12px' }}>Vista no alto para lazer e momentos únicos</Text>
@@ -536,8 +536,8 @@ const Villagio = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Box height={{ base: '265px' }} paddingInline={{ base: '35px' }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#092B20', borderRadius: '5px' }}>
-                                            <Box sx={{ backgroundColor: '#FFFFFF80', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
-                                                <TbGlassChampagne color="#092B20" size='32px' />
+                                            <Box sx={{ border: 'solid 1px #FFFFFF32', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
+                                                <TbGlassChampagne color="#FFF" size='32px' />
                                             </Box>
                                             <Text as='span' sx={{ display: 'block', color: '#FFF', fontWeight: 'bold', fontSize: '18px', marginTop: '20px', marginBottom: '12px' }}>Salão de Festas</Text>
                                             <Text as='p' sx={{ color: '#FFFFFF70', fontWeight: 'light', fontSize: '12px' }}>Espaço ideal para suas celebrações</Text>
@@ -545,8 +545,8 @@ const Villagio = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Box height={{ base: '265px' }} paddingInline={{ base: '35px' }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#092B20', borderRadius: '5px' }}>
-                                            <Box sx={{ backgroundColor: '#FFFFFF80', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
-                                                <FaWind color="#092B20" size='32px' />
+                                            <Box sx={{ border: 'solid 1px #FFFFFF32', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
+                                                <FaWind color="#FFF" size='32px' />
                                             </Box>
                                             <Text as='span' sx={{ display: 'block', color: '#FFF', fontWeight: 'bold', fontSize: '18px', marginTop: '20px', marginBottom: '12px' }}>Água quente e Split </Text>
                                             <Text as='p' sx={{ color: '#FFFFFF70', fontWeight: 'light', fontSize: '12px' }}>Espera de água quente e Split: consulte as opções</Text>
@@ -554,8 +554,8 @@ const Villagio = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Box height={{ base: '265px' }} paddingInline={{ base: '35px' }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#092B20', borderRadius: '5px' }}>
-                                            <Box sx={{ backgroundColor: '#FFFFFF80', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
-                                                <GiHamburgerMenu color="#092B20" size='32px' />
+                                            <Box sx={{ border: 'solid 1px #FFFFFF32', padding: '16px', maxWidth: 'max-content', borderRadius: '100px' }}>
+                                                <GiHamburgerMenu color="#FFF" size='32px' />
                                             </Box>
                                             <Text as='span' sx={{ display: 'block', color: '#FFF', fontWeight: 'bold', fontSize: '18px', marginTop: '20px', marginBottom: '12px' }}>Persianas</Text>
                                             <Text as='p' sx={{ color: '#FFFFFF70', fontWeight: 'light', fontSize: '12px' }}>Esquadrias em alumínio com persianas nos dormitórios</Text>
@@ -722,7 +722,7 @@ const Villagio = () => {
                         <Flex flexDirection={{ base: 'column', lg: 'row' }} sx={{ justifyContent: 'center', alignItems: 'center' }} gap={{ base: '80px' }}>
                             <Image src={logogrande} alt='Logo Villagio' />
                             <Image src={logomarini} alt='Logo Marini' />
-                            <Image src={logocaixa} alt='Logo Caixa' />
+                            <Image width={{ lg: '10%' }} src={logocaixa} alt='Logo Caixa' />
                         </Flex>
                     </Container>
                 </Box>
@@ -793,7 +793,7 @@ const Villagio = () => {
                                             </defs>
                                         </svg>
                                     </Box>
-                                    <Text sx={{ color: '#FFF', marginLeft: '12px', fontWeight: 'light' }}>R. Fernandes Viêira, 146 - Sala 03 - Cidade Alta, Bento Gonçalves - RS, 95700-372</Text>
+                                    <Text sx={{ color: '#FFF', marginLeft: '12px', fontWeight: 'light' }}>R. São Paulo, 685 Bairro Borgo Bento Gonçalves/RS</Text>
                                 </Flex>
                             </Box>
 
@@ -808,6 +808,7 @@ const Villagio = () => {
 
                         <Flex flexDirection={{ base: 'column', lg: 'row' }} gap={{ base: '40px', lg: '0' }} sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
                             <Text sx={{ color: '#FFF', fontWeight: 'light' }}>©2025 Marini. Todos os direitos reservados</Text>
+                            <Text sx={{ color: '#FFF', fontWeight: 'light' }}>Número de incorporação: R2-106.865</Text>
                             <Flex sx={{ alignItems: 'center', gap: '12px' }}>
                                 <Text sx={{ color: '#FFF', fontWeight: 'light' }}>Site desenvolvido por:</Text>
                                 <a href="https://www.eaglesx.com/" target="_blank">
@@ -877,8 +878,8 @@ const Villagio = () => {
 const DestaqueIcon = ({ icon, text }: { icon: ReactNode, text: string }) => {
     return (
         <Flex sx={{ alignItems: 'center', gap: '12px' }}>
-            <Box sx={{ backgroundColor: '#131812', padding: '12px', borderRadius: '100px', color: '#FFF', fontSize: '22px' }}>{icon}</Box>
-            <Text sx={{ fontSize: '18px' }}>{text}</Text>
+            <Box sx={{ backgroundColor: '#523018', padding: '12px', borderRadius: '100px', color: '#FFF', fontSize: '22px' }}>{icon}</Box>
+            <Text sx={{ fontSize: '18px', fontWeight: '300' }}>{text}</Text>
         </Flex>
     )
 }
