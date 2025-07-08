@@ -10,6 +10,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import predio from '../pages/Villagio/images/predio-1.png'
+import background from '../pages/Villagio/images/Background.png'
 import logoVillagio from '../pages/Villagio/images/logo-villagio-banner.png'
 
 // Import Swiper styles
@@ -56,7 +57,8 @@ export function Header() {
 
 
 				<SwiperSlide>
-					<Box bgImage="url(../src/pages/Villagio/images/Background.png)" bgRepeat='no-repeat' bgSize='cover' className="text-white flex" position="relative" h={{ sm: "420px", md: "577px", lg: "577px", "2xl": "800px" }}>
+					<Box bgRepeat='no-repeat' bgSize='cover' className="text-white flex" position="relative" h={{ sm: "420px", md: "577px", lg: "577px", "2xl": "800px" }}>
+						<Image src={background} width={'100%'} height={'100%'} position='absolute' zIndex={-1} />
 						<Container maxW={{ sm: "93%", md: "738px", lg: "960px", xl: "1247px", "2xl": "1247px" }} margin='auto'>
 							<Text sx={{ fontFamily: "Lexend", fontWeight: 'medium' }} width={'max-content'} marginBottom='40px' fontSize="sm" className="uppercase tracking-wide text-white font-semibold bg-[#FFFFFF32] p-2 rounded-full">
 								🔥 Lançamento
@@ -77,7 +79,7 @@ export function Header() {
 							
 						</Container>
 
-							<Image src={predio} alt="Prédio Villaggio" position='absolute' width={{base: 0, xl: 780, "2xl": 1020}} objectFit="cover" zIndex={2} right={-40} />
+						<Image src={predio} alt="Prédio Villaggio" position='absolute' width={{base: 0, xl: 780, "2xl": 1020}} objectFit="cover" zIndex={2} right={-40} />
 							
 					</Box>
 				</SwiperSlide>
