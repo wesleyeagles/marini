@@ -44,7 +44,7 @@ export function Empreendimentos() {
                 </Box>
 
                 <Box display={{sm: 'none', lg: 'flex'}} marginTop='80px'>
-                    <Link to='altos-do-borgo' onClick={scrollToTop}>
+                    <Link to='/villagio-di-borgo' onClick={scrollToTop}>
                     <Box className="empreendimentos__single">
                         <Box className="empreendimentos__title_box">
                             <Text className="empreendimentos__title">
