@@ -9,7 +9,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
-import predio from '../pages/Villagio/images/group 346 (1).png'
+import predio from '../pages/Villagio/images/predio-1.png'
 import logoVillagio from '../pages/Villagio/images/logo-villagio-banner.png'
 
 // Import Swiper styles
@@ -69,7 +69,6 @@ export function Header() {
 								<Text sx={{ fontFamily: "Lexend", fontWeight: '400' }} fontSize="sm" className="text-[#FFFFFF56] mt-2" marginBlock={{ base: '15px', lg: '30px'}}>
 									Design moderno e funcionalidade em uma <br /> localização privilegiada.
 								</Text>
-
 								<Button sx={{ fontFamily: "Lexend", fontWeight: 'medium', bg: '#EADED5', color: '#092B20', borderRadius: '100px' }} variant="outline" p={{base: 6, lg: 8}} onClick={() => navigate('/villagio-di-borgo')}>
 								Ver empreendimento
 							</Button>
