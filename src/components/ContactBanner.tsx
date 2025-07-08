@@ -25,7 +25,7 @@ export function ContactBanner() {
                         </StyledButton>
 
 
-                        <a href="https://wa.me/5554999106006" target='_blank'>
+                        <a href="http://wa.me/5554996257331" target='_blank'>
                         <StyledButton marginLeft={{md: '8px'}} marginTop={{sm: '16px', md: '0'}} white='true' outlined='true'>
                             chame no whatsapp
                         </StyledButton>

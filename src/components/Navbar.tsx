@@ -113,11 +113,11 @@ export function Navbar() {
 													<NavLink>Entregues</NavLink>
 												</MenuItem>
 											</Link>
-											{/* <Link to="/altos-do-borgo">
-												<MenuItem disabled>
+											<Link to="/villagio-di-borgo">
+												<MenuItem>
 													<NavLink>Lançamento</NavLink>
 												</MenuItem>
-											</Link> */}
+											</Link>
 										</MenuList>
 									</Menu>
 								</ListItem>
