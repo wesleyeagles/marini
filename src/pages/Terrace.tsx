@@ -1318,7 +1318,7 @@ export const Terrace = () => {
                                                     <WhatsIcon />
                                                 </Box>
                                                 <StyledSmall marginLeft='12px'>
-                                                    54 99910.6006
+                                                    54 99625-7331
                                                 </StyledSmall>
                                             </Link>
                                         </Box>
